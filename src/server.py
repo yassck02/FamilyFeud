@@ -2,7 +2,6 @@
 #  Authors: 	Logan Docherty, Todd Noreen, Connor Yass
 #  Created on: 	2/26/2019
 
-
 from socket import *		# for use of socket
 from random import randint  # for use of random integer
 from thread import *		# for use of thread
@@ -11,18 +10,16 @@ import math					# for use of log
 #=====================================================================
 
 def handle(socket, address):
-
-	# Ask the user what they want to do
-	socket.send("what would you like to do?".encode())
+	"""Handles an incomming socket connection"""
 
 	# Recieve and handle the clients response
 	response = socket.recv(1024).decode("ascii")
 
-	if "playGame" in response:
+	if args.playGame:
 		playGame(socket, address)
-	elif "getHistory" in response:
+	elif args.getHistory:
 		getHistory(socket)
-	elif "getRecord" in response:
+	elif args.getRecord:
 		getRecord(socket)
 
 	# End the connection
@@ -32,6 +29,7 @@ def handle(socket, address):
 #=====================================================================
 
 def getRecord(socket):
+	"""Retrieves a record from the suers file"""
 
 	# Ask the user what they want to do
 	socket.send("which ip address would you like to see the record for?".encode())
@@ -61,6 +59,7 @@ def getRecord(socket):
 #---------------------------------------------------------------------
 
 def getHistory(socket):
+	"""Gets a play history (for an individual or the population) from the users file"""
 
 	# Ask the user what they want to do
 	socket.send("which ip address would you like to see the history of?".encode())
@@ -86,6 +85,7 @@ def getHistory(socket):
 #---------------------------------------------------------------------
 
 def playGame(socket, address):
+	"""Begins the 2 minute Family Feude gameplay loop"""
 
 	# Generate a random number between 1 and 99 using the randint function
 	num = randint(1, 99)
@@ -121,7 +121,46 @@ def playGame(socket, address):
 
 #=====================================================================
 
+# def getRandomQuestion():
+
+# def readQuestionsFile():
+
+#=====================================================================
+
+# def readUsersFile():
+
+# def registerUser():
+
+# def getUserRecord():
+
+# def addToUserHistory():
+
+# def getPopulationRecord():
+
+#=====================================================================
+
+def parse(message):
+	"""Extracts the command, and arguements from a message string"""
+	
+	tokens = message.split("\r\n")
+
+	command = tokens[0]
+	arguments = {}
+
+	for token in tokens: 
+		argument = token.split(" ")
+		key = arguement[0]
+		value = arguement[1]
+		arguments.update({key: value})
+
+	return (command, arguments)
+
+
+#=====================================================================
+
 def main():
+
+	parse("getRecord\r\nindividual\t127.0.0.1")
 
 	# Create a server socket
 	_socket = socket(AF_INET, SOCK_STREAM)

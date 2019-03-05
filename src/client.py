@@ -84,7 +84,11 @@ def playGame(socket):
 			break
 
 #=====================================================================
-		
+
+# def register():
+
+#=====================================================================
+
 def main():
 
 	# Define  a server port number and server address
@@ -123,6 +127,23 @@ def main():
 	# Terminate the conection
 	print("Closing conenction")
 	_socket.close()
+
+#=====================================================================
+
+def parse(message):
+	
+	tokens = message.split("\r\n")
+
+	command = tokens[0]
+	arguments = {}
+
+	for token in tokens: 
+		argument = token.split(" ")
+		key = arguement[0]
+		value = arguement[1]
+		arguments.update({key: value})
+
+	return (command, arguments)
 
 #=====================================================================
 

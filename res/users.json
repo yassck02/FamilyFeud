@@ -1,0 +1,46 @@
+[
+  {
+    "username": "USERNAME",
+    "password": "PASSWORD",
+    "addresses": [
+      "127.0.0.1",
+      "127.0.0.1"
+    ],
+    "history": [
+      {
+        "date": "1/2/3",
+        "score": 420
+      },
+      {
+        "date": "4/5/6",
+        "score": 69
+      },
+      {
+        "date": "1/2/3",
+        "score": 420
+      },
+      {
+        "date": "4/5/6",
+        "score": 777
+      },
+    ]
+  },
+  {
+    "username": "USERNAME",
+    "password": "PASSWORD",
+    "addresses": [
+      "127.0.0.1",
+      "127.0.0.1"
+    ],
+    "history": [
+      {
+        "date": "1/2/3",
+        "score": 420
+      },
+      {
+        "date": "7/8/9",
+        "score": 69
+      },
+    ]
+  },
+]
