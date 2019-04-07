@@ -3,7 +3,7 @@
 #  Created on: 	2/26/2019
 
 from socket import *	# For use of socket
-import curses			# For Text based UI
+# import curses			# For Text based UI
 
 #=====================================================================
 
@@ -89,6 +89,23 @@ def playGame(socket):
 
 #=====================================================================
 
+def parse(message):
+	
+	tokens = message.split("\r\n")
+
+	command = tokens[0]
+	arguments = {}
+
+	for token in tokens: 
+		argument = token.split(" ")
+		key = arguement[0]
+		value = arguement[1]
+		arguments.update({key: value})
+
+	return (command, arguments)
+
+#=====================================================================
+
 def main():
 
 	# Define  a server port number and server address
@@ -101,13 +118,12 @@ def main():
 
 	# Obtain the response from the server
 	response = _socket.recv(1024).decode("ascii")
-	if ("what would you like" not in response):
+	if ("connected" not in response):
 		_socket.close()
 		print("Server not ready to connect :(")
 		return
 	else:
 		print("Connected to " + str(ip) + " on port " + str(port))
-		print("> Server says: " + response)
 
 	# Ask the user what they would like to do
 	print("\t[0] Play Game")
@@ -130,33 +146,16 @@ def main():
 
 #=====================================================================
 
-def parse(message):
-	
-	tokens = message.split("\r\n")
-
-	command = tokens[0]
-	arguments = {}
-
-	for token in tokens: 
-		argument = token.split(" ")
-		key = arguement[0]
-		value = arguement[1]
-		arguments.update({key: value})
-
-	return (command, arguments)
-
-#=====================================================================
-
-screen = curses.initscr()
-curses.noecho()
-curses.cbreak()
-stdscr.keypad(True)
+# screen = curses.initscr()
+# curses.noecho()
+# curses.cbreak()
+# stdscr.keypad(True)
 
 main()
 
-curses.nocbreak()
-stdscr.keypad(False)
-curses.echo()
-curses.endwin()
+# curses.nocbreak()
+# stdscr.keypad(False)
+# curses.echo()
+# curses.endwin()
 
 #=====================================================================

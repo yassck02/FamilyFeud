@@ -6,6 +6,10 @@ from socket import *		# for use of socket
 from random import randint  # for use of random integer
 from thread import *		# for use of thread
 import math					# for use of log
+import json					# for r/w question and user files
+
+questionFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/questions.json"
+usersFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/users.json"
 
 #=====================================================================
 
@@ -15,11 +19,11 @@ def handle(socket, address):
 	# Recieve and handle the clients response
 	response = socket.recv(1024).decode("ascii")
 
-	if args.playGame:
+	if response.command.playGame:
 		playGame(socket, address)
-	elif args.getHistory:
+	elif response.command.getHistory:
 		getHistory(socket)
-	elif args.getRecord:
+	elif response.command.getRecord:
 		getRecord(socket)
 
 	# End the connection
@@ -38,17 +42,15 @@ def getRecord(socket):
 	ip = socket.recv(1024).decode("ascii")
 
 	# open the records file
-	file = open("records.txt", "r+")
+	with open("records.txt", "r+") as file:
 
-	# search for records file for the largest score for the ip address
-	record = -1.0
-	for line in file:
-		if str(ip) in line:
-			tokens = line.split("\t")
-			if float(tokens[1]) > record:
-				record = float(tokens[1])
-
-	file.close()
+		# search for records file for the largest score for the ip address
+		record = -1.0
+		for line in file:
+			if str(ip) in line:
+				tokens = line.split("\t")
+				if float(tokens[1]) > record:
+					record = float(tokens[1])
 
 	# Send the records that were found
 	if record > 0:
@@ -121,9 +123,24 @@ def playGame(socket, address):
 
 #=====================================================================
 
-# def getRandomQuestion():
+def getRandomQuestion():
+	"""Opens the questions.json file ad Returns a random question from it"""
 
-# def readQuestionsFile():
+	question = {}
+
+	# open the questions file
+	with open(questionFilePath) as file:
+
+		# load the json
+		questions = json.load(file)
+
+		# choose a random index
+		index = randint(1, len(questions))
+		question = questions[index]
+
+	file.close()
+
+	return question
 
 #=====================================================================
 
@@ -135,12 +152,12 @@ def playGame(socket, address):
 
 # def addToUserHistory():
 
-# def getPopulationRecord():
+# def getPopulationRecord()
 
 #=====================================================================
 
 def parse(message):
-	"""Extracts the command, and arguements from a message string"""
+	"""Extracts the command, and arguments from a message string"""
 	
 	tokens = message.split("\r\n")
 
@@ -149,8 +166,8 @@ def parse(message):
 
 	for token in tokens: 
 		argument = token.split(" ")
-		key = arguement[0]
-		value = arguement[1]
+		key = argument[0]
+		value = argument[1]
 		arguments.update({key: value})
 
 	return (command, arguments)
@@ -160,7 +177,8 @@ def parse(message):
 
 def main():
 
-	parse("getRecord\r\nindividual\t127.0.0.1")
+	q = getRandomQuestion()
+	print(q)
 
 	# Create a server socket
 	_socket = socket(AF_INET, SOCK_STREAM)
@@ -169,13 +187,14 @@ def main():
 	port = 20123
 	_socket.bind(("", port))
 	_socket.listen(1)
-	print ("Listening on port " + str(port))
+	print ("FF Server: Listening on port " + str(port))
 
 	# Create an infinite loop to process all connection requests
 	while True:
 
 		# Create a connection socket for each connection request received
 		connection, address = _socket.accept()
+		_socket.send("connected".encode())
 		print("Connected to " + str(address))
 		start_new_thread(handle, (connection, address))
 
