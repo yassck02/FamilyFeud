@@ -3,108 +3,126 @@
 #  Created on: 	2/26/2019
 
 from socket import *	# For use of socket
-# import curses			# For Text based UI
+import json				# for r/w question and user files
 
-#=====================================================================
+# ---------------------------------------------------------------------
 
 def getRecord(socket):
+	""" gets the record of an individual user, or the whole population """
 
-	# Send the 'getRecord' request to the server
-	socket.send("getRecord".encode())
-
-	# Obtain the response message from the server
-	response = socket.recv(1024).decode("ascii")
-	if ("which ip address" not in response):
-		socket.close()
-		print("Server not ready to retrieve records :(")
-		return
-	else:
-		print("> Server says: " + response)
-
-	# Tell the server the IP address we want the records for
-	ip = raw_input("Input the ip address (###.###.###.###)? ")
-	socket.send(ip.encode())
+	username = raw_input("Which user would you lke to get the record for?")
 	
-	# Obtain the response message from the server
-	response = socket.recv(1024).decode("ascii")
-	print("> Server says: " + response)
+	request = { 'command': 'getRecord', 'username': username }
+	send(socket, request)
 
-#---------------------------------------------------------------------
+	response = recieve(socket)
+	print("> server says: ", message['record'])
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 def getHistory(socket):
+	""" gets the history of an individual user """
 
-	# Tell the 'getHistory' request to the server
-	socket.send("getHistory".encode())
-
-	# Obtain the response message from the server
-	response = socket.recv(1024).decode("ascii")
-	if ("which ip address" not in response):
-		socket.close()
-		print("Server not ready to retrieve history :(")
-		return
-	else:
-		print("> Server says: " + response)
-
-	# Tell the server the IP address we want the records for
-	ip = raw_input("Input the ip address (###.###.###.###)? ")
-	socket.send(ip.encode())
+	username = raw_input("Which user would you lke to get the history for?")
 	
-	# Obtain the response message from the server
-	response = socket.recv(1024).decode("ascii")
-	print("> Server says: " + response)
+	request = { 'command': 'getHistory', 'username': username }
+	send(socket, request)
 
+	response = recieve(socket)
+	print("> server says: ", message['history'])
+	
 #---------------------------------------------------------------------
 
 def playGame(socket):
+	""" The main game function """
 
-	# Tell the 'playGame' request to the server
-	socket.send("playGame".encode())
+	# Tell the server we want to start a game
+	request = { 'command': 'playGame' }
+	send(socket, request)
 
 	# Obtain the response message from the server
-	response = socket.recv(1024).decode("ascii")
-	if ("guess a number" not in response):
-		socket.close()
-		print("Server is not ready to play the game :(")
+	response = recieve(socket)
+	if (response['code'] != 200):
+		print()
 		return
-	else:
-		print("> Server says: " + response)
 
 	# Loop until the number os guessed correctly
 	while True:
 
 		# send the guess to the server
-		myGuess = raw_input("Input your guess: ")
-		socket.send(myGuess.encode())
+		guess = raw_input("Input your guess: ")
+		request = { 'guess': guess }
+		send(socket, request)
 
 		# Recieve its response
-		response = socket.recv(1024).decode("ascii")
-		print("> Server says: " + response)
+		response = recieve(socket)
 
-		if("correct" in response):
-			break
+# ---------------------------------------------------------------------
 
-#=====================================================================
+def register(socket):
+	""" Creates a new user on the server """
 
-# def register():
+	username = raw_input("Input your username: ")
+	while (len(username) <= 0):
+		username = raw_input("Must be more than 0 characters. Try again: ")
 
-#=====================================================================
+	password1 = raw_input("Input your password: ")
+	while (len(password1) <= 0):
+		password1 = raw_input("Must be more than 0 characters. Try again: ")
 
-def parse(message):
-	
-	tokens = message.split("\r\n")
+	password2 = raw_input("Re enter your password: ")
+	while (password1 != password2):
+		password2 = raw_input("Passwords do not match. Try again: ")
 
-	command = tokens[0]
-	arguments = {}
+	request = { 'command': 'register', 'username': username, 'password': password1 }
+	send(socket, request)
 
-	for token in tokens: 
-		argument = token.split(" ")
-		key = arguement[0]
-		value = arguement[1]
-		arguments.update({key: value})
+	response = recieve(socket)
 
-	return (command, arguments)
+# ---------------------------------------------------------------------
 
-#=====================================================================
+def login(socket):
+	""" Logs the user into the server """
+
+	# input the username and password
+	username = raw_input("Input your username: ")
+	password = raw_input("Input your password: ")
+
+	# send it to the server
+	request = { 'command': 'login', 'username': username, 'password': password }
+	send(socket, request)
+
+	# recieve the response
+	response = recieve(socket)
+
+	# act on the response
+	if (response['code'] == 200):
+		print("Login success")
+	else:
+		print("Error: ", response['description'])
+
+# ---------------------------------------------------------------------
+
+def recieve(socket):
+	""" Recieves a json string from the server and converts it to a dictionary """
+
+	jsonString = socket.recv(1024).decode("ascii")
+	message = json.loads(jsonString)
+
+	print("RECIEVED: ", jsonString)
+	return message
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+def send(socket, dictionary):
+	""" Converts the dictionary to a json string and sends it to the server"""
+
+	jsonString = json.dumps(dictionary)
+	socket.send(jsonString.encode())
+
+	print("SENDING: ", jsonString)
+
+# ---------------------------------------------------------------------
 
 def main():
 
@@ -117,35 +135,51 @@ def main():
 	_socket.connect((ip, port))
 
 	# Obtain the response from the server
-	response = _socket.recv(1024).decode("ascii")
-	if ("connected" not in response):
+	response = recieve(_socket)
+	if (response['code'] != 200):
 		_socket.close()
 		print("Server not ready to connect :(")
 		return
 	else:
 		print("Connected to " + str(ip) + " on port " + str(port))
 
-	# Ask the user what they would like to do
-	print("\t[0] Play Game")
-	print("\t[1] Get Score History")
-	print("\t[2] Get Player Record")
-	tmp = raw_input("Input your selection: ")
+	while(True):
 
-	if "0" in tmp:
-		playGame(_socket)
-	elif "1" in tmp:
-		getHistory(_socket)
-	elif "2" in tmp:
-		getRecord(_socket)
-	else: 
-		print("Unrecognized selection...")
+		# Ask the user what they would like to do
+		print("\t[0] Register")
+		print("\t[1] Login")
+		print("\t[2] Play Game")
+		print("\t[3] Get Record")
+		print("\t[4] Get History")
+		print("\t[5] Disconnect")
+
+		tmp = raw_input("Input your selection: ")
+
+		if "0" in tmp:
+			register(_socket)
+		elif "1" in tmp:
+			login(_socket)
+		elif "2" in tmp:
+			playGame(_socket)
+		elif "3" in tmp:
+			getRecord(_socket)
+		elif "4" in tmp:
+			getHistory(_socket)
+		elif "5" in tmp:
+			break
+		else: 
+			print("Unrecognized selection...")
 
 	# Terminate the conection
 	print("Closing conenction")
+
+	request = { 'command': 'disconnect' }
+	send(_socket, request)
+
 	_socket.close()
 
-#=====================================================================
+# ---------------------------------------------------------------------
 
 main()
 
-#=====================================================================
+# ---------------------------------------------------------------------
