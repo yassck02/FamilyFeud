@@ -146,16 +146,6 @@ def main():
 
 #=====================================================================
 
-# screen = curses.initscr()
-# curses.noecho()
-# curses.cbreak()
-# stdscr.keypad(True)
-
 main()
-
-# curses.nocbreak()
-# stdscr.keypad(False)
-# curses.echo()
-# curses.endwin()
 
 #=====================================================================
