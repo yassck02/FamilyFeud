@@ -19,28 +19,28 @@ def handle(socket, address):
 	# Recieve and handle the clients response
 	while(True):
 
-		req = recieve(socket)
+		request = recieve(socket)
 
-		if req['command'] == "playGame":
+		if request['command'] == "playGame":
 			playGame(socket, address)
 
-		elif req['command'] == "getHistory":
-			getHistory(socket)
+		elif request['command'] == "getHistory":
+			getUserHistory(socket, request['username'])
 
-		elif req['command'] == "getRecord":
-			getRecord(socket)
+		elif request['command'] == "getRecord":
+			getUserRecord(socket, request['username'])
 
-		elif req['command'] == "login":
-			login(socket, req['username'], req['password'])
+		elif request['command'] == "login":
+			login(socket, request['username'], request['password'])
 
-		elif req['command'] == "register":
-			register(socket, address, req['username'], req['password'])
+		elif request['command'] == "register":
+			register(socket, address, request['username'], request['password'])
 
-		elif req['command'] == "disconnect":
+		elif request['command'] == "disconnect":
 			break
 
 	# End the connection
-	print("Disconnected from " + str(address))
+	print("- Disconnected from " + str(address))
 	socket.close()
 
 # ---------------------------------------------------------------------
@@ -84,7 +84,7 @@ def getRandomQuestion():
 def register(socket, address, username, password):
 
 	# open the users file
-	with open(usersFilePath, 'ra+') as file:
+	with open(usersFilePath, 'r+') as file:
 
 		# load the json
 		users = json.load(file)
@@ -136,7 +136,7 @@ def login(socket, username, password):
 
 # ---------------------------------------------------------------------
 
-def getUserRecord(username):
+def getUserRecord(socket, username):
 	"""Opens the users.json file and calclates the record of an individual user"""
 
 	# open the users file
@@ -196,7 +196,7 @@ def getPopulationRecord():
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-def getUserHistory(username):
+def getUserHistory(socket, username):
 	"""Opens the users.json file, and calculates then sends the record of an individual user"""
 
 	# open the useres file
@@ -211,6 +211,7 @@ def getUserHistory(username):
 
 				response = { 'code': 200, 'history': user['history']}
 				send(socket, response)
+				return
 	
 		# if the user doesent exist
 		response = { 'code': 404, 'description': 'invalid username'}
@@ -219,7 +220,7 @@ def getUserHistory(username):
 # ---------------------------------------------------------------------
 
 def recieve(socket):
-	""" Recieves a json string from the server and converts it to a dictionary """
+	""" Recieves a json string from the client and converts it to a dictionary """
 
 	jsonString = socket.recv(1024).decode("ascii")
 	message = json.loads(jsonString)
@@ -230,7 +231,7 @@ def recieve(socket):
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 def send(socket, dictionary):
-	""" Converts the dictionary to a json string and sends it to the server"""
+	""" Converts the dictionary to a json string and sends it to the client"""
 
 	jsonString = json.dumps(dictionary)
 	socket.send(jsonString.encode())
@@ -258,7 +259,7 @@ def main():
 		connection, address = _socket.accept()
 
 		# tell the client its connetion attempt was succesful
-		print("Connected to " + str(address))
+		print("+ Connected to " + str(address))
 		response = { 'code': 200, 'description': 'OK' }
 		send(connection, response)
 		

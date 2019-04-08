@@ -15,8 +15,14 @@ def getRecord(socket):
 	request = { 'command': 'getRecord', 'username': username }
 	send(socket, request)
 
+	# recieve the response
 	response = recieve(socket)
-	print("> server says: ", message['record'])
+
+	# act on the response
+	if (response['code'] == 200):
+		print(response['record'])
+	else:
+		print("ERROR: ", response['description'])
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -28,8 +34,14 @@ def getHistory(socket):
 	request = { 'command': 'getHistory', 'username': username }
 	send(socket, request)
 
+	# recieve the response
 	response = recieve(socket)
-	print("> server says: ", message['history'])
+
+	# act on the response
+	if (response['code'] == 200):
+		print(response['history'])
+	else:
+		print("ERROR: ", response['description'])
 	
 #---------------------------------------------------------------------
 
@@ -77,7 +89,14 @@ def register(socket):
 	request = { 'command': 'register', 'username': username, 'password': password1 }
 	send(socket, request)
 
+	# recieve the response
 	response = recieve(socket)
+
+	# act on the response
+	if (response['code'] == 200):
+		print("Register Succesfull")
+	else:
+		print("ERROR: ", response['description'])
 
 # ---------------------------------------------------------------------
 
@@ -99,7 +118,7 @@ def login(socket):
 	if (response['code'] == 200):
 		print("Login success")
 	else:
-		print("Error: ", response['description'])
+		print("ERROR: ", response['description'])
 
 # ---------------------------------------------------------------------
 
@@ -141,7 +160,7 @@ def main():
 		print("Server not ready to connect :(")
 		return
 	else:
-		print("Connected to " + str(ip) + " on port " + str(port))
+		print("+ Connected to " + str(ip) + " on port " + str(port))
 
 	while(True):
 
@@ -151,7 +170,7 @@ def main():
 		print("\t[2] Play Game")
 		print("\t[3] Get Record")
 		print("\t[4] Get History")
-		print("\t[5] Disconnect")
+		print("\t[5] Quit (Disconnect)")
 
 		tmp = raw_input("Input your selection: ")
 
@@ -171,7 +190,7 @@ def main():
 			print("Unrecognized selection...")
 
 	# Terminate the conection
-	print("Closing conenction")
+	print("- Disconnecting")
 
 	request = { 'command': 'disconnect' }
 	send(_socket, request)
