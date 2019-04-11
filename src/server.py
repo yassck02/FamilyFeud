@@ -46,57 +46,109 @@ def handle(socket, address):
 # ---------------------------------------------------------------------
 
 def playGame(socket, address):
-	"""Begins the 2 minute Family Feude gameplay loop"""
+	"""Begins the Family Feude gameplay loop"""
+
+	totalScore = 0
 
 	# Main game loop starts here
-	loop = True
-	while loop:
+	for i in range(3):
 
-		# Obtain the guess sent by the client through the socket
-		response = socket.recv(1024).decode("ascii")
+		# Send a random question
+		question = getRandomQuestion()
+		send(socket, question)
 
-		# store the score
-		with open("records.txt", "a+") as file:
-			score = math.log(num, 2) / guessCount
-			file.write(str(address) + "\t" + str(score) + "\n")
+		# recieve the users answer
+		userAnswer = recieve(socket)
+
+
+		# calculate the running score
+		totalScore += calculateScore(question, userAnswer)
+
+	# Send the total score
+	result = { "totalScore": totalScore }
+	send(socket, result)
+
+	# Store the result
+	saveScore("username", totalScore)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+def calculateScore(question, userAnswer):
+	"""Calculates the score of the question for the given answer"""
+
+	score = 0
+
+	## TODO: Update so an exact match isnt necessary
+	for answer in question["answers"]:
+		if(answer['answer'] == userAnswer):
+			score = answer['score']
+
+	return score
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+def saveScore(score, username):
+	"""Opens the users file, searches for the username, and adds the score"""
+
+	with open(usersFilePath, 'r+') as usersfile:
+
+		# load the json from the file
+		users = json.load(usersfile)
+
+		# find the user
+		for user in users:
+			if(user['username'] == username):
+				
+				# add the record
+				record = {
+					'date': 'today',
+					'score': score
+				}
+				user['history'].append(record)
+
+		# save the file
+		usersfile.seek(0)
+		usersfile.write(json.dumps(users, indent=4))
 
 # ---------------------------------------------------------------------
 
-def getRandomQuestion():
-	"""Opens the questions.json file and Returns a random question from it"""
-
-	question = {}
-
-	# open the questions file
+def loadQuestionsFile():
+	"""Opens the users.json file and returns it as a json object"""
+	
 	with open(questionFilePath) as file:
+		return json.load(file)
 
-		# load the json
-		questions = json.load(file)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-		# choose a random index
-		index = randint(1, len(questions))
-		question = questions[index]
+questions = loadQuestionsFile()
 
-	return question
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+def getRandomQuestion():
+	""" Returns a random question from the list"""
+
+	index = randint(1, len(questions))
+	return questions[index]
 
 # ---------------------------------------------------------------------
 
 def register(socket, address, username, password):
+	"""Adds the given user to the users file if it doesent already esist"""
 
-	# open the users file
-	with open(usersFilePath, 'r+') as file:
+	with open(usersFilePath, 'r+') as usersfile:
 
-		# load the json
-		users = json.load(file)
+		# load the json from the file
+		users = json.load(usersfile)
 
 		# make sure the user doesent already exist
 		for user in users:
 			if(user['username'] == username):
 				res = { 'code': 404, 'description': 'user already exists, please login' }
 				send(socket, res)
+				usersfile.close()
 				return
 
-		# create a new user ...
+		# create a new user
 		newUser = {
 			'username': username,
 			'password': password,
@@ -104,18 +156,23 @@ def register(socket, address, username, password):
 			'history': [ ]
 		}
 
-		# ... write it to the file
-		file.write(json.dumps(newUser))
+		# write the user and save the file
+		users.append(newUser)
+		usersfile.seek(0)
+		usersfile.write(json.dumps(users, indent=4))
+
+		res = { 'code': 200, 'description': 'user added' }
+		send(socket, res)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 def login(socket, username, password):
+	"""Logs the user in if their username exists and password is correct"""
 
-	# open the users file
-	with open(usersFilePath) as file:
+	with open(usersFilePath) as usersfile:
 
-		# load the json
-		users = json.load(file)
+		# load the users json array from the file
+		users = json.load(usersfile)
 
 		# search for the user and check the password
 		for user in users:
@@ -124,26 +181,26 @@ def login(socket, username, password):
 				if(user['password'] == password):
 					res = { 'code': 200, 'description': 'OK' }
 					send(socket, res)
+					usersfile.close()
 					return
 				else:
 					res = { 'code': 404, 'description': 'invalid password' }
 					send(socket, res)
+					usersfile.close()
 					return
 
 		res = { 'code': 404, 'description': 'invalid username' }
 		send(socket, res)
-
 
 # ---------------------------------------------------------------------
 
 def getUserRecord(socket, username):
 	"""Opens the users.json file and calclates the record of an individual user"""
 
-	# open the users file
-	with open(usersFilePath) as file:
+	with open(usersFilePath) as usersfile:
 
-		# load the json
-		users = json.load(file)
+		# load the json from the file
+		users = json.load(usersfile)
 
 		bestRecord = { 'date': '', 'score': 0 }
 
@@ -155,6 +212,7 @@ def getUserRecord(socket, username):
 				if(len(user['history']) <= 0):
 					response = { 'code': 410, 'description': 'username has no history' }
 					send(socket, response)
+					usersfile.close()
 					return
 
 				# loop through all their records
@@ -164,22 +222,22 @@ def getUserRecord(socket, username):
 
 				response = { 'code': 200, 'record': bestRecord }
 				send(socket, response)
+				usersfile.close()
 				return
-	
+
 		# if the user doesent exist ...
 		response = { 'code': 404, 'description': 'invalid username' }
 		send(socket, response)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-def getPopulationRecord(): 
+def getPopulationRecord(socket): 
 	"""Opens the users.json file then calclates and sends the record of all users"""
 
-	# open the useres file
-	with open(usersFilePath) as file:
+	with open(usersFilePath, "r") as usersfile:
 
-		# load the json
-		users = json.load(file)
+		# load the json from the file
+		users = json.load(usersfile)
 
 		bestUser = ""
 		bestRecord = { 'date': '', 'score': 0 }
@@ -199,23 +257,23 @@ def getPopulationRecord():
 def getUserHistory(socket, username):
 	"""Opens the users.json file, and calculates then sends the record of an individual user"""
 
-	# open the useres file
-	with open(usersFilePath) as file:
+	with open(usersFilePath, "r") as usersfile:
 
-		# load the json
-		users = json.load(file)
+		# load the json from the file
+		users = json.load(usersfile)
 
 		# search for the user in question
-		for user in users:
+		for user in usersFile['users']:
 			if(user['username'] == username):
 
 				response = { 'code': 200, 'history': user['history']}
 				send(socket, response)
+				usersfile.close()
 				return
-	
-		# if the user doesent exist
-		response = { 'code': 404, 'description': 'invalid username'}
-		send(socket, response)
+
+	# if the user doesent exist
+	response = { 'code': 404, 'description': 'invalid username'}
+	send(socket, response)
 
 # ---------------------------------------------------------------------
 
@@ -225,7 +283,7 @@ def recieve(socket):
 	jsonString = socket.recv(1024).decode("ascii")
 	message = json.loads(jsonString)
 
-	print("RECIEVED: ", jsonString)
+	#print("RECIEVED: ", jsonString)
 	return message
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -236,7 +294,7 @@ def send(socket, dictionary):
 	jsonString = json.dumps(dictionary)
 	socket.send(jsonString.encode())
 
-	print("SENDING: ", jsonString)
+	#print("SENDING: ", jsonString)
 
 # ---------------------------------------------------------------------
 

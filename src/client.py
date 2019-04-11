@@ -10,7 +10,7 @@ import json				# for r/w question and user files
 def getRecord(socket):
 	""" gets the record of an individual user, or the whole population """
 
-	username = raw_input("Which user would you lke to get the record for?")
+	username = raw_input("Which user would you lke to get the record for? ")
 	
 	request = { 'command': 'getRecord', 'username': username }
 	send(socket, request)
@@ -29,7 +29,7 @@ def getRecord(socket):
 def getHistory(socket):
 	""" gets the history of an individual user """
 
-	username = raw_input("Which user would you lke to get the history for?")
+	username = raw_input("Which user would you lke to get the history for? ")
 	
 	request = { 'command': 'getHistory', 'username': username }
 	send(socket, request)
@@ -52,22 +52,21 @@ def playGame(socket):
 	request = { 'command': 'playGame' }
 	send(socket, request)
 
-	# Obtain the response message from the server
-	response = recieve(socket)
-	if (response['code'] != 200):
-		print()
-		return
+	for i in range(3):
 
-	# Loop until the number os guessed correctly
-	while True:
+		#recieve a question
+		question = recieve(socket)
+		print(question)
 
 		# send the guess to the server
 		guess = raw_input("Input your guess: ")
 		request = { 'guess': guess }
 		send(socket, request)
 
-		# Recieve its response
-		response = recieve(socket)
+	# Recieve the total score
+	totalScore = recieve(socket)
+	print(totalScore)
+
 
 # ---------------------------------------------------------------------
 
@@ -94,7 +93,7 @@ def register(socket):
 
 	# act on the response
 	if (response['code'] == 200):
-		print("Register Succesfull")
+		print("Register success")
 	else:
 		print("ERROR: ", response['description'])
 
@@ -128,7 +127,7 @@ def recieve(socket):
 	jsonString = socket.recv(1024).decode("ascii")
 	message = json.loads(jsonString)
 
-	print("RECIEVED: ", jsonString)
+	#print("RECIEVED: ", jsonString)
 	return message
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -139,7 +138,7 @@ def send(socket, dictionary):
 	jsonString = json.dumps(dictionary)
 	socket.send(jsonString.encode())
 
-	print("SENDING: ", jsonString)
+	#print("SENDING: ", jsonString)
 
 # ---------------------------------------------------------------------
 
@@ -149,6 +148,9 @@ def main():
 	ip = "localhost"
 	port = 20123
 
+	# ip = raw_input("Server ip address: ")
+	# port = raw_input("Server port number: ")
+
 	# Create a client TCP socket to connect with the server
 	_socket = socket(AF_INET, SOCK_STREAM)
 	_socket.connect((ip, port))
@@ -157,12 +159,14 @@ def main():
 	response = recieve(_socket)
 	if (response['code'] != 200):
 		_socket.close()
-		print("Server not ready to connect :(")
+		print("Could not connect to server :(")
 		return
 	else:
 		print("+ Connected to " + str(ip) + " on port " + str(port))
 
 	while(True):
+
+		print('-----------------------------------------')
 
 		# Ask the user what they would like to do
 		print("\t[0] Register")
@@ -173,6 +177,8 @@ def main():
 		print("\t[5] Quit (Disconnect)")
 
 		tmp = raw_input("Input your selection: ")
+
+		print('- - - - - - - - - - - - - - - - - - - - -')
 
 		if "0" in tmp:
 			register(_socket)
@@ -187,7 +193,7 @@ def main():
 		elif "5" in tmp:
 			break
 		else: 
-			print("Unrecognized selection...")
+			print("ERROR: Unrecognized selection...")
 
 	# Terminate the conection
 	print("- Disconnecting")
