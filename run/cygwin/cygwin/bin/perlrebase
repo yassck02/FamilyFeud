@@ -1,0 +1,32 @@
+#!/bin/sh
+suff=$1
+suff=${suff:=5.10.1}
+baseaddr=0x5400000
+perl=/usr/local/bin/perl$suff.exe
+if [ ! -f $perl ]; then
+  perl=/usr/bin/perl$suff.exe
+  if [ ! -f $perl ]; then
+    echo "$perl and /usr/local/bin/perl$suff.exe not found"
+    echo "usage: perlrebase.sh [5.11.4d-nt]"
+    exit
+  fi
+fi
+dll=$(ldd $perl | perl -anle 'print $F[2] if /cygperl/')
+arch=$($perl -MConfig -MFile::Basename -e'print basename($Config{archlib})')
+ver=$($perl -MConfig -MFile::Basename -e'print basename(dirname $Config{archlib})')
+echo $perl > rebase$suff.lst
+if [ ! -d /usr/lib/perl5/$ver/$arch/auto ]; then
+  echo "no archlib found for $perl"
+  exit
+fi
+if [ ! -e /usr/bin/rebase.exe ]; then
+  echo "/usr/bin/rebase.exe not found. Install the rebase package"
+  exit
+fi
+# pushd /usr/lib/perl5
+echo $dll >> rebase$suff.lst
+find /usr/lib/perl5/{,site_perl/,vendor_perl/}$ver/$arch/auto/ -name \*.dll >> rebase$suff.lst 
+cat rebase$suff.lst | xargs chmod u+w 
+rebase -v -b $baseaddr -T rebase$suff.lst
+cat rebase$suff.lst | xargs chmod u-w
+# popd

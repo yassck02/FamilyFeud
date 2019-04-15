@@ -1,0 +1,75 @@
+nano
+------------------------------------------
+GNU nano is designed to be a free replacement for the Pico text editor, part of the Pine
+email suite from The University of Washington. It aims to "emulate Pico as closely as
+possible and perhaps include extra functionality".
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  libiconv2-1.11-1
+  libintl8-0.15-1
+  libncurses8-5.5-3
+
+Build requirements:
+  cygwin-1.5.24-2 or newer
+  gcc-3.4.4-3 or newer
+  binutils-20060817-1 or newer
+  gettext-0.15-1 or newer
+
+Canonical homepage:
+  http://www.nano-editor.org/
+
+Canonical download:
+  http://www.nano-editor.org/dist/v2.0/nano-2.0.8.tar.gz
+
+------------------------------------
+
+Build instructions:
+  unpack nano-2.0.9-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport nano-2.0.9-1 all
+
+This will create:
+  /usr/src/nano-2.0.9-1.tar.bz2
+  /usr/src/nano-2.0.9-1-src.tar.bz2
+
+Or use 'cygport nano-2.0.9-1 prep' to get a patched source directory
+
+To find out the files included in the binary distribution, you can
+use "cygcheck -l nano", or browse the listing for the appropriate version
+at <http://cygwin.com/packages/>.
+
+------------------
+
+Port Notes:
+
+----- version 2.0.9  -----
+New upstream release from stable branch.
+
+----- version 2.0.6  -----
+Changed mantainer from Gareth Pearce to Lapo Luchini.
+Changed packaging method to cygport.
+New upstream release from stable branch.
+
+----- version 1.2.2  -----
+New upstream release from stable branch.
+
+----- version 1.2.0  -----
+New upstream stable branch, first release.
+
+----- version 1.1.10 -----
+First cygwin release from unstable branch (which is nearing 1.2.0 time)
+First use of 'Method 2' packaging style.
+
+----- version 1.0.7 -----
+New upstream release.
+
+----- version 1.0.6 -----
+Initial cygwin release.
+No known port details, works OOTB.
+
+
+Cygwin port maintained by: Lapo Luchini <lapo@lapo.it
+Please address all questions to the Cygwin mailing list at <cygwin@cygwin.com>

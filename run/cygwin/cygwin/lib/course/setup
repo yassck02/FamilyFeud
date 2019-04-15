@@ -1,0 +1,87 @@
+#!/usr/bin/perl -w
+
+umask 0077;
+
+$course = $ENV{"COURSE"};
+
+print <<EOF;
+
+   * You are running the SETUP program which will create some    *
+   * subdirectories and copy some files into the subdirectories. *
+   * If these files already exist or there are files with        *
+   * identical names, they will be overwritten!                  *
+
+EOF
+print "Do you want to continue (y/n)? ";
+$yesno = <STDIN>;
+chomp $yesno;
+if (length($yesno) > 0) {
+    $yesno = substr($yesno, 0, 1);
+    $yesno =~ tr/a-z/A-Z/;
+}
+if ($yesno eq "Y") {
+    $homedir = $ENV{HOME};
+    chdir $homedir;
+    chmod 0700, $homedir;
+    system "/bin/rm -f .bashrc .profile .bash_profile .vimrc";
+    system "/bin/rm -f .inputrc .nanorc";
+    system "/bin/rm -fr c doc";
+    print "\n";
+    &docopy(".bashrc", ".");
+    &docopy(".bash_profile", ".");
+    &docopy(".inputrc", ".");
+    &docopy(".vimrc", ".");
+    &docopy(".nanorc", ".");
+    &domkdir("c");
+    &docopy("ch1_1.c", "c");
+    &docopy("ch2_1.c", "c");
+    &docopy("ch2_2.c", "c");
+    &docopy("ch2_3.c", "c");
+    &docopy("ch2_4.c", "c");
+    &domkdir("doc");
+    &docopy("abridged.txt", "doc");
+    &docopy("faq.txt", "doc");
+    &docopy("tutor", "doc");
+    print <<EOF;
+
+Setup successfully completed.
+
+Please type the following (exactly!) now:
+
+          source .bash_profile
+
+EOF
+} else {
+  print "\nSetup program aborted.\n\n"
+}
+exit;
+
+sub docopy
+{
+    my $file = shift;
+    my $dir = shift;
+    unless (-e "$dir/$file") {
+        system "cp $course/$file $dir";
+        if ($dir eq ".") {
+            print "   '$file' is copied into your home directory.\n";
+        } else {
+            print "   '$file' is copied into your '$dir' directory.\n";
+        }
+    } else {
+        print "   File $file already exists, copying halted.\n";
+    }
+}
+
+sub domkdir
+{
+    my $dir = shift;
+    print "\n";
+    unless (-e $dir) {
+        mkdir $dir, 0700;
+        print "   '$dir' directory created.\n";
+    } else {
+        print "   Directory $dir already exists, directory creation halted.\n";
+    }
+}
+
+__END__
