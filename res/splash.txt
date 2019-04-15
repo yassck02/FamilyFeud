@@ -4,10 +4,3 @@
  ██╔══╝  ██╔══██║██║╚██╔╝██║██║██║    ╚██╔╝      ██╔══╝  ██╔══╝  ██║   ██║██║  ██║╚═╝
  ██║     ██║  ██║██║ ╚═╝ ██║██║███████╗██║       ██║     ███████╗╚██████╔╝██████╔╝██╗
  ╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚══════╝╚═╝       ╚═╝     ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝
-
-
-                         <Press any key to continue>
-
-
-           Connor Yass          Logan Docherty       Todd Noreen
-         YassCK02@uww.edu    DochertyLD@uww.edu    NorrenT@uww.edu

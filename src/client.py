@@ -2,7 +2,6 @@
 #  Authors: 	Logan Docherty, Todd Noreen, Connor Yass
 #  Created on: 	2/26/2019
 
+import urwid
 import pages
 
-loop = urwid.MainLoop(pages.base, palette=pages.palette)
-loop.run()
