@@ -1,0 +1,6 @@
+
+# Ignore the cygwin directory
+run/cygwin
+
+# Ignore the urwid directory
+src/urwid
