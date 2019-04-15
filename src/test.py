@@ -1,6 +1,8 @@
 
 import urwid
 
+import SplashPage
+
 # - - - - - - - - - - - - - - - - - - - - - - - - -
 
 choices = u'Login Register'.split()
@@ -10,7 +12,7 @@ choices = u'Login Register'.split()
 def menu(title, choices):
 
     body = [urwid.Text(title), urwid.Divider()]
-    
+
     for c in choices:
         button = urwid.Button(c)
         urwid.connect_signal(button, 'click', item_chosen, c)

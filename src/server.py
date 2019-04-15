@@ -8,8 +8,10 @@ from thread import *		# for use of thread
 import math					# for use of log
 import json					# for r/w question and user files
 
-questionFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/questions.json"
-usersFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/users.json"
+questionFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/questions.json"
+usersFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/users.json"
+
+import urwid
 
 # ---------------------------------------------------------------------
 

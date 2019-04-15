@@ -4,3 +4,6 @@ run/cygwin
 
 # Ignore the urwid directory
 src/urwid
+
+# Ignore .pyc files
+*.pyc
