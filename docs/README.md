@@ -1,8 +1,13 @@
-# Family Feud
+ ███████╗ █████╗ ███╗   ███╗██╗██╗  ██╗   ██╗    ███████╗███████╗██╗   ██╗██████╗ ██╗
+ ██╔════╝██╔══██╗████╗ ████║██║██║  ╚██╗ ██╔╝    ██╔════╝██╔════╝██║   ██║██╔══██╗██║
+ █████╗  ███████║██╔████╔██║██║██║   ╚████╔╝     █████╗  █████╗  ██║   ██║██║  ██║██║
+ ██╔══╝  ██╔══██║██║╚██╔╝██║██║██║    ╚██╔╝      ██╔══╝  ██╔══╝  ██║   ██║██║  ██║╚═╝
+ ██║     ██║  ██║██║ ╚═╝ ██║██║███████╗██║       ██║     ███████╗╚██████╔╝██████╔╝██╗
+ ╚═╝     ╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚══════╝╚═╝       ╚═╝     ╚══════╝ ╚═════╝ ╚═════╝ ╚═╝
 
-A text-based Family Feud game build on a client-server architecture
+Family Feud: A text-based Family Feud game build on a client-server architecture
 
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ---
 
@@ -16,8 +21,8 @@ A text-based Family Feud game build on a client-server architecture
 
 ## Contributors
 
-- Logan D.
-- Todd N.
-- Connor Y.
+- Connor Yass: yassck02@uww.edu
+- Logan Docherty: dochertylg08@uww.edu
+- Todd Noreen: noreentr16@uww.edu
 
 ---
