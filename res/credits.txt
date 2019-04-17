@@ -1,6 +1,0 @@
-Connor Yass..........yassck02@uww.edu
-Logan Docherty.......dochertylg08@uww.edu
-Todd Noreen..........noreentr16@uww.edu
-
-Family Feud Question Archive: https://mstiescott.neocities.org/feud16_8.html
-Text-based UI library for Python: https://github.com/urwid/urwid

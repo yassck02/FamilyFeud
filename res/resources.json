@@ -1,0 +1,12 @@
+{
+    "resources": [
+        {
+            "description": "Family Feud Question Archive",
+            "link": "https://mstiescott.neocities.org/feud16_8.html"
+        },
+        {
+            "description": "Text-based UI library for Python",
+            "link": "https://github.com/urwid/urwid"
+        }
+    ]
+}
