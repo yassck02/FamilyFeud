@@ -1,7 +1,8 @@
 import urwid
-import json
 
-from Page import *
+from page import Page
+
+import json
 
 # ---------------------------------------------------------------------
 
@@ -13,12 +14,9 @@ class InfoPage(Page):
         credits_text_filepath = '/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/credits.json'
         resources_text_filepath = '/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/resources.json'
 
-        self.header = urwid.AttrMap(
-            urwid.Text(u'Info'), 
-            'titlebar'
-        )
+        header_text = "Info"
 
-        self.footer = urwid.Text(
+        footer = urwid.Text(
             [(u'Press ('), ('ESC', u'esc'), (u') to quit. '),
             (u'Press ('), ('BACK', u'backspace'), (u') to go back. ')]
         )
@@ -29,11 +27,13 @@ class InfoPage(Page):
         with open(resources_text_filepath) as resources_text_file:
             self.resources = json.load(resources_text_file)
 
-        self.widget = urwid.Filler(
+        widget = urwid.Filler(
             urwid.Columns([
                 urwid.Pile([urwid.Text([contributor['name'], ": ", contributor['email']], align='center') for contributor in self.credits['contributors']]),
                 urwid.Pile([urwid.Text([resource['description'], ": ", resource['link']], align='center') for resource in self.resources['resources']])
             ])
         )
+
+        Page.__init__(self, widget, header_text, footer)
 
 # ---------------------------------------------------------------------
