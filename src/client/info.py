@@ -28,29 +28,28 @@ class InfoPage(Page):
             self.resources = json.load(resources_text_file)
 
         widget = urwid.Filler(
-            urwid.Padding(
-                urwid.Pile([
+            urwid.Pile([
 
-                    urwid.Text(('underline', u"Contributors"), align='center'),
+                urwid.Text(('yellow', u"Family Feud v0.9"), align='center'),
 
-                    urwid.Columns([
-                        urwid.Pile([urwid.Text([('bold',  contributor['name'] ), ":  "], align='right') for contributor in self.credits['contributors']]),
-                        urwid.Pile([urwid.Text(('italics',contributor['email']),         align='left')  for contributor in self.credits['contributors']]),
-                    ]),
+                urwid.Divider(div_char=' ', top=1, bottom=1),
 
-                    urwid.Divider(div_char=' ', top=1, bottom=1),
+                urwid.Text(('underline', u"Contributors"), align='center'),
 
-                    urwid.Text(('underline', u"Resources"), align='center'),
-
-                    urwid.Columns([
-                        urwid.Pile([urwid.Text([('bold',  resource['description'] ), ":  "], align='right') for resource in self.resources['resources']]),
-                        urwid.Pile([urwid.Text(('italics',resource['link']),                 align='left')  for resource in self.resources['resources']]),
-                    ])
+                urwid.Columns([
+                    urwid.Pile([urwid.Text([('bold',  contributor['name'] ), ":  "], align='right') for contributor in self.credits['contributors']]),
+                    urwid.Pile([urwid.Text(('italics',contributor['email']),         align='left')  for contributor in self.credits['contributors']]),
                 ]),
-                min_width=100,
-                left=50,
-                right=50
-            )
+
+                urwid.Divider(div_char=' ', top=1, bottom=1),
+
+                urwid.Text(('underline', u"Resources"), align='center'),
+
+                urwid.Columns([
+                    urwid.Pile([urwid.Text([('bold',  resource['description'] ), ":  "], align='right') for resource in self.resources['resources']]),
+                    urwid.Pile([urwid.Text(('italics',resource['link']),                 align='left')  for resource in self.resources['resources']]),
+                ])
+            ])
         )
 
         Page.__init__(self, widget, header_text, footer)
