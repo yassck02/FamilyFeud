@@ -3,22 +3,38 @@ import json
 
 _socket = socket(AF_INET, SOCK_STREAM)
 
-def connect(ip, port):
-    _socket.connect(ip, port)
+port = 6969
 
+connected = False
+loggedin = False
+
+def connect(ip_address):
+    """ Creates a socket connection to the givn address and port
+        Returns true if success, fales if not """
+
+    # Attempt to connect
+    _socket.connect((ip_address, port))
+
+    # Reciev and act on the response
     response = recieve()
     if (response['code'] != 200):
         _socket.close()
-        print("ERROR: Could not connect to server :(")
-        return
+        connected = False
+        return False
     else:
-        print("+ Connected to " + str(ip) + " on port " + str(port))
+        connected = True
+        return True
 
 def disconnect():
+    """ Closes the socket connection """
+
+    if(connected == False):
+        return
+
     request = { 'command': 'disconnect' }
-    send(_socket, request)
+    send(request)
     _socket.close()
-    print("- Disconnected from server")
+    connected = False
 
 # ---------------------------------------------------------------------
 
@@ -28,7 +44,6 @@ def recieve():
     jsonString = _socket.recv(1024).decode("ascii")
     message = json.loads(jsonString)
 
-    #print("RECIEVED: ", jsonString)
     return message
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -39,6 +54,5 @@ def send(dictionary):
     jsonString = json.dumps(dictionary)
     _socket.send(jsonString.encode())
 
-    #print("SENDING: ", jsonString)
 
 # ---------------------------------------------------------------------

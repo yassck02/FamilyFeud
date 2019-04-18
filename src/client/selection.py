@@ -18,23 +18,20 @@ class SelectionPage(Page):
         btn_record   = urwid.Button(("yellow", "Check Record"),  on_press=self.on_press_record)
         btn_info     = urwid.Button(("yellow", "Info"),          on_press=self.on_press_info)
         btn_login    = urwid.Button(("yellow", "Login"),         on_press=self.on_press_login)
-        btn_register = urwid.Button(("yellow", "Register"),      on_press=self.on_press_register)
 
-        btn_play._label.align     = 'center'
-        btn_history._label.align  = 'center'
-        btn_record._label.align   = 'center'
-        btn_info._label.align     = 'center'
-        btn_login._label.align    = 'center'
-        btn_register._label.align = 'center'
+        btn_play._label.align    = 'center'
+        btn_history._label.align = 'center'
+        btn_record._label.align  = 'center'
+        btn_info._label.align    = 'center'
+        btn_login._label.align   = 'center'
 
         widget = urwid.Filler(
             urwid.Pile([
-                (2, urwid.Filler( urwid.Padding(btn_play,     width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(btn_history,  width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(btn_record,   width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(btn_info,     width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(btn_login,    width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(btn_register, width=20, align='center') ))
+                (2, urwid.Filler( urwid.Padding(btn_play,    width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(btn_history, width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(btn_record,  width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(btn_info,    width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(btn_login,   width=20, align='center') ))
             ])
         )
 
@@ -62,8 +59,5 @@ class SelectionPage(Page):
 
     def on_press_login(self, button):
         wm.show(wm.loginPage)
-
-    def on_press_register(self, button):
-        wm.show(wm.registerPage)
 
 # ---------------------------------------------------------------------

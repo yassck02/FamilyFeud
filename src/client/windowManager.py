@@ -7,7 +7,6 @@ from history   import HistoryPage
 from info      import InfoPage
 from login     import LoginPage
 from records   import RecordsPage
-from register  import RegisterPage
 from selection import SelectionPage
 from splash    import SplashPage
 
@@ -54,7 +53,6 @@ historyPage   = HistoryPage()
 infoPage      = InfoPage()
 loginPage     = LoginPage()
 recordsPage   = RecordsPage()
-registerPage  = RegisterPage()
 selectionPage = SelectionPage()
 splashPage    = SplashPage()
 
@@ -69,36 +67,36 @@ def show(page):
 # ---------------------------------------------------------------------
 
 def dialog(self):
-        ''' Overlays a dialog box on top of the console UI '''
+    ''' Overlays a dialog box on top of the console UI '''
 
-        # Header
-        header_text = urwid.Text(('banner', 'Help'), align = 'center')
-        header = urwid.AttrMap(header_text, 'banner')
+    # Header
+    header_text = urwid.Text(('banner', 'Help'), align = 'center')
+    header = urwid.AttrMap(header_text, 'banner')
 
-        # Body
-        body_text = urwid.Text('Hello world', align = 'center')
-        body_filler = urwid.Filler(body_text, valign = 'top')
-        body_padding = urwid.Padding(
-            body_filler,
-            left = 1,
-            right = 1
-        )
-        body = urwid.LineBox(body_padding)
+    # Body
+    body_text = urwid.Text('Hello world', align = 'center')
+    body_filler = urwid.Filler(body_text, valign = 'top')
+    body_padding = urwid.Padding(
+        body_filler,
+        left = 1,
+        right = 1
+    )
+    body = urwid.LineBox(body_padding)
 
-        # Footer
-        footer = urwid.Button('Okay', self.do)
-        footer = urwid.AttrWrap(footer, 'selectable', 'focus')
-        footer = urwid.GridFlow([footer], 8, 1, 1, 'center')
+    # Footer
+    footer = urwid.Button('Okay', self.do)
+    footer = urwid.AttrWrap(footer, 'selectable', 'focus')
+    footer = urwid.GridFlow([footer], 8, 1, 1, 'center')
 
-        # Layout
-        layout = urwid.Frame(
-            body,
-            header = header,
-            footer = footer,
-            focus_part = 'footer'
-        )
+    # Layout
+    layout = urwid.Frame(
+        body,
+        header = header,
+        footer = footer,
+        focus_part = 'footer'
+    )
 
-        return layout
+    return layout
 
 # ---------------------------------------------------------------------
 

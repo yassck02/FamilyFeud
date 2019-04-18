@@ -11,8 +11,6 @@ import json					# for r/w question and user files
 questionFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/questions.json"
 usersFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/users.json"
 
-import urwid
-
 # ---------------------------------------------------------------------
 
 def handle(socket, address):
@@ -306,7 +304,7 @@ def main():
 	_socket = socket(AF_INET, SOCK_STREAM)
 
 	# Define  a server port number, bind it to the server socket, and listen
-	port = 20123
+	port = 6969
 	_socket.bind(("", port))
 	_socket.listen(1)
 
