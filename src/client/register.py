@@ -11,44 +11,54 @@ class RegisterPage(Page):
 
     def __init__(self):
 
+        self.username_textbox  = urwid.Edit(caption='Username: ')
+        self.password1_textbox = urwid.Edit(caption='Password: ')
+        self.password2_textbox = urwid.Edit(caption='Password: ')
+
+        self.enter_button = urwid.Button(('yellow', u'Register'), on_press=self.register)
+        self.enter_button._label.align = 'center'
+
+        self.error_label = urwid.Text("")
+
         widget = urwid.Filler(
-            urwid.Text("register_page", align='center')
+            urwid.Pile([
+                (2, urwid.Filler( urwid.Padding(self.username_textbox,  width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.password1_textbox, width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.password2_textbox, width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.enter_button,      width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.error_label,       width=20, align='center') )),
+            ])
         )
 
         header_text = "Register"
 
-        footer = urwid.Text(
-            [(u'Press ('), ('ESC', u'esc'), (u') to quit. ')]
-        )
+        footer =  [(u'Presasdasds ('), ('yellow', u'esc'), (u') to quit. ')]
 
         Page.__init__(self, widget, header_text, footer)
 
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    def register(socket):
+    def register(self, button):
         """ Sends the register mesage to the server """
 
-        username = raw_input("Input your username: ")
-        while (len(username) <= 0):
-            username = raw_input("Must be more than 0 characters. Try again: ")
+        username  = self.username_textbox.get_edit_text()
+        password1 = self.password1_textbox.get_edit_text()
+        password2 = self.password2_textbox.get_edit_text()
 
-        password1 = raw_input("Input your password: ")
-        while (len(password1) <= 0):
-            password1 = raw_input("Must be more than 0 characters. Try again: ")
-
-        password2 = raw_input("Re enter your password: ")
-        while (password1 != password2):
-            password2 = raw_input("Passwords do not match. Try again: ")
+        if (password1 != password2):
+            self.error_label.set_text("ERROR: Passwords do not match")
+            return
 
         request = { 'command': 'register', 'username': username, 'password': password1 }
-        send(socket, request)
+        nm.send(socket, request)
 
-	# recieve the response
-	response = recieve(socket)
+        # recieve the response
+        response = nm.recieve(socket)
 
-	# act on the response
-	if (response['code'] == 200):
-		print("Register success")
-	else:
-		print("ERROR: ", response['description'])
+        # act on the response
+        if (response['code'] == 200):
+            self.error_label.set_text("Register success!")
+        else:
+            self.error_label.set_text("ERROR: ", response['description'])
 
 # ---------------------------------------------------------------------
