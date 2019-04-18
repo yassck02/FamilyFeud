@@ -22,7 +22,11 @@ palette = [
     ('red', 'dark red', ''),
     ('pink', 'dark magenta', ''),
     ('yellow', 'yellow', ''),
+    ('yellow_blink', 'yellow,blink', ''),
     ('blink', 'blink', ''),
+    ('bold', 'bold', ''),
+    ('underline', 'underline', ''),
+    ('italics', 'italics', ''),
 ]
 
 # Header (Top bar)
@@ -64,8 +68,37 @@ def show(page):
 
 # ---------------------------------------------------------------------
 
-def popup(title, message):
-    pass
+def dialog(self):
+        ''' Overlays a dialog box on top of the console UI '''
+
+        # Header
+        header_text = urwid.Text(('banner', 'Help'), align = 'center')
+        header = urwid.AttrMap(header_text, 'banner')
+
+        # Body
+        body_text = urwid.Text('Hello world', align = 'center')
+        body_filler = urwid.Filler(body_text, valign = 'top')
+        body_padding = urwid.Padding(
+            body_filler,
+            left = 1,
+            right = 1
+        )
+        body = urwid.LineBox(body_padding)
+
+        # Footer
+        footer = urwid.Button('Okay', self.do)
+        footer = urwid.AttrWrap(footer, 'selectable', 'focus')
+        footer = urwid.GridFlow([footer], 8, 1, 1, 'center')
+
+        # Layout
+        layout = urwid.Frame(
+            body,
+            header = header,
+            footer = footer,
+            focus_part = 'footer'
+        )
+
+        return layout
 
 # ---------------------------------------------------------------------
 

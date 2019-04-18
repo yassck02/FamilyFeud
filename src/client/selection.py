@@ -13,17 +13,15 @@ class SelectionPage(Page):
 
     def __init__(self):
 
-        btn_play = urwid.Button(("yellow", "Play"), on_press=self.on_press_play)
-        btn_play._label.align = 'center'
-
+        btn_play    = urwid.Button(("yellow", "Play"),          on_press=self.on_press_play)
         btn_history = urwid.Button(("yellow", "Check History"), on_press=self.on_press_history)
+        btn_record  = urwid.Button(("yellow", "Check Record"),  on_press=self.on_press_record)
+        btn_info    = urwid.Button(("yellow", "Info"),          on_press=self.on_press_info)
+
+        btn_play._label.align    = 'center'
         btn_history._label.align = 'center'
-
-        btn_record = urwid.Button(("yellow", "Check Record"), on_press=self.on_press_record)
-        btn_record._label.align = 'center'
-
-        btn_info = urwid.Button(("yellow", "Info"), on_press=self.on_press_info)
-        btn_info._label.align = 'center'
+        btn_record._label.align  = 'center'
+        btn_info._label.align    = 'center'
 
         widget = urwid.Filler(
             urwid.Pile([

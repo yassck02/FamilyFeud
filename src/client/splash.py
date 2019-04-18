@@ -15,12 +15,12 @@ class SplashPage(Page):
 
         splash_text_filepath = '/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/splash.txt'
 
+        btn_enter = urwid.Button(('yellow_blink', u"Press enter to continue"), on_press=self.on_press_enter)
+        btn_enter._label.align = 'center'
+
         splash_text = ''
         with open(splash_text_filepath) as splash_text_file:
             splash_text = urwid.Text(('yellow', splash_text_file.read()), align='center')
-
-        btn_enter = urwid.Button(('blink', u"Press enter to continue"), on_press=self.on_press_enter)
-        btn_enter._label.align = 'center'
 
         widget = urwid.Filler(
             urwid.Pile([
