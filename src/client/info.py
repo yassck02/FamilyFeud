@@ -38,7 +38,7 @@ class InfoPage(Page):
 
                 urwid.Columns([
                     urwid.Pile([urwid.Text([('bold',  contributor['name'] ), ":  "], align='right') for contributor in self.credits['contributors']]),
-                    urwid.Pile([urwid.Text(('italics',contributor['email']),         align='left')  for contributor in self.credits['contributors']]),
+                    urwid.Pile([urwid.Text(('italics',contributor['email']),         align='left' ) for contributor in self.credits['contributors']]),
                 ]),
 
                 urwid.Divider(div_char=' ', top=1, bottom=1),
@@ -47,7 +47,7 @@ class InfoPage(Page):
 
                 urwid.Columns([
                     urwid.Pile([urwid.Text([('bold',  resource['description'] ), ":  "], align='right') for resource in self.resources['resources']]),
-                    urwid.Pile([urwid.Text(('italics',resource['link']),                 align='left')  for resource in self.resources['resources']]),
+                    urwid.Pile([urwid.Text(('italics',resource['link']),                 align='left' ) for resource in self.resources['resources']]),
                 ])
             ])
         )

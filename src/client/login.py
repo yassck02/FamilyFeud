@@ -16,16 +16,17 @@ class LoginPage(Page):
         self.username_textbox = urwid.Edit(caption='Username: ')
         self.password_textbox = urwid.Edit(caption='Password: ')
 
-        self.enter_button = urwid.Button(('black_on_yellow', u'Login'), on_press=self.login)
+        self.enter_button = urwid.Button(('yellow', u'Login'), on_press=self.login)
+        self.enter_button._label.align = 'center'
 
         self.error_label = urwid.Text("")
 
         widget = urwid.Filler(
             urwid.Pile([
-                self.username_textbox,
-                self.password_textbox,
-                self.enter_button,
-                self.error_label
+                (2, urwid.Filler( urwid.Padding(self.username_textbox, width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.password_textbox, width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.enter_button,     width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.error_label,      width=20, align='center') )),
             ])
         )
 
