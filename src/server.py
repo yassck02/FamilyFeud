@@ -78,7 +78,7 @@ def calculateScore(question, userAnswer):
 
 	score = 0
 
-	## TODO: Update so an exact match isnt necessary
+	# TODO: Update so an exact match isnt necessary
 	for answer in question["answers"]:
 		if(answer['answer'] == userAnswer):
 			score = answer['score']
@@ -100,6 +100,7 @@ def saveScore(score, username):
 			if(user['username'] == username):
 				
 				# add the record
+				# TODO: save the current date
 				record = {
 					'date': 'today',
 					'score': score
@@ -161,7 +162,7 @@ def register(socket, address, username, password):
 		usersfile.seek(0)
 		usersfile.write(json.dumps(users, indent=4))
 
-		res = { 'code': 200, 'description': 'user added' }
+		res = { 'code': 200, 'description': 'user registered' }
 		send(socket, res)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -179,7 +180,7 @@ def login(socket, username, password):
 
 			if(user['username'] == username):
 				if(user['password'] == password):
-					res = { 'code': 200, 'description': 'OK' }
+					res = { 'code': 200, 'description': 'user logged in' }
 					send(socket, res)
 					usersfile.close()
 					return

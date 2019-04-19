@@ -16,11 +16,6 @@ class InfoPage(Page):
 
         header_text = "Info"
 
-        footer = urwid.Text(
-            [(u'Press ('), ('ESC', u'esc'), (u') to quit. '),
-            (u'Press ('), ('BACK', u'backspace'), (u') to go back. ')]
-        )
-
         with open(credits_text_filepath) as credits_text_file:
             self.credits = json.load(credits_text_file)
 
@@ -52,6 +47,6 @@ class InfoPage(Page):
             ])
         )
 
-        Page.__init__(self, widget, header_text, footer)
+        Page.__init__(self, widget, header_text)
 
 # ---------------------------------------------------------------------

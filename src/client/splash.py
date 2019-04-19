@@ -32,15 +32,11 @@ class SplashPage(Page):
 
         header_text = ""
 
-        footer = urwid.Text(
-            [(u'Press ('), ('ESC', u'esc'), (u') to quit. ')]
-        )
-
-        Page.__init__(self, widget, header_text, footer)
+        Page.__init__(self, widget, header_text)
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
     def on_press_enter(self, button):
-        wm.show(wm.selectionPage)
+        wm.show(wm.loginPage)
 
 # ---------------------------------------------------------------------

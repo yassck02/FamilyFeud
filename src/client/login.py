@@ -23,24 +23,23 @@ class LoginPage(Page):
         self.btn_register = urwid.Button(('yellow', u'Register'), on_press=self.on_btn_press)
         self.btn_register._label.align = 'center'
 
-        self.error_label = urwid.Text("")
+        self.message_login = urwid.Text("")
+        self.message_login.align = 'center'
 
         widget = urwid.Filler(
             urwid.Pile([
-                (3, urwid.Filler( urwid.Padding(self.server_addr_textbox, width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.server_addr_textbox, width=30, align='center') )),
                 (2, urwid.Filler( urwid.Padding(self.username_textbox,    width=30, align='center') )),
                 (2, urwid.Filler( urwid.Padding(self.password_textbox,    width=30, align='center') )),
                 (2, urwid.Filler( urwid.Padding(self.btn_login,           width=20, align='center') )),
-                (1, urwid.Filler( urwid.Padding(self.btn_register,        width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(self.error_label,         width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.btn_register,        width=20, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.message_login,       width=50, align='center') )),
             ])
         )
 
         header_text = "Login"
 
-        footer =  [(u'Presasdasds ('), ('yellow', u'esc'), (u') to quit. ')]
-
-        Page.__init__(self, widget, header_text, footer)
+        Page.__init__(self, widget, header_text)
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -53,33 +52,46 @@ class LoginPage(Page):
 
         # Make sure the address is not empty
         if (ip_address == ""):
-            self.error_label.set_text('red', u"ERROR: Server addres field is empty")
+            self.message_login.set_text([('red', u"ERROR: "), u"Server address field cannot be empty"])
+            return
+
+        # Make sure the username is not empty
+        if (username == ""):
+            self.message_login.set_text([('red', u"ERROR: "), u"Username field cannot be empty"])
+            return
+
+        # Make sure the username is not empty
+        if (password == ""):
+            self.message_login.set_text([('red', u"ERROR: "), u"Password field cannot be empty"])
             return
 
         # Attempt to connect to the server via the network manager
         if (nm.connect(ip_address) == False):
-            self.error_label.set_text('red', u"ERROR: Could not connect to server")
-            return
 
-        # create the request command based on which button was pressed
-        command = ""
-        if button._label.text == "Register":
-            command = 'register'
+            self.message_login.set_text([('red', u"ERROR: "), u"Could not connect to server"])
+
         else:
-            command = 'login'
+        
+            # create the request command based on which button was pressed
+            command = ""
+            if button._label.text == "Register":
+                command = 'register'
+            else:
+                command = 'login'
 
-        # Send the request to the server
-        request = { 'command': command, 'username': username, 'password': password }
-        nm.send(request)
+            # Send the request to the server
+            request = { 'command': command, 'username': username, 'password': password }
+            nm.send(request)
 
-        # recieve and act on the response
-        response = nm.recieve()
-        if (response['code'] == 200):
-            self.error_label.set_text([command, " success!"])
-            return True
-        else:
-            self.error_label.set_text("ERROR: ", response['description'])
-            return False
+            # recieve and act on the response
+            response = nm.recieve()
+            if (response['code'] == 200):
+                self.message_login.set_text([('green', command), u": success!"])
+                nm.loggedin = True
+                wm.show(wm.selectionPage)
+            else:
+                self.message_login.set_text([('red', u"ERROR: "), response['description']])
+                nm.disconnect()
 
         # Clear the text fields
         self.server_addr_textbox.set_edit_text("")

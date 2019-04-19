@@ -17,11 +17,7 @@ class HistoryPage(Page):
 
         header_text = "History"
 
-        footer = urwid.Text(
-            [(u'Press ('), ('ESC', u'esc'), (u') to quit. ')]
-        )
-
-        Page.__init__(self, widget, header_text, footer)
+        Page.__init__(self, widget, header_text)
 
 
     def getHistory(socket):

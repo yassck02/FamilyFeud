@@ -67,7 +67,7 @@ def show(page):
 # ---------------------------------------------------------------------
 
 def dialog(self):
-    ''' Overlays a dialog box on top of the console UI '''
+    """Overlays a dialog box on top of the console UI"""
 
     # Header
     header_text = urwid.Text(('banner', 'Help'), align = 'center')
@@ -101,12 +101,17 @@ def dialog(self):
 # ---------------------------------------------------------------------
 
 def unhandled_input(key):
-    """Handles all input that hasent already been handled"""
+    """Handles all input that hasent already been handled by other widgets"""
     
     if key == 'esc':
-        # nm.disconnect()
+        
+        if nm.connected == True:
+            nm.disconnect()
+        
         raise urwid.ExitMainLoop()
-    elif key == 'backspace':
+
+    elif (key == 'backspace') & (nm.loggedin == True):
+
         show(selectionPage)
 
 # ---------------------------------------------------------------------

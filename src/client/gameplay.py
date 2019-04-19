@@ -19,8 +19,9 @@ class GameplayPage(Page):
             [(u'Press ('), ('ESC', u'esc'), (u') to quit. ')]
         )
 
-        Page.__init__(self, widget, header_text, footer)
+        Page.__init__(self, widget, header_text)
 
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def playGame(socket):
         """ The main game function """

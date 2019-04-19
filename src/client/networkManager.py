@@ -1,21 +1,31 @@
 from socket import *
 import json
 
-_socket = socket(AF_INET, SOCK_STREAM)
+# ---------------------------------------------------------------------
 
 port = 6969
 
 connected = False
 loggedin = False
 
+_socket = socket(AF_INET, SOCK_STREAM)
+
+# ---------------------------------------------------------------------
+
 def connect(ip_address):
     """ Creates a socket connection to the givn address and port
         Returns true if success, fales if not """
 
-    # Attempt to connect
-    _socket.connect((ip_address, port))
+    # if(connected == False):
+    #     return
 
-    # Reciev and act on the response
+    # Attempt to connect
+    try:
+        _socket.connect((ip_address, port))
+    except:
+        return False
+
+    # Recive and act on the response
     response = recieve()
     if (response['code'] != 200):
         _socket.close()
@@ -25,14 +35,19 @@ def connect(ip_address):
         connected = True
         return True
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 def disconnect():
     """ Closes the socket connection """
 
-    if(connected == False):
-        return
+    # if(connected == False):
+    #     return
 
+    # Send the dissconnect message
     request = { 'command': 'disconnect' }
     send(request)
+
+    # Close the socket
     _socket.close()
     connected = False
 
