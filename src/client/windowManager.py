@@ -2,6 +2,8 @@ import urwid
 
 import networkManager as nm
 
+from page import Page
+
 from gameplay  import GameplayPage
 from history   import HistoryPage
 from info      import InfoPage
@@ -14,18 +16,18 @@ from splash    import SplashPage
 
 # Color sceme
 palette = [
-    ( None, 'white', ''),
-    ('black_on_yellow', 'black', 'yellow'),
-    ('blue', 'dark blue', ''),
-    ('green', 'dark green', ''),
-    ('red', 'dark red', ''),
-    ('pink', 'dark magenta', ''),
-    ('yellow', 'yellow', ''),
-    ('yellow_blink', 'yellow,blink', ''),
-    ('blink', 'blink', ''),
-    ('bold', 'bold', ''),
-    ('underline', 'underline', ''),
-    ('italics', 'italics', ''),
+    ( None,             'white',        ''),
+    ('black_on_yellow', 'black',        'yellow'),
+    ('blue',            'dark blue',    ''),
+    ('green',           'dark green',   ''),
+    ('red',             'dark red',     ''),
+    ('pink',            'dark magenta', ''),
+    ('yellow',          'yellow',       ''),
+    ('yellow_blink',    'yellow,blink', ''),
+    ('blink',           'blink',        ''),
+    ('bold',            'bold',         ''),
+    ('underline',       'underline',    ''),
+    ('italics',         'italics',      ''),
 ]
 
 # Header (Top bar)

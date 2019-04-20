@@ -14,8 +14,13 @@ class LoginPage(Page):
     def __init__(self):
 
         self.server_addr_textbox = urwid.Edit(caption='Server IP: ')
+        self.server_addr_textbox.set_edit_text('127.0.0.1')
+        
         self.username_textbox = urwid.Edit(caption='Username: ')
+        self.username_textbox.set_edit_text('connor')
+
         self.password_textbox = urwid.Edit(caption='Password: ')
+        self.password_textbox.set_edit_text('connor')
 
         self.btn_login = urwid.Button(('yellow', u'Login'), on_press=self.on_btn_press)
         self.btn_login._label.align = 'center'

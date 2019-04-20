@@ -1,53 +1,97 @@
 import urwid
-import time
-import sys
+import json 
+ 
+class ExampleTreeWidget(urwid.TreeWidget):
+    """ Display widget for leaf nodes """
 
+    def get_display_text(self):
+        return self.get_node().get_value()["name"]
 
-class CountDown:
+class ExampleNode(urwid.TreeNode):
+    """ Data storage object for leaf nodes """
 
-    def __init__(self, seconds):
-        self.seconds = seconds
-        self.palette = [('start', 'yellow', ''),
-                        ('finish', 'dark red', '')
-                        ]
-        self.alarm = None
+    def load_widget(self):
+        return ExampleTreeWidget(self)
+ 
+class ExampleParentNode(urwid.ParentNode ):
+    """ Data storage object for interior/parent nodes """
+
+    def load_widget(self):
+        return ExampleTreeWidget(self)
+
+    def load_child_keys(self):
+        data = self.get_value()
+        return range(len(data["children"]))
+
+    def load_child_node(self, key):
+        """Return either an ExampleNode or ExampleParentNode"""
+
+        childdata = self.get_value()["children"][key]
+        childdepth = self.get_depth() + 1
+
+        if "children" in childdata:
+            childclass = ExampleParentNode
+        else:
+            childclass = ExampleNode
+
+        return childclass(childdata, parent=self, key=key, depth=childdepth)
+
+class ExampleTreeBrowser:
+
+    def __init__(self, data=None):
+
+        self.topnode = ExampleParentNode(data)
+        self.listbox = urwid.TreeListBox(urwid.TreeWalker(self.topnode))
+        self.listbox.offset_rows = 1
+
+        self.view = urwid.Frame(
+            self.listbox,
+            header = urwid.Text( "header" ), 
+            footer = urwid.Text( "footer" )
+        )
 
     def main(self):
-        self.setup_view()
-        self.main_loop = urwid.MainLoop(self.view,
-                                        palette=self.palette,
-                                        unhandled_input=self.keypress)
-        self.alarm = self.main_loop.set_alarm_in(1, self.start)
-        self.main_loop.run()
+        """Run the program"""
 
-    def keypress(self, key):
-        if key in ('q', 'Q'):
+        self.loop = urwid.MainLoop(self.view, [], unhandled_input = self.unhandled_input)
+        self.loop.run()
+ 
+    def unhandled_input(self, k):
+        if k in ('q','Q'):
             raise urwid.ExitMainLoop()
 
-    def setup_view(self):
-        color = 'start' if self.seconds > 3 else 'finish'
-        self.count_text = urwid.BigText(
-            time.strftime('%H:%M:%S', time.gmtime(self.seconds)),
-            urwid.font.HalfBlock6x5Font())
-        self.view = urwid.Padding(self.count_text, 'center', width='clip')
-        self.view = urwid.AttrMap(self.view, color)
-        self.view = urwid.Filler(self.view, 'middle')
 
-    def start(self, loop=None, data=None):
-        self.seconds = self.seconds - 1
-        if self.seconds < 0:
-            return
-        self.setup_view()
-        loop.widget = self.view
-        self.alarm = loop.set_alarm_in(1, self.start)
+def generateTree():
+    """generate a quick 100 leaf tree for demo purposes"""
 
-if __name__ == '__main__':
-    try:
-        init = sys.argv[1]
-        sourcetime = map(lambda x: int(x), init.split(':'))
-        total_seconds = sourcetime[0] * 3600 + \
-            sourcetime[1] * 60 + sourcetime[2]
-        c = CountDown(total_seconds)
-        c.main()
-    except Exception, KeyboardInterrupt:
-        pass
+    users_file_path = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/users.json"
+    users_file = open(users_file_path, "r").read()
+    users = json.loads(users_file)
+
+    root = {
+        "name": "Users",
+        "children": []
+    }
+
+    for user in users: 
+        user_node = {
+            "name": user["username"],
+            "children": []
+        }
+
+        for history in user["history"]:
+
+            history_node = {
+                "name": history['date'] + ": " + str(history['score']),
+                "children": []
+            }
+
+            user_node["children"].append(history_node)
+
+        root["children"].append(user_node)
+
+    return root
+ 
+sample = generateTree()
+ExampleTreeBrowser(sample).main()
+ 

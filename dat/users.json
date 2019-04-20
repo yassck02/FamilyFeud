@@ -1,35 +1,54 @@
 [
     {
-        "username": "c", 
-        "password": "c", 
+        "username": "connor", 
+        "password": "connor", 
         "addresses": [
             [
                 "127.0.0.1", 
                 53622
             ]
         ], 
-        "history": []
+        "history": [
+            {
+                "date": "today",
+                "score": 100
+            }
+        ]
     }, 
     {
-        "username": "v", 
-        "password": "v", 
+        "username": "logan", 
+        "password": "logan", 
         "addresses": [
             [
                 "127.0.0.1", 
                 55601
             ]
         ], 
-        "history": []
+        "history": [
+            {
+                "date": "4/20/18",
+                "score": 100
+            }
+        ]
     }, 
     {
-        "username": "p", 
-        "password": "p", 
+        "username": "todd", 
+        "password": "todd", 
         "addresses": [
             [
                 "127.0.0.1", 
                 55601
             ]
         ], 
-        "history": []
+        "history": [
+            {
+                "date": "4/20/69",
+                "score": 123
+            },
+            {
+                "date": "1/1/11",
+                "score": 456
+            }
+        ]
     }
 ]

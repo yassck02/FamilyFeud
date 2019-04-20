@@ -44,7 +44,7 @@ def disconnect():
     #     return
 
     # Send the dissconnect message
-    request = { 'command': 'disconnect' }
+    request = { "command": "disconnect" }
     send(request)
 
     # Close the socket
@@ -68,6 +68,5 @@ def send(dictionary):
 
     jsonString = json.dumps(dictionary)
     _socket.send(jsonString.encode())
-
 
 # ---------------------------------------------------------------------

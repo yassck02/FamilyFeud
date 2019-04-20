@@ -11,30 +11,51 @@ class RecordsPage(Page):
 
     def __init__(self):
 
+        self.username_textbox = urwid.Edit(caption='Username: ')
+
+        self.btn_search = urwid.Button(('yellow', u'Search'), on_press=self.on_btn_press)
+        self.btn_search._label.align = 'center'
+
+        self.message_label = urwid.Text("", align='center')
+
         widget = urwid.Filler(
-            urwid.Text("records_page", align='center')
+            urwid.Pile([
+                (2, urwid.Filler( urwid.Padding(self.username_textbox, width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.btn_search,       width=30, align='center') )),
+                (2, urwid.Filler( urwid.Padding(self.message_label,    width=50, align='center') ))
+            ])
         )
 
-        header_text = "Records"
+        header_text = "Check Record"
 
         Page.__init__(self, widget, header_text)
 
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    def getRecord(socket):
-        """ gets the record of an individual user, or the whole population """
+    def on_btn_press(self, button):
 
-        username = raw_input("Which user would you lke to get the record for? ")
-        
+        # Get the user inputs form the text field
+        username = self.username_textbox.get_edit_text()
+
+        # Make sure the username is not empty
+        if (username == ""):
+            self.message_label.set_text([('red', u"ERROR: "), u"Username field cannot be empty"])
+            return
+
+        # Create end the request to the server
         request = { 'command': 'getRecord', 'username': username }
-        send(socket, request)
+        nm.send(request)
 
-        # recieve the response
-        response = recieve(socket)
-
-        # act on the response
+        # recieve and act on the response
+        response = nm.recieve()
         if (response['code'] == 200):
-            print(response['record'])
+            
+            self.message_label.set_text(username + "'s best record was " + 
+                                        str(response['record']['score']) + " on " + 
+                                        response['record']['date'])
+        
         else:
-            print("ERROR: ", response['description'])
 
-# ---------------------------------------------------------------------
+            self.message_label.set_text([('red', u"ERROR: "), response['description']])
+
+    # ---------------------------------------------------------------------

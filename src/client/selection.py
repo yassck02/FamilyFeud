@@ -28,7 +28,7 @@ class SelectionPage(Page):
                 (2, urwid.Filler( urwid.Padding(btn_play,    width=20, align='center') )),
                 (2, urwid.Filler( urwid.Padding(btn_history, width=20, align='center') )),
                 (2, urwid.Filler( urwid.Padding(btn_record,  width=20, align='center') )),
-                (2, urwid.Filler( urwid.Padding(btn_info,    width=20, align='center') )),
+                (4, urwid.Filler( urwid.Padding(btn_info,    width=20, align='center') )),
             ])
         )
 
