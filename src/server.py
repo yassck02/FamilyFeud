@@ -162,8 +162,11 @@ def register(socket, address, username, password):
         usersfile.seek(0)
         usersfile.write(json.dumps(users, indent=4))
 
-        res = { 'code': 200, 'description': 'user registered' }
-        send(socket, res)
+        response = {
+            'code': 200,
+            'description': 'user registered'
+        }
+        send(socket, response)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
