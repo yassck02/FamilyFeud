@@ -12,6 +12,42 @@
             {
                 "date": "today",
                 "score": 100
+            },
+            {
+                "date": "yesterday",
+                "score": 200
+            },
+            {
+                "date": "tomorrow",
+                "score": 200
+            },
+            {
+                "date": "friday",
+                "score": 1050
+            },
+            {
+                "date": "1990",
+                "score": 1700
+            },
+            {
+                "date": "may",
+                "score": 10230
+            },
+            {
+                "date": "august 2nd",
+                "score": 1040
+            },
+            {
+                "date": "1997",
+                "score": 1070
+            },
+            {
+                "date": "wednesday",
+                "score": 9999
+            },
+            {
+                "date": "today",
+                "score": 100
             }
         ]
     }, 
