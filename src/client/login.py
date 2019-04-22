@@ -46,6 +46,11 @@ class LoginPage(Page):
 
         Page.__init__(self, widget, header_text)
 
+    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
+
+    def willShow():
+        pass
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):

@@ -34,6 +34,11 @@ class SplashPage(Page):
 
         Page.__init__(self, widget, header_text)
 
+    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
+
+    def willShow():
+        pass
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
     def on_press_enter(self, button):

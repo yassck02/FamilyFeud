@@ -49,4 +49,9 @@ class InfoPage(Page):
 
         Page.__init__(self, widget, header_text)
 
+    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
+
+    def willShow():
+        pass
+
 # ---------------------------------------------------------------------

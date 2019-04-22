@@ -17,22 +17,25 @@ class HistoryPage(Page):
         self.btn_search._label.align = 'center'
 
         self.history_list  = urwid.Pile([])
-        self.history_list.contents.append((urwid.Text("asdasdasdasd", align='center'), ('given', 1)))
         self.message_label = urwid.Text("", align='center')
 
         widget = urwid.Filler(
-            urwid.Pile([
-                (2, urwid.Filler( urwid.Padding(self.username_textbox, width=30, align='center') )),
-                (2, urwid.Filler( urwid.Padding(self.btn_search,       width=30, align='center') )),
-                (8, self.history_list),
-                (2, urwid.Filler( urwid.Padding(self.message_label,    width=50, align='center') ))
-            ])
-        )
+                urwid.Pile([
+                    ( 2, urwid.Filler( urwid.Padding(self.username_textbox, width=30, align='center') )),
+                    ( 2, urwid.Filler( urwid.Padding(self.btn_search,       width=30, align='center') )),
+                    ( 2, urwid.Filler( urwid.Padding(self.message_label,    width=50, align='center') ))
+                    (10, urwid.Filler( urwid.Padding(self.history_list,     width=30, align='center') )),
+                ])
+            )
 
         header_text = "Check History"
 
         Page.__init__(self, widget, header_text)
 
+    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
+
+    def willShow():
+        pass
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):
@@ -52,10 +55,11 @@ class HistoryPage(Page):
         # recieve and act on the response
         response = nm.recieve()
         if (response['code'] == 200):
+            pass
 
-            self.history_list = []
+            self.history_list.contents = []
             for record in response['history']:
-                self.history_list.widget_list.append( urwid.Text(record['date'] + ": " + str(record['score'])) )
+                self.history_list.contents.append((urwid.Text(record['date'] + ": " + str(record['score'])), ('weight', 1)))
             
             self.message_label.set_text(str(len(response['history'])) + " games played")
         
