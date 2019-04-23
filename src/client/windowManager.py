@@ -63,6 +63,8 @@ splashPage    = SplashPage()
 def show(page):
     """Displays the given page by assigning the main windows body to its widget"""
 
+    page.willShow()
+
     header.original_widget.set_text( page.header_text)
     base.body = urwid.LineBox( page.widget )
 

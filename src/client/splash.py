@@ -36,7 +36,7 @@ class SplashPage(Page):
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-    def willShow():
+    def willShow(self):
         pass
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

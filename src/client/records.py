@@ -32,8 +32,9 @@ class RecordsPage(Page):
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-    def willShow():
-        pass
+    def willShow(self):
+        self.username_textbox.set_edit_text("")
+        self.message_label.set_text("")
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

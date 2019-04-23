@@ -38,7 +38,7 @@ class SelectionPage(Page):
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-    def willShow():
+    def willShow(self):
         pass
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -

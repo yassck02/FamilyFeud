@@ -48,7 +48,7 @@ class LoginPage(Page):
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-    def willShow():
+    def willShow(self):
         pass
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

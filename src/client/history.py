@@ -34,8 +34,11 @@ class HistoryPage(Page):
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-    def willShow():
-        pass
+    def willShow(self):
+        self.username_textbox.set_edit_text("")
+        self.history_list.contents = []
+        self.message_label.set_text("")
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):

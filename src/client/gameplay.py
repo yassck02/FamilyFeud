@@ -45,4 +45,9 @@ class GameplayPage(Page):
         totalScore = recieve(socket)
         print(totalScore)
 
+     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
+
+    def willShow(self):
+        pass
+
 # ---------------------------------------------------------------------
