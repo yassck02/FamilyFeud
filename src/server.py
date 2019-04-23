@@ -8,6 +8,7 @@ from thread import *        # for use of thread
 import math                 # for use of log
 import json                 # for r/w question and user files
 import os                   # for relative file paths
+import datetime             # for getting the current time
 
 dirname = os.path.dirname(__file__)
 questionFilePath = os.path.join(dirname, '../dat/questions1.json')
@@ -18,15 +19,12 @@ usersFilePath = os.path.join(dirname, '../dat/users.json')
 def handle(socket, address):
     """Handles an incomming socket connection"""
 
-    # Recieve and handle the clients response
     while(True):
 
+        # Recieve and handle the clients response
         request = recieve(socket)
 
-        if request['command'] == "playGame":
-            playGame(socket, address)
-
-        elif request['command'] == "getHistory":
+        if request['command'] == "getHistory":
             getUserHistory(socket, request['username'])
 
         elif request['command'] == "getRecord":
@@ -38,58 +36,59 @@ def handle(socket, address):
         elif request['command'] == "register":
             register(socket, address, request['username'], request['password'])
 
+        elif request['command'] == "playGame":
+            playGame(socket, address)
+
         elif request['command'] == "disconnect":
             break
 
     # End the connection
-    print("- Disconnected from " + str(address))
     socket.close()
-
-# ---------------------------------------------------------------------
-
-def playGame(socket, address):
-    """Begins the Family Feude gameplay loop"""
-
-    totalScore = 0
-
-    # Main game loop starts here
-    for i in range(3):
-
-        # Send a random question
-        question = getRandomQuestion()
-        send(socket, question)
-
-        # recieve the users answer
-        userAnswer = recieve(socket)
-
-
-        # calculate the running score
-        totalScore += calculateScore(question, userAnswer)
-
-    # Send the total score
-    result = { "totalScore": totalScore }
-    send(socket, result)
-
-    # Store the result
-    saveScore("username", totalScore)
+    print("- Disconnected from " + str(address))
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-def calculateScore(question, userAnswer):
+def playGame(socket, username):
+
+    totalScore = 0
+    continuePlaying = True
+
+    while(continuePlaying == True):
+
+        # Get and send a random question
+        question = getRandomQuestion()
+        send(socket, question)
+
+        # wait for the users responses
+        usersAnswers = recieve(socket)
+
+        # calculate and send the score
+        score = calculateScore(question, usersAnswers)
+        message = { 'score': score }
+        send(socket, message)
+
+        totalScore += score
+
+    # after the game is done... save the record
+    save(totalScore, username)
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+def calculateScore(question, usersAnswer):
     """Calculates the score of the question for the given answer"""
 
     score = 0
 
-    # TODO: Update so an exact match isnt necessary
     for answer in question["answers"]:
-        if(answer['answer'] == userAnswer):
+        if(answer['answer'] == usersAnswer):    # TODO: Update so an exact match isnt necessary
             score = answer['score']
 
     return score
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-def saveScore(score, username):
+def save(score, username):
     """Opens the users file, searches for the username, and adds the score"""
 
     with open(usersFilePath, 'r+') as usersfile:
@@ -101,13 +100,11 @@ def saveScore(score, username):
         for user in users:
             if(user['username'] == username):
                 
-                # add the record
-                # TODO: save the current date
-                record = {
-                    'date': 'today',
+                # add the date and score
+                user['history'].append({
+                    'date': str(datetime.datetime.now()),
                     'score': score
-                }
-                user['history'].append(record)
+                })
 
         # save the file
         usersfile.seek(0)
@@ -125,11 +122,9 @@ def loadQuestionsFile():
 
 questions = loadQuestionsFile()
 
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 def getRandomQuestion():
-    """ Returns a random question from the list"""
-
+    """ Gets and returns a random questionfrom the list"""
+    
     index = randint(1, len(questions))
     return questions[index]
 

@@ -61,9 +61,32 @@ class GameplayPage(Page):
         self.guess2_textbox.set_edit_text("")
         self.guess3_textbox.set_edit_text("")
 
+        self.timerFinished = False
+        self.localScore = 0
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    localScore = 0
+    timerFinished = False
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    def startGame(self):
+        """Starts the gameplay loop by asking the server for a question
+            and starting the countdown timer"""
+
+        # tell the server we want to play a game
+        request = { 'command': 'playGame' }
+        nm.send(request)
+
+        # recieve the first question from the server
+        question = nm.recieve()
+        self.question_label.set_text(question['prompt'])
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_press_submit(self, button):
+        """Called when the user presses the 'submit' button"""
 
         # retrieve the guesses from the text boxes
         guess1 = self.guess1_textbox.edit_text
@@ -76,35 +99,18 @@ class GameplayPage(Page):
                     'guess3': guess3 }
         nm.send(socket, request)
 
-        # get the response
+        # recieve the score from the server
         response = nm.recieve()
-        print(response)
+        self.localScore += response['score']
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-    def playGame(socket):
-        """ The main game function """
+    def onTimerFinish():
+        self.timerFinished = True
 
-        # Tell the server we want to start a game
-        request = { 'command': 'playGame' }
-        send(socket, request)
 
-        for i in range(3):
+    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
-            #recieve a question
-            question = recieve(socket)
-            print(question)
-
-            # send the guess to the server
-            guess = raw_input("Input your guess: ")
-            request = { 'guess': guess }
-            send(socket, request)
-
-        # Recieve the total score
-        totalScore = recieve(socket)
-        print(totalScore)
-
-     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def willShow(self):
         pass
