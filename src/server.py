@@ -5,11 +5,13 @@
 from socket import *        # for use of socket
 from random import randint  # for use of random integer
 from thread import *        # for use of thread
-import math                    # for use of log
-import json                    # for r/w question and user files
+import math                 # for use of log
+import json                 # for r/w question and user files
+import os                   # for relative file paths
 
-questionFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/questions.json"
-usersFilePath = "/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/dat/users.json"
+dirname = os.path.dirname(__file__)
+questionFilePath = os.path.join(dirname, '../dat/questions1.json')
+usersFilePath = os.path.join(dirname, '../dat/users.json')
 
 # ---------------------------------------------------------------------
 
