@@ -70,7 +70,7 @@ def show(page):
 
 # ---------------------------------------------------------------------
 
-def dialog(self):
+def presentDialog(self):
     """Overlays a dialog box on top of the console UI"""
 
     # Header
@@ -114,9 +114,12 @@ def unhandled_input(key):
         
         raise urwid.ExitMainLoop()
 
-    elif (key == 'backspace') & (nm.loggedin == True):
+    elif (key == 'backspace'):
 
-        show(selectionPage)
+        if (nm.loggedin == True):
+            show(selectionPage)
+        else:
+            show(splashPage)
 
 # ---------------------------------------------------------------------
 
