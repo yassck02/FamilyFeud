@@ -1,6 +1,6 @@
 [
   {
-    "question": "We asked 100 married men... Fill in the blank: I'm addicted to my wife's ________.",
+    "prompt": "We asked 100 married men... Fill in the blank: I'm addicted to my wife's ________.",
     "answers": [
       {
         "answer": "HOT FACE/EYES",
@@ -25,7 +25,7 @@
     ]
   },
   {
-    "question": "Name a slang word for an erection",
+    "prompt": "Name a slang word for an erection",
     "answers": [
         {
             "answer": "Boner",
@@ -50,7 +50,7 @@
     ]
 },
   {
-    "question": "Name something a woman might do to her moustache.",
+    "prompt": "Name something a woman might do to her moustache.",
     "answers": [
       {
         "answer": "SHAVE/TRIM IT",
@@ -75,7 +75,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: A jealous Mrs. Claus might say to Santa, It's either ________ or me.",
+    "prompt": "Fill in the blank: A jealous Mrs. Claus might say to Santa, It's either ________ or me.",
     "answers": [
       {
         "answer": "RUDOLPH/REINDEER",
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "question": "Name something with teeth.",
+    "prompt": "Name something with teeth.",
     "answers": [
       {
         "answer": "ANIMALS",
@@ -125,7 +125,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name something your dog does to let you know he doesn't like your new boyfriend.",
+    "prompt": "We asked 100 women... Name something your dog does to let you know he doesn't like your new boyfriend.",
     "answers": [
       {
         "answer": "GROWLS/BARKS",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "question": "Name something babies suck on that would be weird to see an adult sucking on.",
+    "prompt": "Name something babies suck on that would be weird to see an adult sucking on.",
     "answers": [
       {
         "answer": "PACIFIER/BINKY",
@@ -175,7 +175,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... Name something you'd do if your date took you to Chuck E. Cheese.",
+    "prompt": "We asked 100 single women... Name something you'd do if your date took you to Chuck E. Cheese.",
     "answers": [
       {
         "answer": "PLAY GAMES",
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "question": "Name something fake that a man might give his girlfriend for her birthday.",
+    "prompt": "Name something fake that a man might give his girlfriend for her birthday.",
     "answers": [
       {
         "answer": "JEWELRY/DIAMOND",
@@ -225,7 +225,7 @@
     ]
   },
   {
-    "question": "Name something a vampire might say he wants for Christmas.",
+    "prompt": "Name something a vampire might say he wants for Christmas.",
     "answers": [
       {
         "answer": "BLOOD/NEW VICTIM",
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "question": "Name something an angry wife might use her husband's toothbrush to clean.",
+    "prompt": "Name something an angry wife might use her husband's toothbrush to clean.",
     "answers": [
       {
         "answer": "THE TOILET",
@@ -275,7 +275,7 @@
     ]
   },
   {
-    "question": "If your lover has a cold sore on their lip, where do you kiss them instead?",
+    "prompt": "If your lover has a cold sore on their lip, where do you kiss them instead?",
     "answers": [
       {
         "answer": "CHEEK",
@@ -300,7 +300,7 @@
     ]
   },
   {
-    "question": "Name something that would be harder to do if you had a really fat tongue.",
+    "prompt": "Name something that would be harder to do if you had a really fat tongue.",
     "answers": [
       {
         "answer": "TALK/CLEARLY",
@@ -325,7 +325,7 @@
     ]
   },
   {
-    "question": "We asked 100 married men... Name something you'd like to buy your wife a new pair of.",
+    "prompt": "We asked 100 married men... Name something you'd like to buy your wife a new pair of.",
     "answers": [
       {
         "answer": "SHOES/POKE-ME PUMPS",
@@ -350,7 +350,7 @@
     ]
   },
   {
-    "question": "Name a place a cheating husband might keep a pair of clean underwear for emergencies.",
+    "prompt": "Name a place a cheating husband might keep a pair of clean underwear for emergencies.",
     "answers": [
       {
         "answer": "CAR/GLOVE BOX",
@@ -375,7 +375,7 @@
     ]
   },
   {
-    "question": "Name something the Easter Bunny would hate to run out of the night before Easter.",
+    "prompt": "Name something the Easter Bunny would hate to run out of the night before Easter.",
     "answers": [
       {
         "answer": "EASTER EGGS",
@@ -400,7 +400,7 @@
     ]
   },
   {
-    "question": "Name a part of your body a golf ball could get stuck in.",
+    "prompt": "Name a part of your body a golf ball could get stuck in.",
     "answers": [
       {
         "answer": "MY PIEHOLE",
@@ -425,7 +425,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: A woman gives a man a piece of her what?",
+    "prompt": "Fill in the blank: A woman gives a man a piece of her what?",
     "answers": [
       {
         "answer": "MIND",
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "question": "Name a reason a man might suspect he's turning into a beaver.",
+    "prompt": "Name a reason a man might suspect he's turning into a beaver.",
     "answers": [
       {
         "answer": "GROWS BUCK TEETH",
@@ -475,7 +475,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name something of yours that might come off during a make out session.",
+    "prompt": "We asked 100 women... Name something of yours that might come off during a make out session.",
     "answers": [
       {
         "answer": "DUDS/BRA/SHOES",
@@ -500,7 +500,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: A wife tells her husband, Roses are red. Violets are blue. If you're caught cheating, I will ______ you.",
+    "prompt": "Fill in the blank: A wife tells her husband, Roses are red. Violets are blue. If you're caught cheating, I will ______ you.",
     "answers": [
       {
         "answer": "KILL & BURY",
@@ -525,7 +525,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name something you'd like to borrow from Steve Harvey to impress the ladies.",
+    "prompt": "We asked 100 men... Name something you'd like to borrow from Steve Harvey to impress the ladies.",
     "answers": [
       {
         "answer": "SUIT/STYLIN' DUDS",
@@ -550,7 +550,7 @@
     ]
   },
   {
-    "question": "They're years apart, but name something Justin Bieber has in common with Donald Trump.",
+    "prompt": "They're years apart, but name something Justin Bieber has in common with Donald Trump.",
     "answers": [
       {
         "answer": "BALLIN'/LOADED",
@@ -575,7 +575,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... If you really did think like a man, what would you be thinking about a lot?",
+    "prompt": "We asked 100 women... If you really did think like a man, what would you be thinking about a lot?",
     "answers": [
       {
         "answer": "SEX/CHICKS/JUGS",
@@ -600,7 +600,7 @@
     ]
   },
   {
-    "question": "Name something women do more of at a party than men do.",
+    "prompt": "Name something women do more of at a party than men do.",
     "answers": [
       {
         "answer": "TALK/GOSSIP",
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "question": "Name something you'd hate to wake up on Christmas morning to see the dog doing under the tree.",
+    "prompt": "Name something you'd hate to wake up on Christmas morning to see the dog doing under the tree.",
     "answers": [
       {
         "answer": "TAKING DUMP/WHIZ",
@@ -650,7 +650,7 @@
     ]
   },
   {
-    "question": "To save time in the morning, name something you might do while in the shower.",
+    "prompt": "To save time in the morning, name something you might do while in the shower.",
     "answers": [
       {
         "answer": "BRUSH MY TEETH",
@@ -675,7 +675,7 @@
     ]
   },
   {
-    "question": "When a man grunts like a caveman, what does it usually mean he wants?",
+    "prompt": "When a man grunts like a caveman, what does it usually mean he wants?",
     "answers": [
       {
         "answer": "FOOD/JUICY RIBEYE",
@@ -700,7 +700,7 @@
     ]
   },
   {
-    "question": "Name a place you might hear someone say, I love those buns.",
+    "prompt": "Name a place you might hear someone say, I love those buns.",
     "answers": [
       {
         "answer": "RESTAURANT/DELI",
@@ -725,7 +725,7 @@
     ]
   },
   {
-    "question": "Name something Jay Z and Beyoncé might count when they're trying to fall asleep.",
+    "prompt": "Name something Jay Z and Beyoncé might count when they're trying to fall asleep.",
     "answers": [
       {
         "answer": "THEIR MONEY",
@@ -750,7 +750,7 @@
     ]
   },
   {
-    "question": "Name a place people spend the night and wish for the comforts of home.",
+    "prompt": "Name a place people spend the night and wish for the comforts of home.",
     "answers": [
       {
         "answer": "HOTEL/MOTEL",
@@ -775,7 +775,7 @@
     ]
   },
   {
-    "question": "Name something that only takes two people to do, but it's even more fun if more people join in.",
+    "prompt": "Name something that only takes two people to do, but it's even more fun if more people join in.",
     "answers": [
       {
         "answer": "GAMES/MARCO POLO",
@@ -800,7 +800,7 @@
     ]
   },
   {
-    "question": "Name something snakes do that people don't.",
+    "prompt": "Name something snakes do that people don't.",
     "answers": [
       {
         "answer": "SLITHER",
@@ -825,7 +825,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... Name something your man must agree to get before you'll marry him.",
+    "prompt": "We asked 100 single women... Name something your man must agree to get before you'll marry him.",
     "answers": [
       {
         "answer": "A JOB",
@@ -850,7 +850,7 @@
     ]
   },
   {
-    "question": "Name a blood-sucking creature that looks at a nudist like they're a buffet.",
+    "prompt": "Name a blood-sucking creature that looks at a nudist like they're a buffet.",
     "answers": [
       {
         "answer": "MOSQUITO",
@@ -875,7 +875,7 @@
     ]
   },
   {
-    "question": "We asked 100 single men... You're at a bar with a date and a really hot girl flirts with you. What do you do?",
+    "prompt": "We asked 100 single men... You're at a bar with a date and a really hot girl flirts with you. What do you do?",
     "answers": [
       {
         "answer": "CHAT/FLIRT/SMILE",
@@ -900,7 +900,7 @@
     ]
   },
   {
-    "question": "We asked 100 married men... Name something you squeeze that reminds you of your wife's behind.",
+    "prompt": "We asked 100 married men... Name something you squeeze that reminds you of your wife's behind.",
     "answers": [
       {
         "answer": "PILLOW",
@@ -925,7 +925,7 @@
     ]
   },
   {
-    "question": "Besides a ball, name something you can catch.",
+    "prompt": "Besides a ball, name something you can catch.",
     "answers": [
       {
         "answer": "A COLD/DISEASE",
@@ -950,7 +950,7 @@
     ]
   },
   {
-    "question": "Name something a man starts wearing that makes his wife suspect he's cheating on her.",
+    "prompt": "Name something a man starts wearing that makes his wife suspect he's cheating on her.",
     "answers": [
       {
         "answer": "COLOGNE",
@@ -975,7 +975,7 @@
     ]
   },
   {
-    "question": "Name something a 50-foot woman might take on a date that's extra large.",
+    "prompt": "Name something a 50-foot woman might take on a date that's extra large.",
     "answers": [
       {
         "answer": "PURSE",
@@ -1000,7 +1000,7 @@
     ]
   },
   {
-    "question": "Name something sexy that can be edible.",
+    "prompt": "Name something sexy that can be edible.",
     "answers": [
       {
         "answer": "UNDIES/LINGERIE",
@@ -1025,7 +1025,7 @@
     ]
   },
   {
-    "question": "Name something of his wife's a cheapskate might give to his mistress as a gift.",
+    "prompt": "Name something of his wife's a cheapskate might give to his mistress as a gift.",
     "answers": [
       {
         "answer": "HER JEWELRY/WATCH",
@@ -1050,7 +1050,7 @@
     ]
   },
   {
-    "question": "Name something you wouldn't want an elephant to do to you.",
+    "prompt": "Name something you wouldn't want an elephant to do to you.",
     "answers": [
       {
         "answer": "STEP ON/TRAMPLE ME",
@@ -1075,7 +1075,7 @@
     ]
   },
   {
-    "question": "Name a part of your body where an insect could be living.",
+    "prompt": "Name a part of your body where an insect could be living.",
     "answers": [
       {
         "answer": "HAIR/BODY HAIR",
@@ -1100,7 +1100,7 @@
     ]
   },
   {
-    "question": "Name a word rhyming with: chimp, that you hope doesn't describe you.",
+    "prompt": "Name a word rhyming with: chimp, that you hope doesn't describe you.",
     "answers": [
       {
         "answer": "WIMP",
@@ -1125,7 +1125,7 @@
     ]
   },
   {
-    "question": "Name something you'd be shocked to see grandma riding.",
+    "prompt": "Name something you'd be shocked to see grandma riding.",
     "answers": [
       {
         "answer": "HARLEY/MOTORCYCLE",
@@ -1150,7 +1150,7 @@
     ]
   },
   {
-    "question": "Name something that might cause you to panic if you couldn't get it open.",
+    "prompt": "Name something that might cause you to panic if you couldn't get it open.",
     "answers": [
       {
         "answer": "A DOOR",
@@ -1175,7 +1175,7 @@
     ]
   },
   {
-    "question": "If a man is in training for marriage, name a word or phrase he should practice saying.",
+    "prompt": "If a man is in training for marriage, name a word or phrase he should practice saying.",
     "answers": [
       {
         "answer": "YES, DEAR/AGREE",
@@ -1200,7 +1200,7 @@
     ]
   },
   {
-    "question": "We asked 100 married women... Unlike most husbands, name someone on TV who would listen when you talk.",
+    "prompt": "We asked 100 married women... Unlike most husbands, name someone on TV who would listen when you talk.",
     "answers": [
       {
         "answer": "DR. PHIL",
@@ -1225,7 +1225,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name something new you'd get that you'd rub in the face of an ex-boyfriend.",
+    "prompt": "We asked 100 women... Name something new you'd get that you'd rub in the face of an ex-boyfriend.",
     "answers": [
       {
         "answer": "NEW STUD/A HUBBY",
@@ -1250,7 +1250,7 @@
     ]
   },
   {
-    "question": "Name a phrase that begins with Hold your...",
+    "prompt": "Name a phrase that begins with Hold your...",
     "answers": [
       {
         "answer": "... HORSES",
@@ -1275,7 +1275,7 @@
     ]
   },
   {
-    "question": "Name a fruit a guy would have a hard time stealing by putting it in his underwear.",
+    "prompt": "Name a fruit a guy would have a hard time stealing by putting it in his underwear.",
     "answers": [
       {
         "answer": "MELON/WATERMELON",
@@ -1300,7 +1300,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: At the stripper exercise class, they touch their toes with their ________.",
+    "prompt": "Fill in the blank: At the stripper exercise class, they touch their toes with their ________.",
     "answers": [
       {
         "answer": "FINGERS/HANDS",
@@ -1325,7 +1325,7 @@
     ]
   },
   {
-    "question": "If you won the lottery, name something you'd buy for every member of your family.",
+    "prompt": "If you won the lottery, name something you'd buy for every member of your family.",
     "answers": [
       {
         "answer": "CAR/'92 GEO METRO",
@@ -1350,7 +1350,7 @@
     ]
   },
   {
-    "question": "Name something you wouldn't want to see in the stream that you just drank from.",
+    "prompt": "Name something you wouldn't want to see in the stream that you just drank from.",
     "answers": [
       {
         "answer": "FLOAT'G DOODY/PEE",
@@ -1375,7 +1375,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name something the Pillsbury Doughboy and your man have in common.",
+    "prompt": "We asked 100 women... Name something the Pillsbury Doughboy and your man have in common.",
     "answers": [
       {
         "answer": "CHUBBY/LOVE FOOD",
@@ -1400,7 +1400,7 @@
     ]
   },
   {
-    "question": "Name a place a ghost hunter goes looking for ghosts.",
+    "prompt": "Name a place a ghost hunter goes looking for ghosts.",
     "answers": [
       {
         "answer": "HAUNTED HOUSE",
@@ -1425,7 +1425,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... What would you say if a date asked you if your breasts were real?",
+    "prompt": "We asked 100 single women... What would you say if a date asked you if your breasts were real?",
     "answers": [
       {
         "answer": "YES!/OF COURSE!",
@@ -1450,7 +1450,7 @@
     ]
   },
   {
-    "question": "Name something that starts with the word pine.",
+    "prompt": "Name something that starts with the word pine.",
     "answers": [
       {
         "answer": "PINECONE",
@@ -1475,7 +1475,7 @@
     ]
   },
   {
-    "question": "We asked 100 married men... What's the first thing you do when you realize your wife is mad at you?",
+    "prompt": "We asked 100 married men... What's the first thing you do when you realize your wife is mad at you?",
     "answers": [
       {
         "answer": "BUY FLOWERS/GIFT",
@@ -1500,7 +1500,7 @@
     ]
   },
   {
-    "question": "We asked 100 married men... Name your wife's most unappealing habit.",
+    "prompt": "We asked 100 married men... Name your wife's most unappealing habit.",
     "answers": [
       {
         "answer": "NAGGING",
@@ -1525,7 +1525,7 @@
     ]
   },
   {
-    "question": "Name something people have a hard time controlling.",
+    "prompt": "Name something people have a hard time controlling.",
     "answers": [
       {
         "answer": "TEMPER/ANGER",
@@ -1550,7 +1550,7 @@
     ]
   },
   {
-    "question": "What one weapon would you choose to fight off a pack of zombies?",
+    "prompt": "What one weapon would you choose to fight off a pack of zombies?",
     "answers": [
       {
         "answer": "GUN/MACHINE GUN",
@@ -1575,7 +1575,7 @@
     ]
   },
   {
-    "question": "Name a traffic sign a woman might answer when a man asks, What's your sign?",
+    "prompt": "Name a traffic sign a woman might answer when a man asks, What's your sign?",
     "answers": [
       {
         "answer": "STOP/RED LIGHT",
@@ -1600,7 +1600,7 @@
     ]
   },
   {
-    "question": "Name a word that rhymes with: fudge.",
+    "prompt": "Name a word that rhymes with: fudge.",
     "answers": [
       {
         "answer": "BUDGE",
@@ -1625,7 +1625,7 @@
     ]
   },
   {
-    "question": "Name something you wouldn't want someone to stick you with.",
+    "prompt": "Name something you wouldn't want someone to stick you with.",
     "answers": [
       {
         "answer": "THE BILL/DEBT",
@@ -1650,7 +1650,7 @@
     ]
   },
   {
-    "question": "Name nicer words a wife could use to tell her husband to shut up.",
+    "prompt": "Name nicer words a wife could use to tell her husband to shut up.",
     "answers": [
       {
         "answer": "BE QUIET",
@@ -1675,7 +1675,7 @@
     ]
   },
   {
-    "question": "When a husband asks his wife: What did you do today, honey?, name something she leaves out.",
+    "prompt": "When a husband asks his wife: What did you do today, honey?, name something she leaves out.",
     "answers": [
       {
         "answer": "SHOPPED/SPENT $",
@@ -1700,7 +1700,7 @@
     ]
   },
   {
-    "question": "Name something you wouldn't want to use after everyone else has used it first.",
+    "prompt": "Name something you wouldn't want to use after everyone else has used it first.",
     "answers": [
       {
         "answer": "TOOTHBRUSH",
@@ -1725,7 +1725,7 @@
     ]
   },
   {
-    "question": "Name someone you'd hate to see make a surprise visit to your house.",
+    "prompt": "Name someone you'd hate to see make a surprise visit to your house.",
     "answers": [
       {
         "answer": "MY IN-LAWS",
@@ -1750,7 +1750,7 @@
     ]
   },
   {
-    "question": "Give me a word that rhymes with: zipper.",
+    "prompt": "Give me a word that rhymes with: zipper.",
     "answers": [
       {
         "answer": "FLIPPER",
@@ -1775,7 +1775,7 @@
     ]
   },
   {
-    "question": "Name something a person might be referring to when they ask: Is it firm?",
+    "prompt": "Name something a person might be referring to when they ask: Is it firm?",
     "answers": [
       {
         "answer": "FRUIT/VEGETABLE",
@@ -1800,7 +1800,7 @@
     ]
   },
   {
-    "question": "Name something you have that you hope to someday get rid of.",
+    "prompt": "Name something you have that you hope to someday get rid of.",
     "answers": [
       {
         "answer": "EXCESS WEIGHT",
@@ -1825,7 +1825,7 @@
     ]
   },
   {
-    "question": "Name something people are dying to get into.",
+    "prompt": "Name something people are dying to get into.",
     "answers": [
       {
         "answer": "CEMETERY/CASKET",
@@ -1850,7 +1850,7 @@
     ]
   },
   {
-    "question": "What's the worst thing to accidentally swallow?",
+    "prompt": "What's the worst thing to accidentally swallow?",
     "answers": [
       {
         "answer": "BUG/FLY",
@@ -1875,7 +1875,7 @@
     ]
   },
   {
-    "question": "Name something you wish was fat-free.",
+    "prompt": "Name something you wish was fat-free.",
     "answers": [
       {
         "answer": "CHOCOLATE/CANDY",
@@ -1900,7 +1900,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name a kind of fish that describes your man in the bedroom.",
+    "prompt": "We asked 100 women... Name a kind of fish that describes your man in the bedroom.",
     "answers": [
       {
         "answer": "SHARK/HAMMERHEAD",
@@ -1925,7 +1925,7 @@
     ]
   },
   {
-    "question": "Tell us your worst habit.",
+    "prompt": "Tell us your worst habit.",
     "answers": [
       {
         "answer": "SMOKING",
@@ -1950,7 +1950,7 @@
     ]
   },
   {
-    "question": "Name someone you wouldn't want to run into at a nude beach.",
+    "prompt": "Name someone you wouldn't want to run into at a nude beach.",
     "answers": [
       {
         "answer": "MY MOM/DAD",
@@ -1975,7 +1975,7 @@
     ]
   },
   {
-    "question": "Name a part of a person's body that might be really narrow.",
+    "prompt": "Name a part of a person's body that might be really narrow.",
     "answers": [
       {
         "answer": "NOSE",
@@ -2000,7 +2000,7 @@
     ]
   },
   {
-    "question": "Name something people have two of but one is bigger than the other.",
+    "prompt": "Name something people have two of but one is bigger than the other.",
     "answers": [
       {
         "answer": "FEET",
@@ -2025,7 +2025,7 @@
     ]
   },
   {
-    "question": "Name a kind of bird you'd be shocked to see eating from your bird feeder.",
+    "prompt": "Name a kind of bird you'd be shocked to see eating from your bird feeder.",
     "answers": [
       {
         "answer": "EAGLE",
@@ -2050,7 +2050,7 @@
     ]
   },
   {
-    "question": "Besides a car, name something else you got that turned out to be a lemon.",
+    "prompt": "Besides a car, name something else you got that turned out to be a lemon.",
     "answers": [
       {
         "answer": "SPOUSE/MATE/EX",
@@ -2075,7 +2075,7 @@
     ]
   },
   {
-    "question": "Give me a word or phrase that contains the word: band.",
+    "prompt": "Give me a word or phrase that contains the word: band.",
     "answers": [
       {
         "answer": "RUBBER BAND",
@@ -2100,7 +2100,7 @@
     ]
   },
   {
-    "question": "Name something people do to their armpits.",
+    "prompt": "Name something people do to their armpits.",
     "answers": [
       {
         "answer": "SHAVE/WAX 'EM",
@@ -2129,7 +2129,7 @@
     ]
   },
   {
-    "question": "Name something the man picks up on a date.",
+    "prompt": "Name something the man picks up on a date.",
     "answers": [
       {
         "answer": "THE CHECK",
@@ -2158,7 +2158,7 @@
     ]
   },
   {
-    "question": "We asked 100 married men... Name a furry animal it feels like you're sleeping with when your wife doesn't shave her legs.",
+    "prompt": "We asked 100 married men... Name a furry animal it feels like you're sleeping with when your wife doesn't shave her legs.",
     "answers": [
       {
         "answer": "PORCUPINE",
@@ -2187,7 +2187,7 @@
     ]
   },
   {
-    "question": "Name a reason you don't sleep in the nude.",
+    "prompt": "Name a reason you don't sleep in the nude.",
     "answers": [
       {
         "answer": "KIDS/NO PRIVACY",
@@ -2216,7 +2216,7 @@
     ]
   },
   {
-    "question": "Name something a man might pick up on his way home from work.",
+    "prompt": "Name something a man might pick up on his way home from work.",
     "answers": [
       {
         "answer": "FOOD/MILK",
@@ -2245,7 +2245,7 @@
     ]
   },
   {
-    "question": "Name something you like hot, and the hotter the better.",
+    "prompt": "Name something you like hot, and the hotter the better.",
     "answers": [
       {
         "answer": "FOOD/DRINK/COCOA",
@@ -2274,7 +2274,7 @@
     ]
   },
   {
-    "question": "Name something a pirate would take off his wooden leg to do.",
+    "prompt": "Name something a pirate would take off his wooden leg to do.",
     "answers": [
       {
         "answer": "BATHE/SHOWER",
@@ -2303,7 +2303,7 @@
     ]
   },
   {
-    "question": "If a man had a death wish, name a part of a hippopotamus he might say looks like his wife's.",
+    "prompt": "If a man had a death wish, name a part of a hippopotamus he might say looks like his wife's.",
     "answers": [
       {
         "answer": "BUTT",
@@ -2332,7 +2332,7 @@
     ]
   },
   {
-    "question": "Name something a woman might say she likes a man to do to her toes.",
+    "prompt": "Name something a woman might say she likes a man to do to her toes.",
     "answers": [
       {
         "answer": "MASSAGE/RUB 'EM",
@@ -2361,7 +2361,7 @@
     ]
   },
   {
-    "question": "We asked 100 married people... What's the worst way to find out your spouse is cheating?",
+    "prompt": "We asked 100 married people... What's the worst way to find out your spouse is cheating?",
     "answers": [
       {
         "answer": "SEE IT/IN YOUR BED",
@@ -2390,7 +2390,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name something you'd rather do with your dog than your wife.",
+    "prompt": "We asked 100 men... Name something you'd rather do with your dog than your wife.",
     "answers": [
       {
         "answer": "RUN/PLAY",
@@ -2419,7 +2419,7 @@
     ]
   },
   {
-    "question": "Name something that might make you suspect your new house is haunted.",
+    "prompt": "Name something that might make you suspect your new house is haunted.",
     "answers": [
       {
         "answer": "NOISES/VOICES",
@@ -2448,7 +2448,7 @@
     ]
   },
   {
-    "question": "Name something a man likes to see a woman bouncing on.",
+    "prompt": "Name something a man likes to see a woman bouncing on.",
     "answers": [
       {
         "answer": "TRAMPOLINE",
@@ -2477,7 +2477,7 @@
     ]
   },
   {
-    "question": "Name something that grows faster than you want it to.",
+    "prompt": "Name something that grows faster than you want it to.",
     "answers": [
       {
         "answer": "HAIR/UNIBROW",
@@ -2506,7 +2506,7 @@
     ]
   },
   {
-    "question": "If you're obsessed with yourself, name a place you'd keep your picture.",
+    "prompt": "If you're obsessed with yourself, name a place you'd keep your picture.",
     "answers": [
       {
         "answer": "HOME/OVER MY BED",
@@ -2535,7 +2535,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
+    "prompt": "We asked 100 women... Roses are red. Violets are blue. What kind of flowers do cheap guys buy you?",
     "answers": [
       {
         "answer": "DAISIES",
@@ -2564,7 +2564,7 @@
     ]
   },
   {
-    "question": "Name something that might be brewing.",
+    "prompt": "Name something that might be brewing.",
     "answers": [
       {
         "answer": "COFFEE",
@@ -2593,7 +2593,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... What is the biggest lie that a man ever told you?",
+    "prompt": "We asked 100 single women... What is the biggest lie that a man ever told you?",
     "answers": [
       {
         "answer": "I'M SINGLE",
@@ -2622,7 +2622,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name a way you can tell a woman's boobs are not real.",
+    "prompt": "We asked 100 men... Name a way you can tell a woman's boobs are not real.",
     "answers": [
       {
         "answer": "DON'T JIGGLE/MOVE",
@@ -2651,7 +2651,7 @@
     ]
   },
   {
-    "question": "Name something you'd do if your skinny-dipping neighbors invited you over for a swim.",
+    "prompt": "Name something you'd do if your skinny-dipping neighbors invited you over for a swim.",
     "answers": [
       {
         "answer": "SAY NO/RUN",
@@ -2680,7 +2680,7 @@
     ]
   },
   {
-    "question": "Name an occupation that begins with the letter: J.",
+    "prompt": "Name an occupation that begins with the letter: J.",
     "answers": [
       {
         "answer": "JANITOR",
@@ -2709,7 +2709,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name a reason a stranger might mistake you for a hooker.",
+    "prompt": "We asked 100 women... Name a reason a stranger might mistake you for a hooker.",
     "answers": [
       {
         "answer": "CLOTHES/HO HEELS",
@@ -2738,7 +2738,7 @@
     ]
   },
   {
-    "question": "Name something you don't like your dog licking.",
+    "prompt": "Name something you don't like your dog licking.",
     "answers": [
       {
         "answer": "ME/MY OPEN MOUTH",
@@ -2767,7 +2767,7 @@
     ]
   },
   {
-    "question": "Name something you've seen your neighbor doing outside while wearing a bathrobe.",
+    "prompt": "Name something you've seen your neighbor doing outside while wearing a bathrobe.",
     "answers": [
       {
         "answer": "GETTING NEWSPAPER",
@@ -2796,7 +2796,7 @@
     ]
   },
   {
-    "question": "Name something that starts with the word: chow.",
+    "prompt": "Name something that starts with the word: chow.",
     "answers": [
       {
         "answer": "CHOW MEIN",
@@ -2825,7 +2825,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name a term of endearment that's good to call a wife but bad to call a coworker.",
+    "prompt": "We asked 100 men... Name a term of endearment that's good to call a wife but bad to call a coworker.",
     "answers": [
       {
         "answer": "HONEY/HON",
@@ -2854,7 +2854,7 @@
     ]
   },
   {
-    "question": "Name an animal that, if it could talk, would say: I'm all ears.",
+    "prompt": "Name an animal that, if it could talk, would say: I'm all ears.",
     "answers": [
       {
         "answer": "ELEPHANT",
@@ -2883,7 +2883,7 @@
     ]
   },
   {
-    "question": "Name something real birds do that you'd be surprised to see Big Bird do on: Sesame Street.",
+    "prompt": "Name something real birds do that you'd be surprised to see Big Bird do on: Sesame Street.",
     "answers": [
       {
         "answer": "POO/ON BERT'S HEAD",
@@ -2912,7 +2912,7 @@
     ]
   },
   {
-    "question": "You never want to shake someone's hand right after they do what?",
+    "prompt": "You never want to shake someone's hand right after they do what?",
     "answers": [
       {
         "answer": "WHIZ/SHOOT A DOOKY",
@@ -2941,7 +2941,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... If it were up to your man, where would you go on every date?",
+    "prompt": "We asked 100 single women... If it were up to your man, where would you go on every date?",
     "answers": [
       {
         "answer": "BAR",
@@ -2970,7 +2970,7 @@
     ]
   },
   {
-    "question": "Name something that has to be licked.",
+    "prompt": "Name something that has to be licked.",
     "answers": [
       {
         "answer": "LOLLIPOP",
@@ -2999,7 +2999,7 @@
     ]
   },
   {
-    "question": "Name something done to nuts that Mr. Peanut's wife might do to him for cheating on her.",
+    "prompt": "Name something done to nuts that Mr. Peanut's wife might do to him for cheating on her.",
     "answers": [
       {
         "answer": "CRACK/SMASH HIM",
@@ -3028,7 +3028,7 @@
     ]
   },
   {
-    "question": "When you call in sick to work, name something you do to make it believable.",
+    "prompt": "When you call in sick to work, name something you do to make it believable.",
     "answers": [
       {
         "answer": "COUGH",
@@ -3057,7 +3057,7 @@
     ]
   },
   {
-    "question": "A wife might say to her husband: Okay, if you're going to wear a Speedo to the beach, I'm going to wear ______?",
+    "prompt": "A wife might say to her husband: Okay, if you're going to wear a Speedo to the beach, I'm going to wear ______?",
     "answers": [
       {
         "answer": "STRING BIKINI/THONG",
@@ -3086,7 +3086,7 @@
     ]
   },
   {
-    "question": "If they made an R-rated: Wizard of Oz, what might Dorothy ask the Wizard for?",
+    "prompt": "If they made an R-rated: Wizard of Oz, what might Dorothy ask the Wizard for?",
     "answers": [
       {
         "answer": "GUY/DO ME, WIZARD",
@@ -3115,7 +3115,7 @@
     ]
   },
   {
-    "question": "Name an activity that requires using your lips.",
+    "prompt": "Name an activity that requires using your lips.",
     "answers": [
       {
         "answer": "KISSING",
@@ -3144,7 +3144,7 @@
     ]
   },
   {
-    "question": "Name something a pool guy might wear to tease a rich housewife.",
+    "prompt": "Name something a pool guy might wear to tease a rich housewife.",
     "answers": [
       {
         "answer": "SPEEDO/THONG",
@@ -3173,7 +3173,7 @@
     ]
   },
   {
-    "question": "Name something you try to make smell as nice as possible.",
+    "prompt": "Name something you try to make smell as nice as possible.",
     "answers": [
       {
         "answer": "MY HOME/THE CRAPPER",
@@ -3202,7 +3202,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name something you don't want to see fall to the ground when a woman takes off her bra.",
+    "prompt": "We asked 100 men... Name something you don't want to see fall to the ground when a woman takes off her bra.",
     "answers": [
       {
         "answer": "STUFFING/FALSIES",
@@ -3231,7 +3231,7 @@
     ]
   },
   {
-    "question": "Name place you see greasy legs.",
+    "prompt": "Name place you see greasy legs.",
     "answers": [
       {
         "answer": "BEACH",
@@ -3260,7 +3260,7 @@
     ]
   },
   {
-    "question": "Name something the world's oldest stripper drags along the stage.",
+    "prompt": "Name something the world's oldest stripper drags along the stage.",
     "answers": [
       {
         "answer": "PINK-NOSED PUPPIES",
@@ -3289,7 +3289,7 @@
     ]
   },
   {
-    "question": "Name something a car salesman hopes doesn't happen when he takes a customer for a ride.",
+    "prompt": "Name something a car salesman hopes doesn't happen when he takes a customer for a ride.",
     "answers": [
       {
         "answer": "CRASH THE CAR",
@@ -3318,7 +3318,7 @@
     ]
   },
   {
-    "question": "We asked 100 married women... Name something you find irresistable in men that unfortunately your hubby doesn't have.",
+    "prompt": "We asked 100 married women... Name something you find irresistable in men that unfortunately your hubby doesn't have.",
     "answers": [
       {
         "answer": "MUSCLES/6-PACK",
@@ -3347,7 +3347,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... If you had to share a bed with grandma, what do you hope she doesn't do?",
+    "prompt": "We asked 100 women... If you had to share a bed with grandma, what do you hope she doesn't do?",
     "answers": [
       {
         "answer": "RIP EGG FARTS",
@@ -3376,7 +3376,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... If you marry Miss Nude America, name a specific place you'd tell her she has to wear clothes.",
+    "prompt": "We asked 100 men... If you marry Miss Nude America, name a specific place you'd tell her she has to wear clothes.",
     "answers": [
       {
         "answer": "MALL/STORE",
@@ -3405,7 +3405,7 @@
     ]
   },
   {
-    "question": "Name an animal a snake can swallow whole.",
+    "prompt": "Name an animal a snake can swallow whole.",
     "answers": [
       {
         "answer": "MOUSE/RAT",
@@ -3434,7 +3434,7 @@
     ]
   },
   {
-    "question": "Name something Tarzan reaches for when he wants to have a good time.",
+    "prompt": "Name something Tarzan reaches for when he wants to have a good time.",
     "answers": [
       {
         "answer": "JANE/A HOTTIE",
@@ -3463,7 +3463,7 @@
     ]
   },
   {
-    "question": "Name something that would be hard to do if you really had two left feet.",
+    "prompt": "Name something that would be hard to do if you really had two left feet.",
     "answers": [
       {
         "answer": "WALK/RUN",
@@ -3492,7 +3492,7 @@
     ]
   },
   {
-    "question": "Name some news that a woman would locate her ex-boyfriend to tell him about.",
+    "prompt": "Name some news that a woman would locate her ex-boyfriend to tell him about.",
     "answers": [
       {
         "answer": "PREGNANT/IT'S HIS",
@@ -3521,7 +3521,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... What's the most fun thing to do with another woman?",
+    "prompt": "We asked 100 women... What's the most fun thing to do with another woman?",
     "answers": [
       {
         "answer": "SHOP",
@@ -3550,7 +3550,7 @@
     ]
   },
   {
-    "question": "If the zipper on your pants breaks at work, what do you do?",
+    "prompt": "If the zipper on your pants breaks at work, what do you do?",
     "answers": [
       {
         "answer": "PIN/SAFETY PIN",
@@ -3579,7 +3579,7 @@
     ]
   },
   {
-    "question": "Name a word you can use instead of: woman.",
+    "prompt": "Name a word you can use instead of: woman.",
     "answers": [
       {
         "answer": "LADY",
@@ -3608,7 +3608,7 @@
     ]
   },
   {
-    "question": "Name something a wife should learn to play so her husband won't spend so much time with the guys.",
+    "prompt": "Name something a wife should learn to play so her husband won't spend so much time with the guys.",
     "answers": [
       {
         "answer": "SPORTS/FOOTBALL",
@@ -3637,7 +3637,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name an animal your wife turns into when she's angry.",
+    "prompt": "We asked 100 men... Name an animal your wife turns into when she's angry.",
     "answers": [
       {
         "answer": "PIT BULL/DOG",
@@ -3666,7 +3666,7 @@
     ]
   },
   {
-    "question": "A married man shows you pictures of his kids. What does a single man show you pictures of?",
+    "prompt": "A married man shows you pictures of his kids. What does a single man show you pictures of?",
     "answers": [
       {
         "answer": "HIS CAR",
@@ -3695,7 +3695,7 @@
     ]
   },
   {
-    "question": "If two women started fighting in a beauty salon, name something one might use as a weapon.",
+    "prompt": "If two women started fighting in a beauty salon, name something one might use as a weapon.",
     "answers": [
       {
         "answer": "SCISSORS",
@@ -3724,7 +3724,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name a place you go with your man that's ruined if he brings his mother along.",
+    "prompt": "We asked 100 women... Name a place you go with your man that's ruined if he brings his mother along.",
     "answers": [
       {
         "answer": "DINNER/APPLEBEE'S",
@@ -3753,7 +3753,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... Name something you'd hate to see when your date takes his shirt off.",
+    "prompt": "We asked 100 single women... Name something you'd hate to see when your date takes his shirt off.",
     "answers": [
       {
         "answer": "HAIR/MAN SWEATER",
@@ -3782,7 +3782,7 @@
     ]
   },
   {
-    "question": "We asked 100 married women... Name a lazy animal that reminds you of your husband.",
+    "prompt": "We asked 100 married women... Name a lazy animal that reminds you of your husband.",
     "answers": [
       {
         "answer": "DOG/HOUND DOG",
@@ -3811,7 +3811,7 @@
     ]
   },
   {
-    "question": "Name something specific in an aquarium that the fish might be too stupid to realize is fake.",
+    "prompt": "Name something specific in an aquarium that the fish might be too stupid to realize is fake.",
     "answers": [
       {
         "answer": "PLANTS",
@@ -3840,7 +3840,7 @@
     ]
   },
   {
-    "question": "Name a reason a guy might not break up with his psycho girlfriend.",
+    "prompt": "Name a reason a guy might not break up with his psycho girlfriend.",
     "answers": [
       {
         "answer": "FEAR",
@@ -3869,7 +3869,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... If your date never shows up, name something you hope happened to him.",
+    "prompt": "We asked 100 single women... If your date never shows up, name something you hope happened to him.",
     "answers": [
       {
         "answer": "CAR CRASH/DIED",
@@ -3898,7 +3898,7 @@
     ]
   },
   {
-    "question": "Name something you see outside that would make you want to stay inside.",
+    "prompt": "Name something you see outside that would make you want to stay inside.",
     "answers": [
       {
         "answer": "WEATHER/TORNADO",
@@ -3927,7 +3927,7 @@
     ]
   },
   {
-    "question": "If it were up to dogs, what would people taste like when they lick them?",
+    "prompt": "If it were up to dogs, what would people taste like when they lick them?",
     "answers": [
       {
         "answer": "BACON/MEAT",
@@ -3956,7 +3956,7 @@
     ]
   },
   {
-    "question": "Name something small a male stripper might have.",
+    "prompt": "Name something small a male stripper might have.",
     "answers": [
       {
         "answer": "THONG/COSTUME",
@@ -3985,7 +3985,7 @@
     ]
   },
   {
-    "question": "Name something that twins should never share.",
+    "prompt": "Name something that twins should never share.",
     "answers": [
       {
         "answer": "SPOUSE/LOVER",
@@ -4014,7 +4014,7 @@
     ]
   },
   {
-    "question": "We asked 100 women... Name something you would do if you discovered your next-door neighbor peeping in your window.",
+    "prompt": "We asked 100 women... Name something you would do if you discovered your next-door neighbor peeping in your window.",
     "answers": [
       {
         "answer": "CALL THE COPS",
@@ -4043,7 +4043,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... If your dog could talk, name something the two of you would talk about.",
+    "prompt": "We asked 100 men... If your dog could talk, name something the two of you would talk about.",
     "answers": [
       {
         "answer": "HOTTIES",
@@ -4072,7 +4072,7 @@
     ]
   },
   {
-    "question": "Name something specific about Mickey Mouse that other mice might make fun of.",
+    "prompt": "Name something specific about Mickey Mouse that other mice might make fun of.",
     "answers": [
       {
         "answer": "GIGANTIC EARS",
@@ -4101,7 +4101,7 @@
     ]
   },
   {
-    "question": "Name something a man finds in the house that makes him suspect his wife might kill him.",
+    "prompt": "Name something a man finds in the house that makes him suspect his wife might kill him.",
     "answers": [
       {
         "answer": "POISON/ARSENIC",
@@ -4130,7 +4130,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: Raging what?",
+    "prompt": "Fill in the blank: Raging what?",
     "answers": [
       {
         "answer": "BULL",
@@ -4159,7 +4159,7 @@
     ]
   },
   {
-    "question": "What does the new wife do when she knows the ex is stopping by?",
+    "prompt": "What does the new wife do when she knows the ex is stopping by?",
     "answers": [
       {
         "answer": "DOLL UP/LOOK SEXY",
@@ -4188,7 +4188,7 @@
     ]
   },
   {
-    "question": "Name something a detective might find at a crime scene that would make him think the culprit was a circus clown.",
+    "prompt": "Name something a detective might find at a crime scene that would make him think the culprit was a circus clown.",
     "answers": [
       {
         "answer": "RED RUBBER NOSE",
@@ -4217,7 +4217,7 @@
     ]
   },
   {
-    "question": "Name something at a supermarket a man might squeeze a little too romantically.",
+    "prompt": "Name something at a supermarket a man might squeeze a little too romantically.",
     "answers": [
       {
         "answer": "MELONS",
@@ -4246,7 +4246,7 @@
     ]
   },
   {
-    "question": "Since you can't take it with you, name something an 80-year-old man might spend all his money on.",
+    "prompt": "Since you can't take it with you, name something an 80-year-old man might spend all his money on.",
     "answers": [
       {
         "answer": "GAL/FERTILE MYRTLE",
@@ -4275,7 +4275,7 @@
     ]
   },
   {
-    "question": "Name something it should be against the law for people to wear if they're out of shape.",
+    "prompt": "Name something it should be against the law for people to wear if they're out of shape.",
     "answers": [
       {
         "answer": "BIKINI/SPEEDO",
@@ -4304,7 +4304,7 @@
     ]
   },
   {
-    "question": "Name something you hope the nurses aren't saying about you when you're out during surgery.",
+    "prompt": "Name something you hope the nurses aren't saying about you when you're out during surgery.",
     "answers": [
       {
         "answer": "WHAT A DINKY WINKY",
@@ -4333,7 +4333,7 @@
     ]
   },
   {
-    "question": "Name something only an idiot would do if a cop car was driving right behind him.",
+    "prompt": "Name something only an idiot would do if a cop car was driving right behind him.",
     "answers": [
       {
         "answer": "SPEED",
@@ -4362,7 +4362,7 @@
     ]
   },
   {
-    "question": "Name something people stick their fingers in that they shouldn't.",
+    "prompt": "Name something people stick their fingers in that they shouldn't.",
     "answers": [
       {
         "answer": "FOOD/DRINK",
@@ -4391,7 +4391,7 @@
     ]
   },
   {
-    "question": "Name something that shakes, rattles, and rolls.",
+    "prompt": "Name something that shakes, rattles, and rolls.",
     "answers": [
       {
         "answer": "OLD CAR",
@@ -4420,7 +4420,7 @@
     ]
   },
   {
-    "question": "You should never tell a woman she looks... what?",
+    "prompt": "You should never tell a woman she looks... what?",
     "answers": [
       {
         "answer": "BIG-BONED/FLESHY",
@@ -4449,7 +4449,7 @@
     ]
   },
   {
-    "question": "Name an animal starting with the letter: C that you'd never want to eat.",
+    "prompt": "Name an animal starting with the letter: C that you'd never want to eat.",
     "answers": [
       {
         "answer": "CAT",
@@ -4478,7 +4478,7 @@
     ]
   },
   {
-    "question": "If the groom's dog is his best man, name something he hopes Fido doesn't do at the reception.",
+    "prompt": "If the groom's dog is his best man, name something he hopes Fido doesn't do at the reception.",
     "answers": [
       {
         "answer": "WHIZ/DUMP",
@@ -4507,7 +4507,7 @@
     ]
   },
   {
-    "question": "We asked 100 single women... Name something your parents always ask about the man you're dating.",
+    "prompt": "We asked 100 single women... Name something your parents always ask about the man you're dating.",
     "answers": [
       {
         "answer": "JOB/RICH?",
@@ -4536,7 +4536,7 @@
     ]
   },
   {
-    "question": "Other than feet, name something that runs.",
+    "prompt": "Other than feet, name something that runs.",
     "answers": [
       {
         "answer": "WATER/TOILET",
@@ -4565,7 +4565,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Fill in the blank: Someday, I'd like to be known as the world's greatest ________.",
+    "prompt": "We asked 100 men... Fill in the blank: Someday, I'd like to be known as the world's greatest ________.",
     "answers": [
       {
         "answer": "LOVER",
@@ -4594,7 +4594,7 @@
     ]
   },
   {
-    "question": "Name a reason you think men grow beards.",
+    "prompt": "Name a reason you think men grow beards.",
     "answers": [
       {
         "answer": "LAZY/HATE SHAVING",
@@ -4623,7 +4623,7 @@
     ]
   },
   {
-    "question": "Name something you'd be surprised your grandma did to her hair.",
+    "prompt": "Name something you'd be surprised your grandma did to her hair.",
     "answers": [
       {
         "answer": "DYED IT/PINK",
@@ -4652,7 +4652,7 @@
     ]
   },
   {
-    "question": "Name something of grandma's you hope doesn't end up in the cookies she bakes you.",
+    "prompt": "Name something of grandma's you hope doesn't end up in the cookies she bakes you.",
     "answers": [
       {
         "answer": "TEETH/DENTURES",
@@ -4681,7 +4681,7 @@
     ]
   },
   {
-    "question": "We asked 100 single men... Name something your girlfriend starts talking about that makes you nervous.",
+    "prompt": "We asked 100 single men... Name something your girlfriend starts talking about that makes you nervous.",
     "answers": [
       {
         "answer": "MARRIAGE",
@@ -4710,7 +4710,7 @@
     ]
   },
   {
-    "question": "Name something you'd be surprised to hear Brian Williams was wearing under his desk.",
+    "prompt": "Name something you'd be surprised to hear Brian Williams was wearing under his desk.",
     "answers": [
       {
         "answer": "SHORTS",
@@ -4739,7 +4739,7 @@
     ]
   },
   {
-    "question": "Name something a person might keep in a cellar.",
+    "prompt": "Name something a person might keep in a cellar.",
     "answers": [
       {
         "answer": "WINE",
@@ -4768,7 +4768,7 @@
     ]
   },
   {
-    "question": "Give me another word people say for: rear end.",
+    "prompt": "Give me another word people say for: rear end.",
     "answers": [
       {
         "answer": "BUTT/BUTTOCKS",
@@ -4797,7 +4797,7 @@
     ]
   },
   {
-    "question": "You'd probably be too scared to run with the bulls. But what animal would you be okay running with?",
+    "prompt": "You'd probably be too scared to run with the bulls. But what animal would you be okay running with?",
     "answers": [
       {
         "answer": "DOGS/PUPPIES",
@@ -4826,7 +4826,7 @@
     ]
   },
   {
-    "question": "Right now, name something your body's telling you to do.",
+    "prompt": "Right now, name something your body's telling you to do.",
     "answers": [
       {
         "answer": "EAT/MORE COOKIES",
@@ -4855,7 +4855,7 @@
     ]
   },
   {
-    "question": "Name a reason a woman might choose to be with a chubby man.",
+    "prompt": "Name a reason a woman might choose to be with a chubby man.",
     "answers": [
       {
         "answer": "FATTY GOT MONEY!",
@@ -4884,7 +4884,7 @@
     ]
   },
   {
-    "question": "We asked 100 married women... Name something your husband mistakenly thinks he's good at.",
+    "prompt": "We asked 100 married women... Name something your husband mistakenly thinks he's good at.",
     "answers": [
       {
         "answer": "FIX'G STUFF/REPAIRS",
@@ -4913,7 +4913,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name someone you'd hate your mate to say you reminded her of.",
+    "prompt": "We asked 100 men... Name someone you'd hate your mate to say you reminded her of.",
     "answers": [
       {
         "answer": "HER EX",
@@ -4942,7 +4942,7 @@
     ]
   },
   {
-    "question": "You've fallen and you can't get up. What's your dog doing?",
+    "prompt": "You've fallen and you can't get up. What's your dog doing?",
     "answers": [
       {
         "answer": "LICKING MY FACE",
@@ -4971,7 +4971,7 @@
     ]
   },
   {
-    "question": "Name something you prefer to be real instead of fake.",
+    "prompt": "Name something you prefer to be real instead of fake.",
     "answers": [
       {
         "answer": "CHESTICLES/BOOBS",
@@ -5000,7 +5000,7 @@
     ]
   },
   {
-    "question": "Tell me a nickname someone gives their lover that starts with the word: sugar.",
+    "prompt": "Tell me a nickname someone gives their lover that starts with the word: sugar.",
     "answers": [
       {
         "answer": "SUGAR PIE",
@@ -5029,7 +5029,7 @@
     ]
   },
   {
-    "question": "We asked 100 married women... Fill in the blank: In the bedroom, my husband's superhero name would be ________ Man.",
+    "prompt": "We asked 100 married women... Fill in the blank: In the bedroom, my husband's superhero name would be ________ Man.",
     "answers": [
       {
         "answer": "IRON MAN",
@@ -5058,7 +5058,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... Name a specific word you'd use to describe a peach and a woman.",
+    "prompt": "We asked 100 men... Name a specific word you'd use to describe a peach and a woman.",
     "answers": [
       {
         "answer": "FUZZY",
@@ -5087,7 +5087,7 @@
     ]
   },
   {
-    "question": "Name something grandpa might use grandma's big underwear for.",
+    "prompt": "Name something grandpa might use grandma's big underwear for.",
     "answers": [
       {
         "answer": "CLEANING/RAG",
@@ -5116,7 +5116,7 @@
     ]
   },
   {
-    "question": "Name something most men do in the morning that a caveman wouldn't have done.",
+    "prompt": "Name something most men do in the morning that a caveman wouldn't have done.",
     "answers": [
       {
         "answer": "SHAVE/MANSCAPE",
@@ -5145,7 +5145,7 @@
     ]
   },
   {
-    "question": "Name something a man discovers about his fiancï¿½e that would make him call off the wedding.",
+    "prompt": "Name something a man discovers about his fiancï¿½e that would make him call off the wedding.",
     "answers": [
       {
         "answer": "SHE'S CHEATING",
@@ -5174,7 +5174,7 @@
     ]
   },
   {
-    "question": "We asked 100 married men... If you decided to live a simpler life, name something you'd get rid of.",
+    "prompt": "We asked 100 married men... If you decided to live a simpler life, name something you'd get rid of.",
     "answers": [
       {
         "answer": "MY PHONE",
@@ -5203,7 +5203,7 @@
     ]
   },
   {
-    "question": "Name something you talk to that can't talk back.",
+    "prompt": "Name something you talk to that can't talk back.",
     "answers": [
       {
         "answer": "DOG/ANIMALS",
@@ -5232,7 +5232,7 @@
     ]
   },
   {
-    "question": "Name something Steve Harvey will probably never run out of.",
+    "prompt": "Name something Steve Harvey will probably never run out of.",
     "answers": [
       {
         "answer": "JOKES/LAUGHS",
@@ -5261,7 +5261,7 @@
     ]
   },
   {
-    "question": "Name a part of Steve Harvey's body that's probably very smooth.",
+    "prompt": "Name a part of Steve Harvey's body that's probably very smooth.",
     "answers": [
       {
         "answer": "SHINY BALD HEAD",
@@ -5290,7 +5290,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: Road what?",
+    "prompt": "Fill in the blank: Road what?",
     "answers": [
       {
         "answer": "ROAD RAGE",
@@ -5319,7 +5319,7 @@
     ]
   },
   {
-    "question": "During a concert, what might a grandma toss onstage to a sexy old rock star?",
+    "prompt": "During a concert, what might a grandma toss onstage to a sexy old rock star?",
     "answers": [
       {
         "answer": "BRA",
@@ -5348,7 +5348,7 @@
     ]
   },
   {
-    "question": "Name something a woman wants a matching set of.",
+    "prompt": "Name something a woman wants a matching set of.",
     "answers": [
       {
         "answer": "EARRINGS/JEWELRY",
@@ -5377,7 +5377,7 @@
     ]
   },
   {
-    "question": "Name a U.S. city that starts with the letter: P.",
+    "prompt": "Name a U.S. city that starts with the letter: P.",
     "answers": [
       {
         "answer": "PITTSBURGH",
@@ -5406,7 +5406,7 @@
     ]
   },
   {
-    "question": "Name someone you'd hate to realize you drunk dialed last night.",
+    "prompt": "Name someone you'd hate to realize you drunk dialed last night.",
     "answers": [
       {
         "answer": "MY EX",
@@ -5435,7 +5435,7 @@
     ]
   },
   {
-    "question": "We asked 100 men... If you had x-ray vision, name a place you'd be sure to use it.",
+    "prompt": "We asked 100 men... If you had x-ray vision, name a place you'd be sure to use it.",
     "answers": [
       {
         "answer": "STORE/MALL",
@@ -5464,7 +5464,7 @@
     ]
   },
   {
-    "question": "Name something you'd do if a waitress kept sneezing while taking your order.",
+    "prompt": "Name something you'd do if a waitress kept sneezing while taking your order.",
     "answers": [
       {
         "answer": "LEAVE/WALK OUT",
@@ -5493,7 +5493,7 @@
     ]
   },
   {
-    "question": "Give me a word that rhymes with: heart.",
+    "prompt": "Give me a word that rhymes with: heart.",
     "answers": [
       {
         "answer": "FART",
@@ -5522,7 +5522,7 @@
     ]
   },
   {
-    "question": "Name a word that rhymes with: pump.",
+    "prompt": "Name a word that rhymes with: pump.",
     "answers": [
       {
         "answer": "HUMP",
@@ -5551,7 +5551,7 @@
     ]
   },
   {
-    "question": "Name something your friend does in your car that irritates you.",
+    "prompt": "Name something your friend does in your car that irritates you.",
     "answers": [
       {
         "answer": "SMOKES CIGS",
@@ -5580,7 +5580,7 @@
     ]
   },
   {
-    "question": "Name something you'd never want to be sprayed with.",
+    "prompt": "Name something you'd never want to be sprayed with.",
     "answers": [
       {
         "answer": "MACE/PEPPER SPRAY",
@@ -5609,7 +5609,7 @@
     ]
   },
   {
-    "question": "We asked 100 married women... Name something a wife might put in the cake she bakes for her cheating husband's birthday.",
+    "prompt": "We asked 100 married women... Name something a wife might put in the cake she bakes for her cheating husband's birthday.",
     "answers": [
       {
         "answer": "LAXATIVE",
@@ -5638,7 +5638,7 @@
     ]
   },
   {
-    "question": "Name something that swings both ways.",
+    "prompt": "Name something that swings both ways.",
     "answers": [
       {
         "answer": "DOOR/GATE",
@@ -5667,7 +5667,7 @@
     ]
   },
   {
-    "question": "Name something you'd like to have with you at a nude beach.",
+    "prompt": "Name something you'd like to have with you at a nude beach.",
     "answers": [
       {
         "answer": "BIG TOWEL",
@@ -5696,7 +5696,7 @@
     ]
   },
   {
-    "question": "Name something a woman gets when she hits the big time.",
+    "prompt": "Name something a woman gets when she hits the big time.",
     "answers": [
       {
         "answer": "MONEY/GOLD",
@@ -5725,7 +5725,7 @@
     ]
   },
   {
-    "question": "If you won the lottery on Monday, what would you hate to have happen on Tuesday?",
+    "prompt": "If you won the lottery on Monday, what would you hate to have happen on Tuesday?",
     "answers": [
       {
         "answer": "I KICK THE BUCKET",
@@ -5754,7 +5754,7 @@
     ]
   },
   {
-    "question": "Name something a pirate might be embarrassed to admit he didn't know how to do.",
+    "prompt": "Name something a pirate might be embarrassed to admit he didn't know how to do.",
     "answers": [
       {
         "answer": "SAIL/NAVIGATE SHIP",
@@ -5783,7 +5783,7 @@
     ]
   },
   {
-    "question": "At a game, name something you wouldn't want to be caught doing on the Jumbotron.",
+    "prompt": "At a game, name something you wouldn't want to be caught doing on the Jumbotron.",
     "answers": [
       {
         "answer": "PICK/BLOW'G NOSE",
@@ -5812,7 +5812,7 @@
     ]
   },
   {
-    "question": "Other than a woman, name something a man likes so much, he should put a ring on it.",
+    "prompt": "Other than a woman, name something a man likes so much, he should put a ring on it.",
     "answers": [
       {
         "answer": "HIS CAR",
@@ -5841,7 +5841,7 @@
     ]
   },
   {
-    "question": "Name a word or phrase that starts with: hip.",
+    "prompt": "Name a word or phrase that starts with: hip.",
     "answers": [
       {
         "answer": "HIP-HOP",
@@ -5870,7 +5870,7 @@
     ]
   },
   {
-    "question": "Name something a woman might swing.",
+    "prompt": "Name something a woman might swing.",
     "answers": [
       {
         "answer": "HER PURSE",
@@ -5899,7 +5899,7 @@
     ]
   },
   {
-    "question": "If love were really blind, name something women wouldn't bother doing to attract men.",
+    "prompt": "If love were really blind, name something women wouldn't bother doing to attract men.",
     "answers": [
       {
         "answer": "PUT ON MAKEUP",
@@ -5928,7 +5928,7 @@
     ]
   },
   {
-    "question": "Name something people swallow by accident.",
+    "prompt": "Name something people swallow by accident.",
     "answers": [
       {
         "answer": "GUM",
@@ -5957,7 +5957,7 @@
     ]
   },
   {
-    "question": "What present do you think Santa would like for Christmas?",
+    "prompt": "What present do you think Santa would like for Christmas?",
     "answers": [
       {
         "answer": "REST/VACATION",
@@ -5986,7 +5986,7 @@
     ]
   },
   {
-    "question": "Name something that can go really wrong at a funeral.",
+    "prompt": "Name something that can go really wrong at a funeral.",
     "answers": [
       {
         "answer": "DROP CASKET/BODY",
@@ -6015,7 +6015,7 @@
     ]
   },
   {
-    "question": "Besides the U.S., name a country that has the best music to dance to.",
+    "prompt": "Besides the U.S., name a country that has the best music to dance to.",
     "answers": [
       {
         "answer": "MEXICO",
@@ -6044,7 +6044,7 @@
     ]
   },
   {
-    "question": "Name a part of the body that could pop out.",
+    "prompt": "Name a part of the body that could pop out.",
     "answers": [
       {
         "answer": "MY BELLY/BUTTON",
@@ -6073,7 +6073,7 @@
     ]
   },
   {
-    "question": "Name something you hold in your hand that helps you relax.",
+    "prompt": "Name something you hold in your hand that helps you relax.",
     "answers": [
       {
         "answer": "A STIFF DRINK",
@@ -6102,7 +6102,7 @@
     ]
   },
   {
-    "question": "After a face-lift, name something a person gets to go along with their new young face.",
+    "prompt": "After a face-lift, name something a person gets to go along with their new young face.",
     "answers": [
       {
         "answer": "DUDS/AT FOREVER 21",
@@ -6131,7 +6131,7 @@
     ]
   },
   {
-    "question": "Tell me a good present for a female stripper.",
+    "prompt": "Tell me a good present for a female stripper.",
     "answers": [
       {
         "answer": "THONG/LINGERIE",
@@ -6160,7 +6160,7 @@
     ]
   },
   {
-    "question": "Name something of yours you look at and say: What was I thinking when I got that?",
+    "prompt": "Name something of yours you look at and say: What was I thinking when I got that?",
     "answers": [
       {
         "answer": "DUDS/HOOKER HEELS",
@@ -6189,7 +6189,7 @@
     ]
   },
   {
-    "question": "Name something you might think about getting rid of because it's starting to make a lot of noise.",
+    "prompt": "Name something you might think about getting rid of because it's starting to make a lot of noise.",
     "answers": [
       {
         "answer": "MY CAR",
@@ -6218,7 +6218,7 @@
     ]
   },
   {
-    "question": "Name something that's described as low-hanging.",
+    "prompt": "Name something that's described as low-hanging.",
     "answers": [
       {
         "answer": "FRUIT",
@@ -6247,7 +6247,7 @@
     ]
   },
   {
-    "question": "Name an animal whose tongue reminds you of Miley Cyrus.",
+    "prompt": "Name an animal whose tongue reminds you of Miley Cyrus.",
     "answers": [
       {
         "answer": "GIRAFFE",
@@ -6276,7 +6276,7 @@
     ]
   },
   {
-    "question": "Name something you keep on doing even though you know it's wrong.",
+    "prompt": "Name something you keep on doing even though you know it's wrong.",
     "answers": [
       {
         "answer": "PIGGING OUT",
@@ -6305,7 +6305,7 @@
     ]
   },
   {
-    "question": "Name something that's long and wet.",
+    "prompt": "Name something that's long and wet.",
     "answers": [
       {
         "answer": "FISH/EEL",
@@ -6334,7 +6334,7 @@
     ]
   },
   {
-    "question": "Name an S word that describes how dancing makes you feel.",
+    "prompt": "Name an S word that describes how dancing makes you feel.",
     "answers": [
       {
         "answer": "SEXY",
@@ -6363,7 +6363,7 @@
     ]
   },
   {
-    "question": "If grandma ran away from home, name something she'd take with her.",
+    "prompt": "If grandma ran away from home, name something she'd take with her.",
     "answers": [
       {
         "answer": "MONEY/PURSE",
@@ -6392,7 +6392,7 @@
     ]
   },
   {
-    "question": "Name a party game that might take a really long time to play at a nursing home.",
+    "prompt": "Name a party game that might take a really long time to play at a nursing home.",
     "answers": [
       {
         "answer": "TWISTER",
@@ -6421,7 +6421,7 @@
     ]
   },
   {
-    "question": "If you got a text message from God, name something God might tell you to stop doing.",
+    "prompt": "If you got a text message from God, name something God might tell you to stop doing.",
     "answers": [
       {
         "answer": "WORRYING/STRESSING",
@@ -6450,7 +6450,7 @@
     ]
   },
   {
-    "question": "Name a TV host who's almost as funny as Steve Harvey.",
+    "prompt": "Name a TV host who's almost as funny as Steve Harvey.",
     "answers": [
       {
         "answer": "JIMMY FALLON",
@@ -6479,7 +6479,7 @@
     ]
   },
   {
-    "question": "Fill in the blank: It only hurts when I what?",
+    "prompt": "Fill in the blank: It only hurts when I what?",
     "answers": [
       {
         "answer": "LAUGH",
@@ -6508,7 +6508,7 @@
     ]
   },
   {
-    "question": "Name a kind of bird you'd be shocked to see someone serve at Thanksgiving.",
+    "prompt": "Name a kind of bird you'd be shocked to see someone serve at Thanksgiving.",
     "answers": [
       {
         "answer": "PIGEON",
@@ -6537,7 +6537,7 @@
     ]
   },
   {
-    "question": "Name an occupation whose members could say: I've seen it all.",
+    "prompt": "Name an occupation whose members could say: I've seen it all.",
     "answers": [
       {
         "answer": "DR./GYNO/SHRINK",
@@ -6566,7 +6566,7 @@
     ]
   },
   {
-    "question": "Birds do it. Bees do it. But name an animal that makes you wonder how they can possibly do it.",
+    "prompt": "Birds do it. Bees do it. But name an animal that makes you wonder how they can possibly do it.",
     "answers": [
       {
         "answer": "ELEPHANT",
@@ -6595,7 +6595,7 @@
     ]
   },
   {
-    "question": "Name a kind of car you'd love to have your ex see you driving.",
+    "prompt": "Name a kind of car you'd love to have your ex see you driving.",
     "answers": [
       {
         "answer": "MERCEDES",
@@ -6624,7 +6624,7 @@
     ]
   },
   {
-    "question": "Name a word that follows the word: high.",
+    "prompt": "Name a word that follows the word: high.",
     "answers": [
       {
         "answer": "HIGH SCHOOL",
@@ -6653,7 +6653,7 @@
     ]
   },
   {
-    "question": "Finish this expression: Dirty... what?",
+    "prompt": "Finish this expression: Dirty... what?",
     "answers": [
       {
         "answer": "DANCING",
@@ -6682,7 +6682,7 @@
     ]
   },
   {
-    "question": "Name the worst thing that can happen to a guy on a first date.",
+    "prompt": "Name the worst thing that can happen to a guy on a first date.",
     "answers": [
       {
         "answer": "NO WALLET/CASH",
@@ -6711,7 +6711,7 @@
     ]
   },
   {
-    "question": "So far, name something in your life you've only done once.",
+    "prompt": "So far, name something in your life you've only done once.",
     "answers": [
       {
         "answer": "GOTTEN MARRIED",
