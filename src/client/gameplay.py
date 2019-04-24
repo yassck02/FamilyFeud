@@ -16,7 +16,7 @@ class GameplayPage(Page):
 
         self.question_label = urwid.Text("", align='center')
 
-        self.timer_label = urwid.Text("time: 0:00", align='left')
+        self.timer_label = urwid.Text("question: 0/0", align='left')
         self.score_label = urwid.Text("score: 0", align='right')
 
         self.guess1_textbox = urwid.Edit(caption='Guess 1: ')
@@ -98,6 +98,7 @@ class GameplayPage(Page):
         question = nm.recieve()
         self.question_label.set_text(question['prompt'])
         self.questionNum += 1
+        self.timer_label.set_text("question: " + str(self.questionNum) + " / " + str(self.numQuestions))
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -133,6 +134,7 @@ class GameplayPage(Page):
         self.localScore += response['score']
         self.score_label.set_text(str(self.localScore))
         self.questionNum += 1
+        self.timer_label.set_text("question: " + str(self.questionNum) + " / " + str(self.numQuestions))
 
         # recieve the next question from the server if we expect one
         if (lastQuestion == False):
