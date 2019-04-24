@@ -39,6 +39,9 @@ class SplashPage(Page):
     def willShow(self):
         pass
 
+    def didShow(self):
+        pass
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
     def on_press_enter(self, button):

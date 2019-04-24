@@ -9,5 +9,5 @@ class Page:
     def willShow():
         """Called before the page gets displayed to the user"""
 
-    def willHide():
+    def didShow():
         """Called before the page is remoded or replaced by another"""

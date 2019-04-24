@@ -51,6 +51,9 @@ class LoginPage(Page):
     def willShow(self):
         pass
 
+    def didShow(self):
+        pass
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):

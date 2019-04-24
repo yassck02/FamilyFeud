@@ -54,4 +54,7 @@ class InfoPage(Page):
     def willShow(self):
         pass
 
+    def didShow(self):
+        pass
+
 # ---------------------------------------------------------------------

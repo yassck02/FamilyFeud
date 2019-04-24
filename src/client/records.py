@@ -36,6 +36,9 @@ class RecordsPage(Page):
         self.username_textbox.set_edit_text("")
         self.message_label.set_text("")
 
+    def didShow(self):
+        pass
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):

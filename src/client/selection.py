@@ -41,10 +41,13 @@ class SelectionPage(Page):
     def willShow(self):
         pass
 
+    def didShow(self):
+        pass
+
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def on_press_play(self, button):
-        wm.show(wm.gameplayPage)
+        wm.show(wm.instructionsPage)
 
     def on_press_history(self, button):
         wm.show(wm.historyPage)

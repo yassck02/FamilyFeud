@@ -72,7 +72,6 @@ def playGame(socket, username):
     # after the game is done... save the record
     save(totalScore, username)
 
-
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 def calculateScore(question, usersAnswer):

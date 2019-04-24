@@ -39,6 +39,9 @@ class HistoryPage(Page):
         self.history_list.contents = []
         self.message_label.set_text("")
 
+    def didShow(self):
+        pass
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):
