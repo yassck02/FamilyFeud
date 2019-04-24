@@ -1,5 +1,5 @@
 import urwid
-import networkManager
+import networkManager as nm
 
 from page import Page
 
@@ -12,7 +12,7 @@ class GameplayPage(Page):
         self.btn_submit = urwid.Button(('yellow', u"Submit"), on_press=self.on_press_submit)
         self.btn_submit._label.align = 'center'
 
-        self.question_label = urwid.Text("* insert question here *", align='center')
+        self.question_label = urwid.Text("", align='center')
 
         self.timer_label = urwid.Text("remaining time: #", align='left')
         self.score_label = urwid.Text("score: #", align='right')
@@ -55,7 +55,9 @@ class GameplayPage(Page):
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def willShow(self):
-        self.question_label.set_text()
+        """called right before this page is displayed"""
+
+        self.question_label.set_text("")
 
         self.guess1_textbox.set_edit_text("")
         self.guess2_textbox.set_edit_text("")
@@ -64,12 +66,15 @@ class GameplayPage(Page):
         self.timerFinished = False
         self.localScore = 0
 
+    def didShow(self):
+        """called right after this page is displayed"""
+
+        self.startGame()
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     localScore = 0
     timerFinished = False
-
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def startGame(self):
         """Starts the gameplay loop by asking the server for a question
@@ -81,6 +86,7 @@ class GameplayPage(Page):
 
         # recieve the first question from the server
         question = nm.recieve()
+        print(question)
         self.question_label.set_text(question['prompt'])
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -97,22 +103,16 @@ class GameplayPage(Page):
         request = { 'guess1': guess1, 
                     'guess2': guess2, 
                     'guess3': guess3 }
-        nm.send(socket, request)
+        nm.send(request)
 
         # recieve the score from the server
         response = nm.recieve()
         self.localScore += response['score']
+        self.score_label.set_text(str(self.localScore))
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def onTimerFinish():
         self.timerFinished = True
-
-
-    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
-
-
-    def willShow(self):
-        pass
 
 # ---------------------------------------------------------------------
