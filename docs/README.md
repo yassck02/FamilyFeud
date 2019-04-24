@@ -1,4 +1,4 @@
-# Family Feud 🧠🏆💵
+# Family Feud 🧠 🏆 💵
 A text-based Family Feud game build on a client-server architecture
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -24,5 +24,5 @@ The game consists of 2 main parts, the client and the server. The server holds a
 - https://www.cygwin.com
   
 #### Notes:
-Some terminals do not support the colored text like is shown in the screenshots, All terminals support the use of navigation via the up, down, and enter keys, but some also support input and button clicks via the mouse
+Most terminals support the colored text like is shown in the screenshots but some may not. All terminals support the use of navigation via the up, down, and enter keys, but only a small subset support input and button clicks via the mouse.
 
