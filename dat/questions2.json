@@ -1,2878 +1,2877 @@
 [
     {
-        "prompt": "Name an occupation that is more admired than you think it deserves to be",
-        "answers": [
-            {
-                "answer": "Military",
-                "score": 16 
-            },
-            {
-                "answer": "Athlete",
-                "score": 15 
-            },
-            {
-                "answer": "Politician",
-                "score": 11 
-            },
-            {
-                "answer": "Lawyer",
-                "score": 10 
-            },
-            {
-                "answer": "Actor",
-                "score": 10
-            }
-        ]
-    },
-    {
-        "prompt": "Name a product people put all over their bodies",
-        "answers": [
-            {
-                "answer": "Moisturizer/Lotion",
-                "score": 51 
-            },
-            {
-                "answer": "Soap",
-                "score": 20 
-            },
-            {
-                "answer": "Sunscreen",
-                "score": 12 
-            },
-            {
-                "answer": "Bodywash",
-                "score": 4 
-            },
-            {
-                "answer": "Clothes",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name a childhood fear that is carried into adulthood",
-        "answers": [
-            {
-                "answer": "Dark",
-                "score": 26 
-            },
-            {
-                "answer": "Spiders",
-                "score": 25 
-            },
-            {
-                "answer": "Heights",
-                "score": 17 
-            },
-            {
-                "answer": "Clowns",
-                "score": 12 
-            },
-            {
-                "answer": "Death",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that makes you feel really good",
-        "answers": [
-            {
-                "answer": "Sexy Times",
-                "score": 29 
-            },
-            {
-                "answer": "Sleep",
-                "score": 14 
-            },
-            {
-                "answer": "Exercise",
-                "score": 10 
-            },
-            {
-                "answer": "Helping Others",
-                "score": 7 
-            },
-            {
-                "answer": "Take a shower",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Besides weiners, name something every hot dog vendor has",
-        "answers": [
-            {
-                "answer": "Mustard",
-                "score": 32 
-            },
-            {
-                "answer": "Buns",
-                "score": 30 
-            },
-            {
-                "answer": "Ketchup",
-                "score": 26 
-            },
-            {
-                "answer": "Relish",
-                "score": 6 
-            },
-            {
-                "answer": "Drinks",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Besides Food, make something people will buy even if the price triples",
-        "answers": [
-            {
-                "answer": "Gas",
-                "score": 59 
-            },
-            {
-                "answer": "Toilet Paper",
-                "score": 8 
-            },
-            {
-                "answer": "Clothes",
-                "score": 6 
-            },
-            {
-                "answer": "Electronics",
-                "score": 5 
-            },
-            {
-                "answer": "Alcohol",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name a part time job that kids do to make money",
-        "answers": [
-            {
-                "answer": "Mow Lawns/Yard Work",
-                "score": 20 
-            },
-            {
-                "answer": "Newspaper Route",
-                "score": 19 
-            },
-            {
-                "answer": "Food Services",
-                "score": 18 
-            },
-            {
-                "answer": "Babysitting",
-                "score": 17 
-            },
-            {
-                "answer": "Lemonade Stand",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "Name a day that all kids look forward to",
-        "answers": [
-            {
-                "answer": "Christmas",
-                "score": 35 
-            },
-            {
-                "answer": "Saturday",
-                "score": 18 
-            },
-            {
-                "answer": "Birthday",
-                "score": 16 
-            },
-            {
-                "answer": "End of school/Summer Vacation",
-                "score": 12 
-            },
-            {
-                "answer": "Friday",
-                "score": 10
-            }
-        ]
-    },
-    {
-        "prompt": "Name something people use to keep burglars away",
-        "answers": [
-            {
-                "answer": "Security System",
-                "score": 44 
-            },
-            {
-                "answer": "Dog",
-                "score": 28 
-            },
-            {
-                "answer": "Weapons",
-                "score": 16 
-            },
-            {
-                "answer": "Lock your doors",
-                "score": 7 
-            },
-            {
-                "answer": "Leave lights on",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name something people borrow from their coworkers at work",
-        "answers": [
-            {
-                "answer": "Pens & Pencils",
-                "score": 58 
-            },
-            {
-                "answer": "Stapler",
-                "score": 25 
-            },
-            {
-                "answer": "Money",
-                "score": 4 
-            },
-            {
-                "answer": "Time",
-                "score": 3 
-            },
-            {
-                "answer": "Food",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name a piece of good news that people like to tell other people",
-        "answers": [
-            {
-                "answer": "Pregnant/Birth Announcement",
-                "score": 54 
-            },
-            {
-                "answer": "Engaged",
-                "score": 16 
-            },
-            {
-                "answer": "Wedding",
-                "score": 9 
-            },
-            {
-                "answer": "Got a raise",
-                "score": 7 
-            },
-            {
-                "answer": "New Job",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name the most important invention of all time",
-        "answers": [
-            {
-                "answer": "Electricity",
-                "score": 18 
-            },
-            {
-                "answer": "Wheel",
-                "score": 17 
-            },
-            {
-                "answer": "Internet",
-                "score": 10 
-            },
-            {
-                "answer": "Press",
-                "score": 8 
-            },
-            {
-                "answer": "Computer",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name something a woman might have a special hiding place for",
-        "answers": [
-            {
-                "answer": "Sex Toys",
-                "score": 33 
-            },
-            {
-                "answer": "Tampons",
-                "score": 23 
-            },
-            {
-                "answer": "Jewelry",
-                "score": 11 
-            },
-            {
-                "answer": "Money",
-                "score": 7 
-            },
-            {
-                "answer": "Chocolate",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something people have installed by professionals",
-        "answers": [
-            {
-                "answer": "Plumbing",
-                "score": 18 
-            },
-            {
-                "answer": "Cable/Internet",
-                "score": 16 
-            },
-            {
-                "answer": "Electrical Wiring/Lighting",
-                "score": 9 
-            },
-            {
-                "answer": "Air Conditioning",
-                "score": 8 
-            },
-            {
-                "answer": "Security System",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name a good way to wake up fast",
-        "answers": [
-            {
-                "answer": "Cold Water",
-                "score": 36 
-            },
-            {
-                "answer": "Alarm Clock",
-                "score": 27 
-            },
-            {
-                "answer": "Coffee",
-                "score": 14 
-            },
-            {
-                "answer": "Kids/Pets need attention",
-                "score": 3 
-            },
-            {
-                "answer": "Realize you are running late",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name a living thing that scares people",
-        "answers": [
-            {
-                "answer": "Spiders",
-                "score": 45 
-            },
-            {
-                "answer": "Snakes",
-                "score": 13 
-            },
-            {
-                "answer": "Other People",
-                "score": 12 
-            },
-            {
-                "answer": "Bears",
-                "score": 9 
-            },
-            {
-                "answer": "Sharks",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you put in tea",
-        "answers": [
-            {
-                "answer": "Sugar",
-                "score": 35 
-            },
-            {
-                "answer": "Honey",
-                "score": 24 
-            },
-            {
-                "answer": "Milk",
-                "score": 19 
-            },
-            {
-                "answer": "Lemon",
-                "score": 5 
-            },
-            {
-                "answer": "Hot Water",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you'd find in the desert",
-        "answers": [
-            {
-                "answer": "Sand",
-                "score": 41 
-            },
-            {
-                "answer": "Cactus",
-                "score": 32 
-            },
-            {
-                "answer": "Camel",
-                "score": 5 
-            },
-            {
-                "answer": "Scorpions",
-                "score": 4 
-            },
-            {
-                "answer": "Snakes",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name an occasion to send flowers",
-        "answers": [
-            {
-                "answer": "Valentines Day",
-                "score": 32 
-            },
-            {
-                "answer": "Funeral",
-                "score": 22 
-            },
-            {
-                "answer": "Anniversary",
-                "score": 14 
-            },
-            {
-                "answer": "Birthday",
-                "score": 13 
-            },
-            {
-                "answer": "Mothers Day",
-                "score": 12
-            }
-        ]
-    },
-    {
-        "prompt": "Name a city in Canada",
-        "answers": [
-            {
-                "answer": "Toronto",
-                "score": 34 
-            },
-            {
-                "answer": "Ottawa",
-                "score": 13 
-            },
-            {
-                "answer": "Vancouver",
-                "score": 11 
-            },
-            {
-                "answer": "Montreal",
-                "score": 10 
-            },
-            {
-                "answer": "Quebec",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that is against the law",
-        "answers": [
-            {
-                "answer": "Murder",
-                "score": 39 
-            },
-            {
-                "answer": "Theft",
-                "score": 25 
-            },
-            {
-                "answer": "Speeding",
-                "score": 8 
-            },
-            {
-                "answer": "Jaywalking",
-                "score": 6 
-            },
-            {
-                "answer": "Drugs",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something expensive you could order in a restaurant",
-        "answers": [
-            {
-                "answer": "Lobster",
-                "score": 32 
-            },
-            {
-                "answer": "Wine",
-                "score": 23 
-            },
-            {
-                "answer": "Steak/Filet",
-                "score": 19 
-            },
-            {
-                "answer": "Caviar",
-                "score": 13 
-            },
-            {
-                "answer": "Foie Gras",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something people often lose",
-        "answers": [
-            {
-                "answer": "Keys",
-                "score": 53 
-            },
-            {
-                "answer": "Money",
-                "score": 7 
-            },
-            {
-                "answer": "Mind",
-                "score": 6 
-            },
-            {
-                "answer": "Phone",
-                "score": 5 
-            },
-            {
-                "answer": "Virginity",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something a baby might use",
-        "answers": [
-            {
-                "answer": "Pacifier",
-                "score": 32 
-            },
-            {
-                "answer": "Diaper",
-                "score": 21 
-            },
-            {
-                "answer": "Rattle",
-                "score": 15 
-            },
-            {
-                "answer": "Bottle",
-                "score": 14 
-            },
-            {
-                "answer": "Bib",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name a food that kids love",
-        "answers": [
-            {
-                "answer": "Pizza",
-                "score": 21 
-            },
-            {
-                "answer": "Mac & Cheese",
-                "score": 20 
-            },
-            {
-                "answer": "Chicken Nuggets",
-                "score": 15 
-            },
-            {
-                "answer": "Candy",
-                "score": 9 
-            },
-            {
-                "answer": "Ice Cream",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name one of the Seven Dwarfs",
-        "answers": [
-            {
-                "answer": "Sleepy",
-                "score": 32 
-            },
-            {
-                "answer": "Dopey",
-                "score": 26 
-            },
-            {
-                "answer": "Grumpy",
-                "score": 17 
-            },
-            {
-                "answer": "Doc",
-                "score": 9 
-            },
-            {
-                "answer": "Happy",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name a cold drink",
-        "answers": [
-            {
-                "answer": "Soda",
-                "score": 31 
-            },
-            {
-                "answer": "Iced Tea",
-                "score": 18 
-            },
-            {
-                "answer": "Water",
-                "score": 14 
-            },
-            {
-                "answer": "Beer",
-                "score": 13 
-            },
-            {
-                "answer": "Lemonade",
-                "score": 8
-            }
-        ]
-    },
-    {
-        "prompt": "Name a piece of clothing you put on when it gets cold",
-        "answers": [
-            {
-                "answer": "Jacket/Coat",
-                "score": 32 
-            },
-            {
-                "answer": "Sweater/Sweatshirt",
-                "score": 27 
-            },
-            {
-                "answer": "Scarf",
-                "score": 19 
-            },
-            {
-                "answer": "Hat",
-                "score": 8 
-            },
-            {
-                "answer": "Gloves/Mittens",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name a vegetable that grows underground",
-        "answers": [
-            {
-                "answer": "Carrot",
-                "score": 48 
-            },
-            {
-                "answer": "Potato",
-                "score": 40 
-            },
-            {
-                "answer": "Onion",
-                "score": 3 
-            },
-            {
-                "answer": "Radish",
-                "score": 2 
-            },
-            {
-                "answer": "Beet",
-                "score": 1
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you sit on at home",
-        "answers": [
-            {
-                "answer": "Couch/Sofa",
-                "score": 52 
-            },
-            {
-                "answer": "Chair",
-                "score": 26 
-            },
-            {
-                "answer": "Toilet",
-                "score": 7 
-            },
-            {
-                "answer": "Bed",
-                "score": 5 
-            },
-            {
-                "answer": "Floor",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you shouldn't put your feet on at your parents house",
-        "answers": [
-            {
-                "answer": "Dinner Table",
-                "score": 35 
-            },
-            {
-                "answer": "Coffee Table",
-                "score": 22 
-            },
-            {
-                "answer": "Couch",
-                "score": 12 
-            },
-            {
-                "answer": "Family Members",
-                "score": 10 
-            },
-            {
-                "answer": "Carpets",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name a word or phrase that contains the word 'Stream'",
-        "answers": [
-            {
-                "answer": "Streamlined",
-                "score": 17 
-            },
-            {
-                "answer": "Livestream",
-                "score": 14 
-            },
-            {
-                "answer": "Streaming Vimeo",
-                "score": 10 
-            },
-            {
-                "answer": "Stream of Consciousness",
-                "score": 6 
-            },
-            {
-                "answer": "Downstream",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a word that has no rhymes",
-        "answers": [
-            {
-                "answer": "Orange",
-                "score": 64 
-            },
-            {
-                "answer": "Purple",
-                "score": 11 
-            },
-            {
-                "answer": "Silver",
-                "score": 9 
-            },
-            {
-                "answer": "Month",
-                "score": 3 
-            },
-            {
-                "answer": "Rhythm",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name a fictional character famous for not wearing pants",
-        "answers": [
-            {
-                "answer": "Donald Duck",
-                "score": 42 
-            },
-            {
-                "answer": "Winnie the Pooh",
-                "score": 14 
-            },
-            {
-                "answer": "Captain Underpants",
-                "score": 9 
-            },
-            {
-                "answer": "Squidward",
-                "score": 6 
-            },
-            {
-                "answer": "Bugs Bunny",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you delete",
-        "answers": [
-            {
-                "answer": "Browser History",
-                "score": 26 
-            },
-            {
-                "answer": "Old emails/messages",
-                "score": 18 
-            },
-            {
-                "answer": "Files",
-                "score": 16 
-            },
-            {
-                "answer": "Photos",
-                "score": 8 
-            },
-            {
-                "answer": "Typos",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you don't want to see at the beach",
-        "answers": [
-            {
-                "answer": "The human body",
-                "score": 45 
-            },
-            {
-                "answer": "Sharks",
-                "score": 22 
-            },
-            {
-                "answer": "Trash",
-                "score": 7 
-            },
-            {
-                "answer": "Dead Animals",
-                "score": 7 
-            },
-            {
-                "answer": "Bad Weather",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "What is something you can do in a video game that you wish you could do in real life",
-        "answers": [
-            {
-                "answer": "Fly",
-                "score": 30 
-            },
-            {
-                "answer": "Respawn",
-                "score": 20 
-            },
-            {
-                "answer": "Superhuman Athletics",
-                "score": 11 
-            },
-            {
-                "answer": "Violence",
-                "score": 9 
-            },
-            {
-                "answer": "Easy Money",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Which family member would you least like to go clothes shopping with",
-        "answers": [
-            {
-                "answer": "Father",
-                "score": 32 
-            },
-            {
-                "answer": "Mother",
-                "score": 21 
-            },
-            {
-                "answer": "Sister",
-                "score": 7 
-            },
-            {
-                "answer": "Grandpa",
-                "score": 6 
-            },
-            {
-                "answer": "Brother",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a vegetable that isn't green",
-        "answers": [
-            {
-                "answer": "Carrot",
-                "score": 55 
-            },
-            {
-                "answer": "Potato",
-                "score": 9 
-            },
-            {
-                "answer": "Eggplant",
-                "score": 8 
-            },
-            {
-                "answer": "Tomato",
-                "score": 7 
-            },
-            {
-                "answer": "Beets",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name an animal that growls",
-        "answers": [
-            {
-                "answer": "Dog",
-                "score": 55 
-            },
-            {
-                "answer": "Wolf",
-                "score": 11 
-            },
-            {
-                "answer": "Bear",
-                "score": 10 
-            },
-            {
-                "answer": "Tiger",
-                "score": 9 
-            },
-            {
-                "answer": "Lion",
-                "score": 8
-            }
-        ]
-    },
-    {
-        "prompt": "Name a time that you might get stuck with a needle",
-        "answers": [
-            {
-                "answer": "Sewing",
-                "score": 32 
-            },
-            {
-                "answer": "Doctor's Office",
-                "score": 24 
-            },
-            {
-                "answer": "Vaccinations",
-                "score": 19 
-            },
-            {
-                "answer": "Blood Donation",
-                "score": 6 
-            },
-            {
-                "answer": "Using Intravenous Drugs",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something with fangs",
-        "answers": [
-            {
-                "answer": "Vampire",
-                "score": 39 
-            },
-            {
-                "answer": "Snakes",
-                "score": 22 
-            },
-            {
-                "answer": "Bats",
-                "score": 11 
-            },
-            {
-                "answer": "Wolf",
-                "score": 9 
-            },
-            {
-                "answer": "Tiger",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a country with green in their flag",
-        "answers": [
-            {
-                "answer": "Italy",
-                "score": 23 
-            },
-            {
-                "answer": "Mexico",
-                "score": 20 
-            },
-            {
-                "answer": "Ireland",
-                "score": 18 
-            },
-            {
-                "answer": "Brazil",
-                "score": 11 
-            },
-            {
-                "answer": "Libya",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that can have a spring in it",
-        "answers": [
-            {
-                "answer": "Bed Mattress",
-                "score": 30 
-            },
-            {
-                "answer": "Pen/Mechanical Pencil",
-                "score": 18 
-            },
-            {
-                "answer": "Your Step",
-                "score": 11 
-            },
-            {
-                "answer": "Watch/Clock",
-                "score": 10 
-            },
-            {
-                "answer": "Car",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a menu item that is made with noodles",
-        "answers": [
-            {
-                "answer": "Spaghetti",
-                "score": 27 
-            },
-            {
-                "answer": "Ramen",
-                "score": 13 
-            },
-            {
-                "answer": "Pad Thai",
-                "score": 11 
-            },
-            {
-                "answer": "Chicken Noodle Soup",
-                "score": 8 
-            },
-            {
-                "answer": "Chow Mein",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "What one thing would you want to have with you if you got stranded on a desert island",
-        "answers": [
-            {
-                "answer": "Phone/Radio",
-                "score": 23 
-            },
-            {
-                "answer": "Clean Water",
-                "score": 22 
-            },
-            {
-                "answer": "Boat/Vehicle",
-                "score": 17 
-            },
-            {
-                "answer": "Knife/Tools",
-                "score": 6 
-            },
-            {
-                "answer": "Another Person",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "What was your favorite class in grade school",
-        "answers": [
-            {
-                "answer": "Math",
-                "score": 20 
-            },
-            {
-                "answer": "English (reading & writing)",
-                "score": -18 
-            },
-            {
-                "answer": "Art",
-                "score": 17 
-            },
-            {
-                "answer": "Science",
-                "score": 16 
-            },
-            {
-                "answer": "History/Social Studies",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "What is one thing that anybody should be able to cook",
-        "answers": [
-            {
-                "answer": "Pasta",
-                "score": 27 
-            },
-            {
-                "answer": "Eggs",
-                "score": 22 
-            },
-            {
-                "answer": "Ramen",
-                "score": 11 
-            },
-            {
-                "answer": "Toast",
-                "score": 10 
-            },
-            {
-                "answer": "Rice",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name one part of your body that you wish was smaller",
-        "answers": [
-            {
-                "answer": "Stomach",
-                "score": 37 
-            },
-            {
-                "answer": "Nose",
-                "score": 22 
-            },
-            {
-                "answer": "Thighs",
-                "score": 7 
-            },
-            {
-                "answer": "Feet",
-                "score": 6 
-            },
-            {
-                "answer": "Waist",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "What animal at the zoo gets the most attention",
-        "answers": [
-            {
-                "answer": "Lions",
-                "score": 33 
-            },
-            {
-                "answer": "Primates",
-                "score": 19 
-            },
-            {
-                "answer": "Elephants",
-                "score": 14 
-            },
-            {
-                "answer": "Pandas",
-                "score": 10 
-            },
-            {
-                "answer": "Tigers",
-                "score": 8
-            }
-        ]
-    },
-    {
-        "prompt": "Name something sticky",
-        "answers": [
-            {
-                "answer": "Glue",
-                "score": 27 
-            },
-            {
-                "answer": "Gum",
-                "score": 19 
-            },
-            {
-                "answer": "A Stick",
-                "score": 11 
-            },
-            {
-                "answer": "Honey",
-                "score": 9 
-            },
-            {
-                "answer": "Syrup",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name an American city that starts with the letter 'T'",
-        "answers": [
-            {
-                "answer": "Tallahassee",
-                "score": 31 
-            },
-            {
-                "answer": "Toledo",
-                "score": 13 
-            },
-            {
-                "answer": "Tampa",
-                "score": 12 
-            },
-            {
-                "answer": "Tulsa",
-                "score": 7 
-            },
-            {
-                "answer": "Tucson",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name a National Park",
-        "answers": [
-            {
-                "answer": "Yellowstone",
-                "score": 51 
-            },
-            {
-                "answer": "Yosemite",
-                "score": 24 
-            },
-            {
-                "answer": "Grand Canyon",
-                "score": 5 
-            },
-            {
-                "answer": "Zion",
-                "score": 3 
-            },
-            {
-                "answer": "Glacier",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name a reason you might get stopped by the police",
-        "answers": [
-            {
-                "answer": "Speeding",
-                "score": 67 
-            },
-            {
-                "answer": "Racism",
-                "score": 10 
-            },
-            {
-                "answer": "Broken tail/headlight",
-                "score": 6 
-            },
-            {
-                "answer": "DUI",
-                "score": 4 
-            },
-            {
-                "answer": "Dangerous Driving",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name a magazine that features shirtless men on the cover",
-        "answers": [
-            {
-                "answer": "Men's Health",
-                "score": 26 
-            },
-            {
-                "answer": "GQ",
-                "score": 22 
-            },
-            {
-                "answer": "Playgirl",
-                "score": 18 
-            },
-            {
-                "answer": "Mens Fitness",
-                "score": 8 
-            },
-            {
-                "answer": "Sports Illustrated",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you need to book months in advance",
-        "answers": [
-            {
-                "answer": "Plane tickets",
-                "score": 26 
-            },
-            {
-                "answer": "Wedding Venues",
-                "score": 22 
-            },
-            {
-                "answer": "Vacations",
-                "score": 21 
-            },
-            {
-                "answer": "Fancy Restaurants",
-                "score": 7 
-            },
-            {
-                "answer": "Medical Appointments",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a villain who wears a mask",
-        "answers": [
-            {
-                "answer": "Bane",
-                "score": 15 
-            },
-            {
-                "answer": "Darth Vader",
-                "score": 11 
-            },
-            {
-                "answer": "The Riddler",
-                "score": 10 
-            },
-            {
-                "answer": "Dr Doom",
-                "score": 8 
-            },
-            {
-                "answer": "Green Goblin",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name a planet that is larger than Earth",
-        "answers": [
-            {
-                "answer": "Jupiter",
-                "score": 68 
-            },
-            {
-                "answer": "Saturn",
-                "score": 17 
-            },
-            {
-                "answer": "Neptune",
-                "score": 5 
-            },
-            {
-                "answer": "Uranus",
-                "score": 4 
-            },
-            {
-                "answer": "Venus",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name an appliance you use almost every day",
-        "answers": [
-            {
-                "answer": "Microwave",
-                "score": 25 
-            },
-            {
-                "answer": "Refrigerator",
-                "score": 24 
-            },
-            {
-                "answer": "Coffee Maker/Tea Kettle",
-                "score": 14 
-            },
-            {
-                "answer": "Stove/Oven",
-                "score": 12 
-            },
-            {
-                "answer": "Toaster",
-                "score": 10
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you do late at night instead of falling asleep",
-        "answers": [
-            {
-                "answer": "Browse Internet",
-                "score": 34 
-            },
-            {
-                "answer": "Read",
-                "score": 23 
-            },
-            {
-                "answer": "Watch TV/Netflix",
-                "score": 19 
-            },
-            {
-                "answer": "Masturbate",
-                "score": 7 
-            },
-            {
-                "answer": "Play Video Games",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a fictional character who uses a bow",
-        "answers": [
-            {
-                "answer": "Robin Hood",
-                "score": 30 
-            },
-            {
-                "answer": "Legolas",
-                "score": 22 
-            },
-            {
-                "answer": "Katniss",
-                "score": 21 
-            },
-            {
-                "answer": "Green Arrow",
-                "score": 11 
-            },
-            {
-                "answer": "Link",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Honestly, how often do you floss",
-        "answers": [
-            {
-                "answer": "Rarely/Never",
-                "score": 40 
-            },
-            {
-                "answer": "Once a week",
-                "score": 15 
-            },
-            {
-                "answer": "Couple times a week",
-                "score": 14 
-            },
-            {
-                "answer": "Daily",
-                "score": 13 
-            },
-            {
-                "answer": "Once a month",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "What country has the palest people",
-        "answers": [
-            {
-                "answer": "Sweden",
-                "score": 23 
-            },
-            {
-                "answer": "Ireland",
-                "score": 18 
-            },
-            {
-                "answer": "Norway",
-                "score": 16 
-            },
-            {
-                "answer": "Iceland",
-                "score": 9 
-            },
-            {
-                "answer": "Finland",
-                "score": 8
-            }
-        ]
-    },
-    {
-        "prompt": "What can you never have enough of in your cabinets at home",
-        "answers": [
-            {
-                "answer": "Food",
-                "score": 46 
-            },
-            {
-                "answer": "Dishes",
-                "score": 14 
-            },
-            {
-                "answer": "Candy",
-                "score": 7 
-            },
-            {
-                "answer": "Alcohol",
-                "score": 6 
-            },
-            {
-                "answer": "Toilet Paper",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that can be stuffed",
-        "answers": [
-            {
-                "answer": "Turkey",
-                "score": 40 
-            },
-            {
-                "answer": "Stuffed Animals",
-                "score": 32 
-            },
-            {
-                "answer": "Peppers",
-                "score": 6 
-            },
-            {
-                "answer": "Pillows",
-                "score": 5 
-            },
-            {
-                "answer": "Chicken",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you pay for once a month",
-        "answers": [
-            {
-                "answer": "Rent/Mortgage",
-                "score": 23 
-            },
-            {
-                "answer": "Cable/Internet",
-                "score": 22 
-            },
-            {
-                "answer": "Utilities",
-                "score": 18 
-            },
-            {
-                "answer": "Phone",
-                "score": 17 
-            },
-            {
-                "answer": "Netflix",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "Who do you text the most",
-        "answers": [
-            {
-                "answer": "Significant Other",
-                "score": 49 
-            },
-            {
-                "answer": "Friend",
-                "score": 25 
-            },
-            {
-                "answer": "Parents",
-                "score": 14 
-            },
-            {
-                "answer": "Siblings",
-                "score": 3 
-            },
-            {
-                "answer": "Work",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you can pop",
-        "answers": [
-            {
-                "answer": "Balloons",
-                "score": 26 
-            },
-            {
-                "answer": "Pimples",
-                "score": 22 
-            },
-            {
-                "answer": "Bubble Wrap",
-                "score": 15 
-            },
-            {
-                "answer": "Popcorn",
-                "score": 7 
-            },
-            {
-                "answer": "Cherry",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a type of tree with large leaves",
-        "answers": [
-            {
-                "answer": "Maple",
-                "score": 31 
-            },
-            {
-                "answer": "Palm",
-                "score": 28 
-            },
-            {
-                "answer": "Oak",
-                "score": 20 
-            },
-            {
-                "answer": "Banana",
-                "score": 6 
-            },
-            {
-                "answer": "Magnolia",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that you can add bacon to",
-        "answers": [
-            {
-                "answer": "Anything & Everything",
-                "score": 23 
-            },
-            {
-                "answer": "Eggs",
-                "score": 20 
-            },
-            {
-                "answer": "Burger",
-                "score": 17 
-            },
-            {
-                "answer": "Sandwich",
-                "score": 10 
-            },
-            {
-                "answer": "Mac & Cheese",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name a type of person who carries a sword",
-        "answers": [
-            {
-                "answer": "Knight",
-                "score": 52 
-            },
-            {
-                "answer": "Samurai",
-                "score": 13 
-            },
-            {
-                "answer": "Nerd",
-                "score": 6 
-            },
-            {
-                "answer": "Warrior",
-                "score": 5 
-            },
-            {
-                "answer": "Ninja",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "What's the worst thing about having a roommate",
-        "answers": [
-            {
-                "answer": "Messiness",
-                "score": 28 
-            },
-            {
-                "answer": "No Privacy",
-                "score": 23 
-            },
-            {
-                "answer": "Loud Noises",
-                "score": 12 
-            },
-            {
-                "answer": "Having to share things",
-                "score": 11 
-            },
-            {
-                "answer": "Bad smells",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name a cocktail you would order at a bar",
-        "answers": [
-            {
-                "answer": "Martini",
-                "score": 17 
-            },
-            {
-                "answer": "Margarita",
-                "score": 7 
-            },
-            {
-                "answer": "Manhattan",
-                "score": 6 
-            },
-            {
-                "answer": "Bloody Mary",
-                "score": 6 
-            },
-            {
-                "answer": "Cosmo",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you are happy to lose",
-        "answers": [
-            {
-                "answer": "Weight",
-                "score": 53 
-            },
-            {
-                "answer": "Virginity",
-                "score": 27 
-            },
-            {
-                "answer": "Debt",
-                "score": 6 
-            },
-            {
-                "answer": "Bad Influences",
-                "score": 2 
-            },
-            {
-                "answer": "Teeth",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "How can you tell you're at a very fancy restaurant",
-        "answers": [
-            {
-                "answer": "Price",
-                "score": 30 
-            },
-            {
-                "answer": "Dress Code",
-                "score": 17 
-            },
-            {
-                "answer": "Cloth Napkins & Tablecloths",
-                "score": 16 
-            },
-            {
-                "answer": "Too many forks",
-                "score": 9 
-            },
-            {
-                "answer": "Fancy Waiters/Good Service",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name an animal with horns",
-        "answers": [
-            {
-                "answer": "Ram",
-                "score": 25 
-            },
-            {
-                "answer": "Bull",
-                "score": 24 
-            },
-            {
-                "answer": "Goat",
-                "score": 17 
-            },
-            {
-                "answer": "Rhino",
-                "score": 16 
-            },
-            {
-                "answer": "Buck",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "What is the best thing to put whipped cream on",
-        "answers": [
-            {
-                "answer": "Pie",
-                "score": 26 
-            },
-            {
-                "answer": "Ice Cream",
-                "score": 20 
-            },
-            {
-                "answer": "People",
-                "score": 16 
-            },
-            {
-                "answer": "Strawberries",
-                "score": 11 
-            },
-            {
-                "answer": "Hot Chocolate",
-                "score": 10
-            }
-        ]
-    },
-    {
-        "prompt": "Name an internet meme that features an animal",
-        "answers": [
-            {
-                "answer": "Socially Awkward Penguin",
-                "score": 16 
-            },
-            {
-                "answer": "Grumpy Cat",
-                "score": 15 
-            },
-            {
-                "answer": "Confession Bear",
-                "score": 14 
-            },
-            {
-                "answer": "Doge",
-                "score": 10 
-            },
-            {
-                "answer": "Insanity Wolf",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you put on when you are getting dressed up",
-        "answers": [
-            {
-                "answer": "Tie",
-                "score": 26 
-            },
-            {
-                "answer": "Makeup",
-                "score": 14 
-            },
-            {
-                "answer": "Jewelry",
-                "score": 11 
-            },
-            {
-                "answer": "Nice Shoes",
-                "score": 10 
-            },
-            {
-                "answer": "Perfume/Cologne",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name a slang word or phrase that your parents used when they were teenagers",
-        "answers": [
-            {
-                "answer": "Groovy",
-                "score": 37 
-            },
-            {
-                "answer": "Rad",
-                "score": 18 
-            },
-            {
-                "answer": "Cool",
-                "score": 6  
-            },
-            {
-                "answer": "Far Out",
-                "score": 5 
-            },
-            {
-                "answer": "Hip",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that you think women find boring",
-        "answers": [
-            {
-                "answer": "Sports",
-                "score": 43 
-            },
-            {
-                "answer": "Cars",
-                "score": 14 
-            },
-            {
-                "answer": "Men",
-                "score": 7 
-            },
-            {
-                "answer": "Video Games",
-                "score": 6 
-            },
-            {
-                "answer": "Hunting/Fishing",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name a place where you look for breaking news",
-        "answers": [
-            {
-                "answer": "Internet",
-                "score": 60 
-            },
-            {
-                "answer": "TV",
-                "score": 24 
-            },
-            {
-                "answer": "Twitter",
-                "score": 8 
-            },
-            {
-                "answer": "Facebook",
-                "score": 3 
-            },
-            {
-                "answer": "Newspaper",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you keep in your car at all times",
-        "answers": [
-            {
-                "answer": "Insurance & Registration",
-                "score": 18 
-            },
-            {
-                "answer": "Ice Scraper",
-                "score": 7 
-            },
-            {
-                "answer": "Jumper Cables",
-                "score": 6 
-            },
-            {
-                "answer": "Money/Coins",
-                "score": 5 
-            },
-            {
-                "answer": "Spare Tire",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you do when you're home sick from school/work",
-        "answers": [
-            {
-                "answer": "sleep",
-                "score": 243
-            },
-            {
-                "answer": "Watch TV/Movies/Netflix",
-                "score": 29 
-            },
-            {
-                "answer": "Play Video Games",
-                "score": 9 
-            },
-            {
-                "answer": "Browse Internet",
-                "score": 6 
-            },
-            {
-                "answer": "Eat Soup/Drink lots of fluids",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name a way parents keep their children from misbehaving in public",
-        "answers": [
-            {
-                "answer": "Bribe them",
-                "score": 21 
-            },
-            {
-                "answer": "Threaten them",
-                "score": 18 
-            },
-            {
-                "answer": "Hit them",
-                "score": 13 
-            },
-            {
-                "answer": "Leash them",
-                "score": 10 
-            },
-            {
-                "answer": "Shouting",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name an awkward conversation you might have with your significant other",
-        "answers": [
-            {
-                "answer": "Time to break up",
-                "score": 14 
-            },
-            {
-                "answer": "Past relationships",
-                "score": 12 
-            },
-            {
-                "answer": "STDs",
-                "score": 10 
-            },
-            {
-                "answer": "Pregnant",
-                "score": 9 
-            },
-            {
-                "answer": "Cheating",
-                "score": 8
-            }
-        ]
-    },
-    {
-        "prompt": "Name something someone might search for on google",
-        "answers": [
-            {
-                "answer": "Porn",
-                "score": 20
-            },
-            {
-                "answer": "To Hot",
-                "score": -12 
-            },
-            {
-                "answer": "Recipes",
-                "score": 10 
-            },
-            {
-                "answer": "Directions",
-                "score": 9 
-            },
-            {
-                "answer": "Medical Symptoms",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you eat with your hands",
-        "answers": [
-            {
-                "answer": "Pizza",
-                "score": 19 
-            },
-            {
-                "answer": "Hamburger",
-                "score": 15 
-            },
-            {
-                "answer": "Sandwich",
-                "score": 13 
-            },
-            {
-                "answer": "French Fries",
-                "score": 10 
-            },
-            {
-                "answer": "Tacos",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name an activity that someone might do in Las Vegas",
-        "answers": [
-            {
-                "answer": "Gamble",
-                "score": 74 
-            },
-            {
-                "answer": "Drink",
-                "score": 6 
-            },
-            {
-                "answer": "Prostitutes",
-                "score": 5 
-            },
-            {
-                "answer": "Get Married",
-                "score": 4 
-            },
-            {
-                "answer": "Go see a show",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something someone might pin on Pinterest",
-        "answers": [
-            {
-                "answer": "Recipes",
-                "score": 30 
-            },
-            {
-                "answer": "DIY/Crafts",
-                "score": 13 
-            },
-            {
-                "answer": "Food",
-                "score": 11 
-            },
-            {
-                "answer": "Fashion",
-                "score": 10 
-            },
-            {
-                "answer": "Wedding Ideas",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "Name something someone might learn to do on Youtube",
-        "answers": [
-            {
-                "answer": "Tie a tie",
-                "score": 16 
-            },
-            {
-                "answer": "Makeup",
-                "score": 14 
-            },
-            {
-                "answer": "Play Instrument",
-                "score": 13 
-            },
-            {
-                "answer": "Knit",
-                "score": 7 
-            },
-            {
-                "answer": "Fix Car",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name something someone might post a photo of on Instagram",
-        "answers": [
-            {
-                "answer": "Food",
-                "score": 43 
-            },
-            {
-                "answer": "Selfie",
-                "score": 25 
-            },
-            {
-                "answer": "Pets",
-                "score": 7 
-            },
-            {
-                "answer": "Nature",
-                "score": 3 
-            },
-            {
-                "answer": "Vacation",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "Name something that people post on Facebook that you might find annoying",
-        "answers": [
-            {
-                "answer": "Babies",
-                "score": 27 
-            },
-            {
-                "answer": "Politics & Religion",
-                "score": 13 
-            },
-            {
-                "answer": "Selfies",
-                "score": 7 
-            },
-            {
-                "answer": "Game invites",
-                "score": 6 
-            },
-            {
-                "answer": "Food",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something people waste a great deal of time doing",
-        "answers": [
-            {
-                "answer": "Browsing internet",
-                "score": 26 
-            },
-            {
-                "answer": "Answering Surveys",
-                "score": 14 
-            },
-            {
-                "answer": "Social Media Sites",
-                "score": 11 
-            },
-            {
-                "answer": "Television",
-                "score": 9 
-            },
-            {
-                "answer": "Worrying",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Where is the best place to take a selfie",
-        "answers": [
-            {
-                "answer": "Bathroom",
-                "score": 39 
-            },
-            {
-                "answer": "Car",
-                "score": 13 
-            },
-            {
-                "answer": "In front of a window",
-                "score": 8 
-            },
-            {
-                "answer": "Outside",
-                "score": 7 
-            },
-            {
-                "answer": "Bedroom",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you would be embarrassed for your parents to find in your room",
-        "answers": [
-            { 
-                "answer": "Sex Toys",
-                "score": 46 
-            },
-            {
-                "answer": "Porn",
-                "score": 21 
-            },
-            {
-                "answer": "Condoms",
-                "score": 11 
-            },
-            {
-                "answer": "Drugs",
-                "score": 4 
-            },
-            {
-                "answer": "Artwork",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name a hashtag you find annoying",
-        "answers": [
-            {
-                "answer": "Yolo",
-                "score": 26  
-            },
-            {
-                "answer": "All of them",
-                "score": 20 
-            },
-            {
-                "answer": "Blessed",
-                "score": 8 
-            },
-            {
-                "answer": "Swag",
-                "score": 7 
-            },
-            {
-                "answer": "hashtag",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "What will be the cause of the coming apocalypse",
-        "answers": [
-            { 
-                "answer": "Climate Change",
-                "score": 20 
-            },
-            {
-                "answer": "War",
-                "score": 14 
-            },
-            {
-                "answer": "Zombies",
-                "score": 11 
-            },
-            {
-                "answer": "Plagues",
-                "score": 8  
-            },
-            {
-                "answer": "Recourse Scarcity",
-                "score": 7
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you can buy from your seat at a sports event",
-        "answers": [
-            { 
-                "answer": "Hot Dogs",
-                "score": 28 
-            },
-            {
-                "answer": "Beer",
-                "score": 22  
-            },
-            {
-                "answer": "Cotton Candy",
-                "score": 13 
-            },
-            {
-                "answer": "Popcorn",
-                "score": 12 
-            },
-            {
-                "answer": "Peanuts",
-                "score": 9
-            }
-        ]
-    },
-    {
-        "prompt": "What do you hope NASA finds on their first manned trip to Mars",
-        "answers": [
-            {
-                "answer": "Signs of life",
-                "score": 41 
-            },
-            {
-                "answer": "Water",
-                "score": 23  
-            },
-            {
-                "answer": "Habitable Conditions",
-                "score": 7 
-            },
-            {
-                "answer": "Nothing",
-                "score": 6 
-            },
-            {
-                "answer": "Rocks",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you can't do on an airplane",
-        "answers": [
-            {
-                "answer": "Smoke",
-                "score": 35 
-            },
-            {
-                "answer": "Sex/Masturbate",
-                "score": 13
-            },
-            {
-                "answer": "Say Bomb",
-                "score": 8 
-            },
-            {
-                "answer": "Carry a  weapon",
-                "score": 4 
-            },
-            {
-                "answer": "Leave",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you are embarrassed to be afraid of",
-        "answers": [
-            { 
-                "answer": "The Dark",
-                "score": 18 
-            },
-            {
-                "answer": "Spiders",
-                "score": 11 
-            },
-            {
-                "answer": "Bugs",
-                "score": 10 
-            },
-            {
-                "answer": "Heights",
-                "score": 9 
-            },
-            {
-                "answer": "Rejection/Opposite Sex",
-                "score": 8
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you should do every day, but which some people don't",
-        "answers": [
-            { 
-                "answer": "Brush Teeth",
-                "score": 33 
-            },
-            {
-                "answer": "Floss",
-                "score": 25 
-            },
-            {
-                "answer": "Shower",
-                "score": 14 
-            },
-            {
-                "answer": "Exercise",
-                "score": 13 
-            },
-            {
-                "answer": "Eat",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something disgusting that people order on a pizza",
-        "answers": [
-            {
-                "answer": "Anchovies",
-                "score": 46 
-            },
-            {
-                "answer": "Pineapple",
-                "score": 16 
-            },
-            {
-                "answer": "Olives",
-                "score": 10 
-            },
-            {
-                "answer": "Mushrooms",
-                "score": 7 
-            },
-            {
-                "answer": "Tomato",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something you wouldn't want someone to see in your browser history",
-        "answers": [
-            {
-                "answer": "Porn",
-                "score": 69
-            },
-            {
-                "answer": "Reddit",
-                "score": 6 
-            },
-            {
-                "answer": "WebMD",
-                "score": 2 
-            },
-            {
-                "answer": "Spacedicks",
-                "score": 2 
-            },
-            {
-                "answer": "Fanfiction",
-                "score": 2
-            }
-        ]
-    },
-    {
-        "prompt": "If you suddenly lost the ability to smell, what would you miss the most",
-        "answers": [
-            { 
-                "answer": "Baked Goods",
-                "score": 18  
-            },
-            {
-                "answer": "People Smells",
-                "score": 13 
-            },
-            {
-                "answer": "Grilled Rain",
-                "score": 6  
-            },
-            {
-                "answer": "Perfume/meat",
-                "score": 5 
-            },
-            {
-                "answer": "Cologne",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a business that is open after midnight",
-        "answers": [
-            { 
-                "answer": "Fast Food",
-                "score": 34  
-            },
-            {
-                "answer": "Convenience Store",
-                "score": 16 
-            },
-            {
-                "answer": "Bars",
-                "score": 10 
-            },
-            {
-                "answer": "Walmart",
-                "score": 9 
-            },
-            {
-                "answer": "Diner",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "What animal has the ugliest babies",
-        "answers": [
-            {
-                "answer": "Human",
-                "score": 40 
-            },
-            {
-                "answer": "Rat/Naked Mole Rat",
-                "score": 15 
-            },
-            {
-                "answer": "Birds",
-                "score": 11 
-            },
-            {
-                "answer": "Moles",
-                "score": 5 
-            },
-            {
-                "answer": "Kangaroos",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "Name something a child might spend their allowance on",
-        "answers": [
-            {
-                "answer": "Candy",
-                "score": 60  
-            },
-            {
-                "answer": "Video Games",
-                "score": 15 
-            },
-            {
-                "answer": "Toys",
-                "score": 9 
-            },
-            {
-                "answer": "Gum",
-                "score": 4  
-            },
-            {
-                "answer": "Comic Books",
-                "score": 3
-            }
-        ]
-    },
-    {
-        "prompt": "Name something people say when they are trying to end a relationship",
-        "answers": [
-            {
-                "answer": "It's not you, it's me",
-                "score": 58 
-            },
-            {
-                "answer": "We need to  talk",
-                "score": 7  
-            },
-            {
-                "answer": "Let's stay friends",
-                "score": 6  
-            },
-            {
-                "answer": "Fuck You/FuckOff",
-                "score": 5 
-            },
-            {
-                "answer": "I'm  sorry",
-                "score": 4
-            }
-        ]
-    },
-    {
-        "prompt": "What do you want to have with you during the Zombie Apocalypse",
-        "answers": [
-            {
-                "answer": "Weapons",
-                "score": 50  
-            },
-            {
-                "answer": "Other People",
-                "score": 13 
-            },
-            {
-                "answer": "Transportation",
-                "score": 10 
-            },
-            {
-                "answer": "SFood/Water/upplies",
-                "score": 7 
-            },
-            {
-                "answer": "A Cure",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name a historical figure you think you could beat in a fist fight",
-        "answers": [
-            { 
-                "answer": "Hellen Keller",
-                "score": 16 
-            },
-            {
-                "answer": "Gandhi",
-                "score": 15  
-            },
-            {
-                "answer": "Mother Theresa",
-                "score": 9  
-            },
-            {
-                "answer": "Napoleon Bonaparte",
-                "score": 7  
-            },
-            {
-                "answer": "Steven Hawking",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "If money and physics were no limit, how would you travel",
-        "answers": [
-            {
-                "answer": "Teleport",
-                "score": 34 
-            },
-            {
-                "answer": "Flight",
-                "score": 14  
-            },
-            {
-                "answer": "Through Time",
-                "score": 8  
-            },
-            {
-                "answer": "Through Outerspace",
-                "score": 6  
-            },
-            {
-                "answer": "Private Jet",
-                "score": 6
-            }
-        ]
-    },
-    {
-        "prompt": "Name a musician people are embarrassed to like",
-        "answers": [
-            { 
-                "answer": "Taylor Swift",
-                "score": 25 
-            },
-            {
-                "answer": "Justin Bieber",
-                "score": 19 
-            },
-            {
-                "answer": "Nicleback",
-                "score": 15  
-            },
-            {
-                "answer": "One Direction",
-                "score": 6,
-            },
-            {
-                "answer": "Katy Perry",
-                "score": 5
-            }
-        ]
-    },
-    {
-        "prompt": "Name a fictional animal you would like to have as a pet",
-        "answers": [
-            {
-                "answer": "Dragon",
-                "score": 23 
-            },
-            {
-                "answer": "Unicorn",
-                "score": 12 
-            },
-            {
-                "answer": "Pokemon",
-                "score": 6 
-            },
-            {
-                "answer": "Phoenix",
-                "score": 5 
-            },
-            {
-                "answer": "Griffin",
-                "score": 4
-            }
-        ]    
+      "prompt": "Name an occupation that is more admired than you think it deserves to be",
+      "answers": [
+        {
+          "answer": "Military",
+          "score": 16
+        },
+        {
+          "answer": "Athlete",
+          "score": 15
+        },
+        {
+          "answer": "Politician",
+          "score": 11
+        },
+        {
+          "answer": "Lawyer",
+          "score": 10
+        },
+        {
+          "answer": "Actor",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "prompt": "Name a product people put all over their bodies",
+      "answers": [
+        {
+          "answer": "Moisturizer/Lotion",
+          "score": 51
+        },
+        {
+          "answer": "Soap",
+          "score": 20
+        },
+        {
+          "answer": "Sunscreen",
+          "score": 12
+        },
+        {
+          "answer": "Bodywash",
+          "score": 4
+        },
+        {
+          "answer": "Clothes",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name a childhood fear that is carried into adulthood",
+      "answers": [
+        {
+          "answer": "Dark",
+          "score": 26
+        },
+        {
+          "answer": "Spiders",
+          "score": 25
+        },
+        {
+          "answer": "Heights",
+          "score": 17
+        },
+        {
+          "answer": "Clowns",
+          "score": 12
+        },
+        {
+          "answer": "Death",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that makes you feel really good",
+      "answers": [
+        {
+          "answer": "Sexy Times",
+          "score": 29
+        },
+        {
+          "answer": "Sleep",
+          "score": 14
+        },
+        {
+          "answer": "Exercise",
+          "score": 10
+        },
+        {
+          "answer": "Helping Others",
+          "score": 7
+        },
+        {
+          "answer": "Take a shower",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Besides weiners, name something every hot dog vendor has",
+      "answers": [
+        {
+          "answer": "Mustard",
+          "score": 32
+        },
+        {
+          "answer": "Buns",
+          "score": 30
+        },
+        {
+          "answer": "Ketchup",
+          "score": 26
+        },
+        {
+          "answer": "Relish",
+          "score": 6
+        },
+        {
+          "answer": "Drinks",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Besides Food, make something people will buy even if the price triples",
+      "answers": [
+        {
+          "answer": "Gas",
+          "score": 59
+        },
+        {
+          "answer": "Toilet Paper",
+          "score": 8
+        },
+        {
+          "answer": "Clothes",
+          "score": 6
+        },
+        {
+          "answer": "Electronics",
+          "score": 5
+        },
+        {
+          "answer": "Alcohol",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name a part time job that kids do to make money",
+      "answers": [
+        {
+          "answer": "Mow Lawns/Yard Work",
+          "score": 20
+        },
+        {
+          "answer": "Newspaper Route",
+          "score": 19
+        },
+        {
+          "answer": "Food Services",
+          "score": 18
+        },
+        {
+          "answer": "Babysitting",
+          "score": 17
+        },
+        {
+          "answer": "Lemonade Stand",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "Name a day that all kids look forward to",
+      "answers": [
+        {
+          "answer": "Christmas",
+          "score": 35
+        },
+        {
+          "answer": "Saturday",
+          "score": 18
+        },
+        {
+          "answer": "Birthday",
+          "score": 16
+        },
+        {
+          "answer": "End of school/Summer Vacation",
+          "score": 12
+        },
+        {
+          "answer": "Friday",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people use to keep burglars away",
+      "answers": [
+        {
+          "answer": "Security System",
+          "score": 44
+        },
+        {
+          "answer": "Dog",
+          "score": 28
+        },
+        {
+          "answer": "Weapons",
+          "score": 16
+        },
+        {
+          "answer": "Lock your doors",
+          "score": 7
+        },
+        {
+          "answer": "Leave lights on",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people borrow from their coworkers at work",
+      "answers": [
+        {
+          "answer": "Pens & Pencils",
+          "score": 58
+        },
+        {
+          "answer": "Stapler",
+          "score": 25
+        },
+        {
+          "answer": "Money",
+          "score": 4
+        },
+        {
+          "answer": "Time",
+          "score": 3
+        },
+        {
+          "answer": "Food",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a piece of good news that people like to tell other people",
+      "answers": [
+        {
+          "answer": "Pregnant/Birth Announcement",
+          "score": 54
+        },
+        {
+          "answer": "Engaged",
+          "score": 16
+        },
+        {
+          "answer": "Wedding",
+          "score": 9
+        },
+        {
+          "answer": "Got a raise",
+          "score": 7
+        },
+        {
+          "answer": "New Job",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name the most important invention of all time",
+      "answers": [
+        {
+          "answer": "Electricity",
+          "score": 18
+        },
+        {
+          "answer": "Wheel",
+          "score": 17
+        },
+        {
+          "answer": "Internet",
+          "score": 10
+        },
+        {
+          "answer": "Press",
+          "score": 8
+        },
+        {
+          "answer": "Computer",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name something a woman might have a special hiding place for",
+      "answers": [
+        {
+          "answer": "Sex Toys",
+          "score": 33
+        },
+        {
+          "answer": "Tampons",
+          "score": 23
+        },
+        {
+          "answer": "Jewelry",
+          "score": 11
+        },
+        {
+          "answer": "Money",
+          "score": 7
+        },
+        {
+          "answer": "Chocolate",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people have installed by professionals",
+      "answers": [
+        {
+          "answer": "Plumbing",
+          "score": 18
+        },
+        {
+          "answer": "Cable/Internet",
+          "score": 16
+        },
+        {
+          "answer": "Electrical Wiring/Lighting",
+          "score": 9
+        },
+        {
+          "answer": "Air Conditioning",
+          "score": 8
+        },
+        {
+          "answer": "Security System",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a good way to wake up fast",
+      "answers": [
+        {
+          "answer": "Cold Water",
+          "score": 36
+        },
+        {
+          "answer": "Alarm Clock",
+          "score": 27
+        },
+        {
+          "answer": "Coffee",
+          "score": 14
+        },
+        {
+          "answer": "Kids/Pets need attention",
+          "score": 3
+        },
+        {
+          "answer": "Realize you are running late",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a living thing that scares people",
+      "answers": [
+        {
+          "answer": "Spiders",
+          "score": 45
+        },
+        {
+          "answer": "Snakes",
+          "score": 13
+        },
+        {
+          "answer": "Other People",
+          "score": 12
+        },
+        {
+          "answer": "Bears",
+          "score": 9
+        },
+        {
+          "answer": "Sharks",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you put in tea",
+      "answers": [
+        {
+          "answer": "Sugar",
+          "score": 35
+        },
+        {
+          "answer": "Honey",
+          "score": 24
+        },
+        {
+          "answer": "Milk",
+          "score": 19
+        },
+        {
+          "answer": "Lemon",
+          "score": 5
+        },
+        {
+          "answer": "Hot Water",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you'd find in the desert",
+      "answers": [
+        {
+          "answer": "Sand",
+          "score": 41
+        },
+        {
+          "answer": "Cactus",
+          "score": 32
+        },
+        {
+          "answer": "Camel",
+          "score": 5
+        },
+        {
+          "answer": "Scorpions",
+          "score": 4
+        },
+        {
+          "answer": "Snakes",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name an occasion to send flowers",
+      "answers": [
+        {
+          "answer": "Valentines Day",
+          "score": 32
+        },
+        {
+          "answer": "Funeral",
+          "score": 22
+        },
+        {
+          "answer": "Anniversary",
+          "score": 14
+        },
+        {
+          "answer": "Birthday",
+          "score": 13
+        },
+        {
+          "answer": "Mothers Day",
+          "score": 12
+        }
+      ]
+    },
+    {
+      "prompt": "Name a city in Canada",
+      "answers": [
+        {
+          "answer": "Toronto",
+          "score": 34
+        },
+        {
+          "answer": "Ottawa",
+          "score": 13
+        },
+        {
+          "answer": "Vancouver",
+          "score": 11
+        },
+        {
+          "answer": "Montreal",
+          "score": 10
+        },
+        {
+          "answer": "Quebec",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that is against the law",
+      "answers": [
+        {
+          "answer": "Murder",
+          "score": 39
+        },
+        {
+          "answer": "Theft",
+          "score": 25
+        },
+        {
+          "answer": "Speeding",
+          "score": 8
+        },
+        {
+          "answer": "Jaywalking",
+          "score": 6
+        },
+        {
+          "answer": "Drugs",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something expensive you could order in a restaurant",
+      "answers": [
+        {
+          "answer": "Lobster",
+          "score": 32
+        },
+        {
+          "answer": "Wine",
+          "score": 23
+        },
+        {
+          "answer": "Steak/Filet",
+          "score": 19
+        },
+        {
+          "answer": "Caviar",
+          "score": 13
+        },
+        {
+          "answer": "Foie Gras",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people often lose",
+      "answers": [
+        {
+          "answer": "Keys",
+          "score": 53
+        },
+        {
+          "answer": "Money",
+          "score": 7
+        },
+        {
+          "answer": "Mind",
+          "score": 6
+        },
+        {
+          "answer": "Phone",
+          "score": 5
+        },
+        {
+          "answer": "Virginity",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something a baby might use",
+      "answers": [
+        {
+          "answer": "Pacifier",
+          "score": 32
+        },
+        {
+          "answer": "Diaper",
+          "score": 21
+        },
+        {
+          "answer": "Rattle",
+          "score": 15
+        },
+        {
+          "answer": "Bottle",
+          "score": 14
+        },
+        {
+          "answer": "Bib",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name a food that kids love",
+      "answers": [
+        {
+          "answer": "Pizza",
+          "score": 21
+        },
+        {
+          "answer": "Mac & Cheese",
+          "score": 20
+        },
+        {
+          "answer": "Chicken Nuggets",
+          "score": 15
+        },
+        {
+          "answer": "Candy",
+          "score": 9
+        },
+        {
+          "answer": "Ice Cream",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name one of the Seven Dwarfs",
+      "answers": [
+        {
+          "answer": "Sleepy",
+          "score": 32
+        },
+        {
+          "answer": "Dopey",
+          "score": 26
+        },
+        {
+          "answer": "Grumpy",
+          "score": 17
+        },
+        {
+          "answer": "Doc",
+          "score": 9
+        },
+        {
+          "answer": "Happy",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a cold drink",
+      "answers": [
+        {
+          "answer": "Soda",
+          "score": 31
+        },
+        {
+          "answer": "Iced Tea",
+          "score": 18
+        },
+        {
+          "answer": "Water",
+          "score": 14
+        },
+        {
+          "answer": "Beer",
+          "score": 13
+        },
+        {
+          "answer": "Lemonade",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "prompt": "Name a piece of clothing you put on when it gets cold",
+      "answers": [
+        {
+          "answer": "Jacket/Coat",
+          "score": 32
+        },
+        {
+          "answer": "Sweater/Sweatshirt",
+          "score": 27
+        },
+        {
+          "answer": "Scarf",
+          "score": 19
+        },
+        {
+          "answer": "Hat",
+          "score": 8
+        },
+        {
+          "answer": "Gloves/Mittens",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name a vegetable that grows underground",
+      "answers": [
+        {
+          "answer": "Carrot",
+          "score": 48
+        },
+        {
+          "answer": "Potato",
+          "score": 40
+        },
+        {
+          "answer": "Onion",
+          "score": 3
+        },
+        {
+          "answer": "Radish",
+          "score": 2
+        },
+        {
+          "answer": "Beet",
+          "score": 1
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you sit on at home",
+      "answers": [
+        {
+          "answer": "Couch/Sofa",
+          "score": 52
+        },
+        {
+          "answer": "Chair",
+          "score": 26
+        },
+        {
+          "answer": "Toilet",
+          "score": 7
+        },
+        {
+          "answer": "Bed",
+          "score": 5
+        },
+        {
+          "answer": "Floor",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you shouldn't put your feet on at your parents house",
+      "answers": [
+        {
+          "answer": "Dinner Table",
+          "score": 35
+        },
+        {
+          "answer": "Coffee Table",
+          "score": 22
+        },
+        {
+          "answer": "Couch",
+          "score": 12
+        },
+        {
+          "answer": "Family Members",
+          "score": 10
+        },
+        {
+          "answer": "Carpets",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a word or phrase that contains the word 'Stream'",
+      "answers": [
+        {
+          "answer": "Streamlined",
+          "score": 17
+        },
+        {
+          "answer": "Livestream",
+          "score": 14
+        },
+        {
+          "answer": "Streaming Vimeo",
+          "score": 10
+        },
+        {
+          "answer": "Stream of Consciousness",
+          "score": 6
+        },
+        {
+          "answer": "Downstream",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a word that has no rhymes",
+      "answers": [
+        {
+          "answer": "Orange",
+          "score": 64
+        },
+        {
+          "answer": "Purple",
+          "score": 11
+        },
+        {
+          "answer": "Silver",
+          "score": 9
+        },
+        {
+          "answer": "Month",
+          "score": 3
+        },
+        {
+          "answer": "Rhythm",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a fictional character famous for not wearing pants",
+      "answers": [
+        {
+          "answer": "Donald Duck",
+          "score": 42
+        },
+        {
+          "answer": "Winnie the Pooh",
+          "score": 14
+        },
+        {
+          "answer": "Captain Underpants",
+          "score": 9
+        },
+        {
+          "answer": "Squidward",
+          "score": 6
+        },
+        {
+          "answer": "Bugs Bunny",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you delete",
+      "answers": [
+        {
+          "answer": "Browser History",
+          "score": 26
+        },
+        {
+          "answer": "Old emails/messages",
+          "score": 18
+        },
+        {
+          "answer": "Files",
+          "score": 16
+        },
+        {
+          "answer": "Photos",
+          "score": 8
+        },
+        {
+          "answer": "Typos",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you don't want to see at the beach",
+      "answers": [
+        {
+          "answer": "The human body",
+          "score": 45
+        },
+        {
+          "answer": "Sharks",
+          "score": 22
+        },
+        {
+          "answer": "Trash",
+          "score": 7
+        },
+        {
+          "answer": "Dead Animals",
+          "score": 7
+        },
+        {
+          "answer": "Bad Weather",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "What is something you can do in a video game that you wish you could do in real life",
+      "answers": [
+        {
+          "answer": "Fly",
+          "score": 30
+        },
+        {
+          "answer": "Respawn",
+          "score": 20
+        },
+        {
+          "answer": "Superhuman Athletics",
+          "score": 11
+        },
+        {
+          "answer": "Violence",
+          "score": 9
+        },
+        {
+          "answer": "Easy Money",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Which family member would you least like to go clothes shopping with",
+      "answers": [
+        {
+          "answer": "Father",
+          "score": 32
+        },
+        {
+          "answer": "Mother",
+          "score": 21
+        },
+        {
+          "answer": "Sister",
+          "score": 7
+        },
+        {
+          "answer": "Grandpa",
+          "score": 6
+        },
+        {
+          "answer": "Brother",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a vegetable that isn't green",
+      "answers": [
+        {
+          "answer": "Carrot",
+          "score": 55
+        },
+        {
+          "answer": "Potato",
+          "score": 9
+        },
+        {
+          "answer": "Eggplant",
+          "score": 8
+        },
+        {
+          "answer": "Tomato",
+          "score": 7
+        },
+        {
+          "answer": "Beets",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name an animal that growls",
+      "answers": [
+        {
+          "answer": "Dog",
+          "score": 55
+        },
+        {
+          "answer": "Wolf",
+          "score": 11
+        },
+        {
+          "answer": "Bear",
+          "score": 10
+        },
+        {
+          "answer": "Tiger",
+          "score": 9
+        },
+        {
+          "answer": "Lion",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "prompt": "Name a time that you might get stuck with a needle",
+      "answers": [
+        {
+          "answer": "Sewing",
+          "score": 32
+        },
+        {
+          "answer": "Doctor's Office",
+          "score": 24
+        },
+        {
+          "answer": "Vaccinations",
+          "score": 19
+        },
+        {
+          "answer": "Blood Donation",
+          "score": 6
+        },
+        {
+          "answer": "Using Intravenous Drugs",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something with fangs",
+      "answers": [
+        {
+          "answer": "Vampire",
+          "score": 39
+        },
+        {
+          "answer": "Snakes",
+          "score": 22
+        },
+        {
+          "answer": "Bats",
+          "score": 11
+        },
+        {
+          "answer": "Wolf",
+          "score": 9
+        },
+        {
+          "answer": "Tiger",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a country with green in their flag",
+      "answers": [
+        {
+          "answer": "Italy",
+          "score": 23
+        },
+        {
+          "answer": "Mexico",
+          "score": 20
+        },
+        {
+          "answer": "Ireland",
+          "score": 18
+        },
+        {
+          "answer": "Brazil",
+          "score": 11
+        },
+        {
+          "answer": "Libya",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that can have a spring in it",
+      "answers": [
+        {
+          "answer": "Bed Mattress",
+          "score": 30
+        },
+        {
+          "answer": "Pen/Mechanical Pencil",
+          "score": 18
+        },
+        {
+          "answer": "Your Step",
+          "score": 11
+        },
+        {
+          "answer": "Watch/Clock",
+          "score": 10
+        },
+        {
+          "answer": "Car",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a menu item that is made with noodles",
+      "answers": [
+        {
+          "answer": "Spaghetti",
+          "score": 27
+        },
+        {
+          "answer": "Ramen",
+          "score": 13
+        },
+        {
+          "answer": "Pad Thai",
+          "score": 11
+        },
+        {
+          "answer": "Chicken Noodle Soup",
+          "score": 8
+        },
+        {
+          "answer": "Chow Mein",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "What one thing would you want to have with you if you got stranded on a desert island",
+      "answers": [
+        {
+          "answer": "Phone/Radio",
+          "score": 23
+        },
+        {
+          "answer": "Clean Water",
+          "score": 22
+        },
+        {
+          "answer": "Boat/Vehicle",
+          "score": 17
+        },
+        {
+          "answer": "Knife/Tools",
+          "score": 6
+        },
+        {
+          "answer": "Another Person",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "What was your favorite class in grade school",
+      "answers": [
+        {
+          "answer": "Math",
+          "score": 20
+        },
+        {
+          "answer": "English (reading & writing)",
+          "score": -18
+        },
+        {
+          "answer": "Art",
+          "score": 17
+        },
+        {
+          "answer": "Science",
+          "score": 16
+        },
+        {
+          "answer": "History/Social Studies",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "What is one thing that anybody should be able to cook",
+      "answers": [
+        {
+          "answer": "Pasta",
+          "score": 27
+        },
+        {
+          "answer": "Eggs",
+          "score": 22
+        },
+        {
+          "answer": "Ramen",
+          "score": 11
+        },
+        {
+          "answer": "Toast",
+          "score": 10
+        },
+        {
+          "answer": "Rice",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name one part of your body that you wish was smaller",
+      "answers": [
+        {
+          "answer": "Stomach",
+          "score": 37
+        },
+        {
+          "answer": "Nose",
+          "score": 22
+        },
+        {
+          "answer": "Thighs",
+          "score": 7
+        },
+        {
+          "answer": "Feet",
+          "score": 6
+        },
+        {
+          "answer": "Waist",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "What animal at the zoo gets the most attention",
+      "answers": [
+        {
+          "answer": "Lions",
+          "score": 33
+        },
+        {
+          "answer": "Primates",
+          "score": 19
+        },
+        {
+          "answer": "Elephants",
+          "score": 14
+        },
+        {
+          "answer": "Pandas",
+          "score": 10
+        },
+        {
+          "answer": "Tigers",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "prompt": "Name something sticky",
+      "answers": [
+        {
+          "answer": "Glue",
+          "score": 27
+        },
+        {
+          "answer": "Gum",
+          "score": 19
+        },
+        {
+          "answer": "A Stick",
+          "score": 11
+        },
+        {
+          "answer": "Honey",
+          "score": 9
+        },
+        {
+          "answer": "Syrup",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name an American city that starts with the letter 'T'",
+      "answers": [
+        {
+          "answer": "Tallahassee",
+          "score": 31
+        },
+        {
+          "answer": "Toledo",
+          "score": 13
+        },
+        {
+          "answer": "Tampa",
+          "score": 12
+        },
+        {
+          "answer": "Tulsa",
+          "score": 7
+        },
+        {
+          "answer": "Tucson",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a National Park",
+      "answers": [
+        {
+          "answer": "Yellowstone",
+          "score": 51
+        },
+        {
+          "answer": "Yosemite",
+          "score": 24
+        },
+        {
+          "answer": "Grand Canyon",
+          "score": 5
+        },
+        {
+          "answer": "Zion",
+          "score": 3
+        },
+        {
+          "answer": "Glacier",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a reason you might get stopped by the police",
+      "answers": [
+        {
+          "answer": "Speeding",
+          "score": 67
+        },
+        {
+          "answer": "Racism",
+          "score": 10
+        },
+        {
+          "answer": "Broken tail/headlight",
+          "score": 6
+        },
+        {
+          "answer": "DUI",
+          "score": 4
+        },
+        {
+          "answer": "Dangerous Driving",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name a magazine that features shirtless men on the cover",
+      "answers": [
+        {
+          "answer": "Men's Health",
+          "score": 26
+        },
+        {
+          "answer": "GQ",
+          "score": 22
+        },
+        {
+          "answer": "Playgirl",
+          "score": 18
+        },
+        {
+          "answer": "Mens Fitness",
+          "score": 8
+        },
+        {
+          "answer": "Sports Illustrated",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you need to book months in advance",
+      "answers": [
+        {
+          "answer": "Plane tickets",
+          "score": 26
+        },
+        {
+          "answer": "Wedding Venues",
+          "score": 22
+        },
+        {
+          "answer": "Vacations",
+          "score": 21
+        },
+        {
+          "answer": "Fancy Restaurants",
+          "score": 7
+        },
+        {
+          "answer": "Medical Appointments",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a villain who wears a mask",
+      "answers": [
+        {
+          "answer": "Bane",
+          "score": 15
+        },
+        {
+          "answer": "Darth Vader",
+          "score": 11
+        },
+        {
+          "answer": "The Riddler",
+          "score": 10
+        },
+        {
+          "answer": "Dr Doom",
+          "score": 8
+        },
+        {
+          "answer": "Green Goblin",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a planet that is larger than Earth",
+      "answers": [
+        {
+          "answer": "Jupiter",
+          "score": 68
+        },
+        {
+          "answer": "Saturn",
+          "score": 17
+        },
+        {
+          "answer": "Neptune",
+          "score": 5
+        },
+        {
+          "answer": "Uranus",
+          "score": 4
+        },
+        {
+          "answer": "Venus",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name an appliance you use almost every day",
+      "answers": [
+        {
+          "answer": "Microwave",
+          "score": 25
+        },
+        {
+          "answer": "Refrigerator",
+          "score": 24
+        },
+        {
+          "answer": "Coffee Maker/Tea Kettle",
+          "score": 14
+        },
+        {
+          "answer": "Stove/Oven",
+          "score": 12
+        },
+        {
+          "answer": "Toaster",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you do late at night instead of falling asleep",
+      "answers": [
+        {
+          "answer": "Browse Internet",
+          "score": 34
+        },
+        {
+          "answer": "Read",
+          "score": 23
+        },
+        {
+          "answer": "Watch TV/Netflix",
+          "score": 19
+        },
+        {
+          "answer": "Masturbate",
+          "score": 7
+        },
+        {
+          "answer": "Play Video Games",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a fictional character who uses a bow",
+      "answers": [
+        {
+          "answer": "Robin Hood",
+          "score": 30
+        },
+        {
+          "answer": "Legolas",
+          "score": 22
+        },
+        {
+          "answer": "Katniss",
+          "score": 21
+        },
+        {
+          "answer": "Green Arrow",
+          "score": 11
+        },
+        {
+          "answer": "Link",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Honestly, how often do you floss",
+      "answers": [
+        {
+          "answer": "Rarely/Never",
+          "score": 40
+        },
+        {
+          "answer": "Once a week",
+          "score": 15
+        },
+        {
+          "answer": "Couple times a week",
+          "score": 14
+        },
+        {
+          "answer": "Daily",
+          "score": 13
+        },
+        {
+          "answer": "Once a month",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "What country has the palest people",
+      "answers": [
+        {
+          "answer": "Sweden",
+          "score": 23
+        },
+        {
+          "answer": "Ireland",
+          "score": 18
+        },
+        {
+          "answer": "Norway",
+          "score": 16
+        },
+        {
+          "answer": "Iceland",
+          "score": 9
+        },
+        {
+          "answer": "Finland",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "prompt": "What can you never have enough of in your cabinets at home",
+      "answers": [
+        {
+          "answer": "Food",
+          "score": 46
+        },
+        {
+          "answer": "Dishes",
+          "score": 14
+        },
+        {
+          "answer": "Candy",
+          "score": 7
+        },
+        {
+          "answer": "Alcohol",
+          "score": 6
+        },
+        {
+          "answer": "Toilet Paper",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that can be stuffed",
+      "answers": [
+        {
+          "answer": "Turkey",
+          "score": 40
+        },
+        {
+          "answer": "Stuffed Animals",
+          "score": 32
+        },
+        {
+          "answer": "Peppers",
+          "score": 6
+        },
+        {
+          "answer": "Pillows",
+          "score": 5
+        },
+        {
+          "answer": "Chicken",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you pay for once a month",
+      "answers": [
+        {
+          "answer": "Rent/Mortgage",
+          "score": 23
+        },
+        {
+          "answer": "Cable/Internet",
+          "score": 22
+        },
+        {
+          "answer": "Utilities",
+          "score": 18
+        },
+        {
+          "answer": "Phone",
+          "score": 17
+        },
+        {
+          "answer": "Netflix",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "Who do you text the most",
+      "answers": [
+        {
+          "answer": "Significant Other",
+          "score": 49
+        },
+        {
+          "answer": "Friend",
+          "score": 25
+        },
+        {
+          "answer": "Parents",
+          "score": 14
+        },
+        {
+          "answer": "Siblings",
+          "score": 3
+        },
+        {
+          "answer": "Work",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you can pop",
+      "answers": [
+        {
+          "answer": "Balloons",
+          "score": 26
+        },
+        {
+          "answer": "Pimples",
+          "score": 22
+        },
+        {
+          "answer": "Bubble Wrap",
+          "score": 15
+        },
+        {
+          "answer": "Popcorn",
+          "score": 7
+        },
+        {
+          "answer": "Cherry",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a type of tree with large leaves",
+      "answers": [
+        {
+          "answer": "Maple",
+          "score": 31
+        },
+        {
+          "answer": "Palm",
+          "score": 28
+        },
+        {
+          "answer": "Oak",
+          "score": 20
+        },
+        {
+          "answer": "Banana",
+          "score": 6
+        },
+        {
+          "answer": "Magnolia",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that you can add bacon to",
+      "answers": [
+        {
+          "answer": "Anything & Everything",
+          "score": 23
+        },
+        {
+          "answer": "Eggs",
+          "score": 20
+        },
+        {
+          "answer": "Burger",
+          "score": 17
+        },
+        {
+          "answer": "Sandwich",
+          "score": 10
+        },
+        {
+          "answer": "Mac & Cheese",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name a type of person who carries a sword",
+      "answers": [
+        {
+          "answer": "Knight",
+          "score": 52
+        },
+        {
+          "answer": "Samurai",
+          "score": 13
+        },
+        {
+          "answer": "Nerd",
+          "score": 6
+        },
+        {
+          "answer": "Warrior",
+          "score": 5
+        },
+        {
+          "answer": "Ninja",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "What's the worst thing about having a roommate",
+      "answers": [
+        {
+          "answer": "Messiness",
+          "score": 28
+        },
+        {
+          "answer": "No Privacy",
+          "score": 23
+        },
+        {
+          "answer": "Loud Noises",
+          "score": 12
+        },
+        {
+          "answer": "Having to share things",
+          "score": 11
+        },
+        {
+          "answer": "Bad smells",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name a cocktail you would order at a bar",
+      "answers": [
+        {
+          "answer": "Martini",
+          "score": 17
+        },
+        {
+          "answer": "Margarita",
+          "score": 7
+        },
+        {
+          "answer": "Manhattan",
+          "score": 6
+        },
+        {
+          "answer": "Bloody Mary",
+          "score": 6
+        },
+        {
+          "answer": "Cosmo",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you are happy to lose",
+      "answers": [
+        {
+          "answer": "Weight",
+          "score": 53
+        },
+        {
+          "answer": "Virginity",
+          "score": 27
+        },
+        {
+          "answer": "Debt",
+          "score": 6
+        },
+        {
+          "answer": "Bad Influences",
+          "score": 2
+        },
+        {
+          "answer": "Teeth",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "How can you tell you're at a very fancy restaurant",
+      "answers": [
+        {
+          "answer": "Price",
+          "score": 30
+        },
+        {
+          "answer": "Dress Code",
+          "score": 17
+        },
+        {
+          "answer": "Cloth Napkins & Tablecloths",
+          "score": 16
+        },
+        {
+          "answer": "Too many forks",
+          "score": 9
+        },
+        {
+          "answer": "Fancy Waiters/Good Service",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name an animal with horns",
+      "answers": [
+        {
+          "answer": "Ram",
+          "score": 25
+        },
+        {
+          "answer": "Bull",
+          "score": 24
+        },
+        {
+          "answer": "Goat",
+          "score": 17
+        },
+        {
+          "answer": "Rhino",
+          "score": 16
+        },
+        {
+          "answer": "Buck",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "What is the best thing to put whipped cream on",
+      "answers": [
+        {
+          "answer": "Pie",
+          "score": 26
+        },
+        {
+          "answer": "Ice Cream",
+          "score": 20
+        },
+        {
+          "answer": "People",
+          "score": 16
+        },
+        {
+          "answer": "Strawberries",
+          "score": 11
+        },
+        {
+          "answer": "Hot Chocolate",
+          "score": 10
+        }
+      ]
+    },
+    {
+      "prompt": "Name an internet meme that features an animal",
+      "answers": [
+        {
+          "answer": "Socially Awkward Penguin",
+          "score": 16
+        },
+        {
+          "answer": "Grumpy Cat",
+          "score": 15
+        },
+        {
+          "answer": "Confession Bear",
+          "score": 14
+        },
+        {
+          "answer": "Doge",
+          "score": 10
+        },
+        {
+          "answer": "Insanity Wolf",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you put on when you are getting dressed up",
+      "answers": [
+        {
+          "answer": "Tie",
+          "score": 26
+        },
+        {
+          "answer": "Makeup",
+          "score": 14
+        },
+        {
+          "answer": "Jewelry",
+          "score": 11
+        },
+        {
+          "answer": "Nice Shoes",
+          "score": 10
+        },
+        {
+          "answer": "Perfume/Cologne",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name a slang word or phrase that your parents used when they were teenagers",
+      "answers": [
+        {
+          "answer": "Groovy",
+          "score": 37
+        },
+        {
+          "answer": "Rad",
+          "score": 18
+        },
+        {
+          "answer": "Cool",
+          "score": 6
+        },
+        {
+          "answer": "Far Out",
+          "score": 5
+        },
+        {
+          "answer": "Hip",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that you think women find boring",
+      "answers": [
+        {
+          "answer": "Sports",
+          "score": 43
+        },
+        {
+          "answer": "Cars",
+          "score": 14
+        },
+        {
+          "answer": "Men",
+          "score": 7
+        },
+        {
+          "answer": "Video Games",
+          "score": 6
+        },
+        {
+          "answer": "Hunting/Fishing",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name a place where you look for breaking news",
+      "answers": [
+        {
+          "answer": "Internet",
+          "score": 60
+        },
+        {
+          "answer": "TV",
+          "score": 24
+        },
+        {
+          "answer": "Twitter",
+          "score": 8
+        },
+        {
+          "answer": "Facebook",
+          "score": 3
+        },
+        {
+          "answer": "Newspaper",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you keep in your car at all times",
+      "answers": [
+        {
+          "answer": "Insurance & Registration",
+          "score": 18
+        },
+        {
+          "answer": "Ice Scraper",
+          "score": 7
+        },
+        {
+          "answer": "Jumper Cables",
+          "score": 6
+        },
+        {
+          "answer": "Money/Coins",
+          "score": 5
+        },
+        {
+          "answer": "Spare Tire",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you do when you're home sick from school/work",
+      "answers": [
+        {
+          "answer": "sleep",
+          "score": 243
+        },
+        {
+          "answer": "Watch TV/Movies/Netflix",
+          "score": 29
+        },
+        {
+          "answer": "Play Video Games",
+          "score": 9
+        },
+        {
+          "answer": "Browse Internet",
+          "score": 6
+        },
+        {
+          "answer": "Eat Soup/Drink lots of fluids",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name a way parents keep their children from misbehaving in public",
+      "answers": [
+        {
+          "answer": "Bribe them",
+          "score": 21
+        },
+        {
+          "answer": "Threaten them",
+          "score": 18
+        },
+        {
+          "answer": "Hit them",
+          "score": 13
+        },
+        {
+          "answer": "Leash them",
+          "score": 10
+        },
+        {
+          "answer": "Shouting",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name an awkward conversation you might have with your significant other",
+      "answers": [
+        {
+          "answer": "Time to break up",
+          "score": 14
+        },
+        {
+          "answer": "Past relationships",
+          "score": 12
+        },
+        {
+          "answer": "STDs",
+          "score": 10
+        },
+        {
+          "answer": "Pregnant",
+          "score": 9
+        },
+        {
+          "answer": "Cheating",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "prompt": "Name something someone might search for on google",
+      "answers": [
+        {
+          "answer": "Porn",
+          "score": 20
+        },
+        {
+          "answer": "To Hot",
+          "score": -12
+        },
+        {
+          "answer": "Recipes",
+          "score": 10
+        },
+        {
+          "answer": "Directions",
+          "score": 9
+        },
+        {
+          "answer": "Medical Symptoms",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you eat with your hands",
+      "answers": [
+        {
+          "answer": "Pizza",
+          "score": 19
+        },
+        {
+          "answer": "Hamburger",
+          "score": 15
+        },
+        {
+          "answer": "Sandwich",
+          "score": 13
+        },
+        {
+          "answer": "French Fries",
+          "score": 10
+        },
+        {
+          "answer": "Tacos",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name an activity that someone might do in Las Vegas",
+      "answers": [
+        {
+          "answer": "Gamble",
+          "score": 74
+        },
+        {
+          "answer": "Drink",
+          "score": 6
+        },
+        {
+          "answer": "Prostitutes",
+          "score": 5
+        },
+        {
+          "answer": "Get Married",
+          "score": 4
+        },
+        {
+          "answer": "Go see a show",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something someone might pin on Pinterest",
+      "answers": [
+        {
+          "answer": "Recipes",
+          "score": 30
+        },
+        {
+          "answer": "DIY/Crafts",
+          "score": 13
+        },
+        {
+          "answer": "Food",
+          "score": 11
+        },
+        {
+          "answer": "Fashion",
+          "score": 10
+        },
+        {
+          "answer": "Wedding Ideas",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "Name something someone might learn to do on Youtube",
+      "answers": [
+        {
+          "answer": "Tie a tie",
+          "score": 16
+        },
+        {
+          "answer": "Makeup",
+          "score": 14
+        },
+        {
+          "answer": "Play Instrument",
+          "score": 13
+        },
+        {
+          "answer": "Knit",
+          "score": 7
+        },
+        {
+          "answer": "Fix Car",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name something someone might post a photo of on Instagram",
+      "answers": [
+        {
+          "answer": "Food",
+          "score": 43
+        },
+        {
+          "answer": "Selfie",
+          "score": 25
+        },
+        {
+          "answer": "Pets",
+          "score": 7
+        },
+        {
+          "answer": "Nature",
+          "score": 3
+        },
+        {
+          "answer": "Vacation",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "Name something that people post on Facebook that you might find annoying",
+      "answers": [
+        {
+          "answer": "Babies",
+          "score": 27
+        },
+        {
+          "answer": "Politics & Religion",
+          "score": 13
+        },
+        {
+          "answer": "Selfies",
+          "score": 7
+        },
+        {
+          "answer": "Game invites",
+          "score": 6
+        },
+        {
+          "answer": "Food",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people waste a great deal of time doing",
+      "answers": [
+        {
+          "answer": "Browsing internet",
+          "score": 26
+        },
+        {
+          "answer": "Answering Surveys",
+          "score": 14
+        },
+        {
+          "answer": "Social Media Sites",
+          "score": 11
+        },
+        {
+          "answer": "Television",
+          "score": 9
+        },
+        {
+          "answer": "Worrying",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Where is the best place to take a selfie",
+      "answers": [
+        {
+          "answer": "Bathroom",
+          "score": 39
+        },
+        {
+          "answer": "Car",
+          "score": 13
+        },
+        {
+          "answer": "In front of a window",
+          "score": 8
+        },
+        {
+          "answer": "Outside",
+          "score": 7
+        },
+        {
+          "answer": "Bedroom",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you would be embarrassed for your parents to find in your room",
+      "answers": [
+        {
+          "answer": "Sex Toys",
+          "score": 46
+        },
+        {
+          "answer": "Porn",
+          "score": 21
+        },
+        {
+          "answer": "Condoms",
+          "score": 11
+        },
+        {
+          "answer": "Drugs",
+          "score": 4
+        },
+        {
+          "answer": "Artwork",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name a hashtag you find annoying",
+      "answers": [
+        {
+          "answer": "Yolo",
+          "score": 26
+        },
+        {
+          "answer": "All of them",
+          "score": 20
+        },
+        {
+          "answer": "Blessed",
+          "score": 8
+        },
+        {
+          "answer": "Swag",
+          "score": 7
+        },
+        {
+          "answer": "hashtag",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "What will be the cause of the coming apocalypse",
+      "answers": [
+        {
+          "answer": "Climate Change",
+          "score": 20
+        },
+        {
+          "answer": "War",
+          "score": 14
+        },
+        {
+          "answer": "Zombies",
+          "score": 11
+        },
+        {
+          "answer": "Plagues",
+          "score": 8
+        },
+        {
+          "answer": "Recourse Scarcity",
+          "score": 7
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you can buy from your seat at a sports event",
+      "answers": [
+        {
+          "answer": "Hot Dogs",
+          "score": 28
+        },
+        {
+          "answer": "Beer",
+          "score": 22
+        },
+        {
+          "answer": "Cotton Candy",
+          "score": 13
+        },
+        {
+          "answer": "Popcorn",
+          "score": 12
+        },
+        {
+          "answer": "Peanuts",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "prompt": "What do you hope NASA finds on their first manned trip to Mars",
+      "answers": [
+        {
+          "answer": "Signs of life",
+          "score": 41
+        },
+        {
+          "answer": "Water",
+          "score": 23
+        },
+        {
+          "answer": "Habitable Conditions",
+          "score": 7
+        },
+        {
+          "answer": "Nothing",
+          "score": 6
+        },
+        {
+          "answer": "Rocks",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you can't do on an airplane",
+      "answers": [
+        {
+          "answer": "Smoke",
+          "score": 35
+        },
+        {
+          "answer": "Sex/Masturbate",
+          "score": 13
+        },
+        {
+          "answer": "Say Bomb",
+          "score": 8
+        },
+        {
+          "answer": "Carry a  weapon",
+          "score": 4
+        },
+        {
+          "answer": "Leave",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you are embarrassed to be afraid of",
+      "answers": [
+        {
+          "answer": "The Dark",
+          "score": 18
+        },
+        {
+          "answer": "Spiders",
+          "score": 11
+        },
+        {
+          "answer": "Bugs",
+          "score": 10
+        },
+        {
+          "answer": "Heights",
+          "score": 9
+        },
+        {
+          "answer": "Rejection/Opposite Sex",
+          "score": 8
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you should do every day, but which some people don't",
+      "answers": [
+        {
+          "answer": "Brush Teeth",
+          "score": 33
+        },
+        {
+          "answer": "Floss",
+          "score": 25
+        },
+        {
+          "answer": "Shower",
+          "score": 14
+        },
+        {
+          "answer": "Exercise",
+          "score": 13
+        },
+        {
+          "answer": "Eat",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something disgusting that people order on a pizza",
+      "answers": [
+        {
+          "answer": "Anchovies",
+          "score": 46
+        },
+        {
+          "answer": "Pineapple",
+          "score": 16
+        },
+        {
+          "answer": "Olives",
+          "score": 10
+        },
+        {
+          "answer": "Mushrooms",
+          "score": 7
+        },
+        {
+          "answer": "Tomato",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something you wouldn't want someone to see in your browser history",
+      "answers": [
+        {
+          "answer": "Porn",
+          "score": 69
+        },
+        {
+          "answer": "Reddit",
+          "score": 6
+        },
+        {
+          "answer": "WebMD",
+          "score": 2
+        },
+        {
+          "answer": "Spacedicks",
+          "score": 2
+        },
+        {
+          "answer": "Fanfiction",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "prompt": "If you suddenly lost the ability to smell, what would you miss the most",
+      "answers": [
+        {
+          "answer": "Baked Goods",
+          "score": 18
+        },
+        {
+          "answer": "People Smells",
+          "score": 13
+        },
+        {
+          "answer": "Grilled Rain",
+          "score": 6
+        },
+        {
+          "answer": "Perfume/meat",
+          "score": 5
+        },
+        {
+          "answer": "Cologne",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a business that is open after midnight",
+      "answers": [
+        {
+          "answer": "Fast Food",
+          "score": 34
+        },
+        {
+          "answer": "Convenience Store",
+          "score": 16
+        },
+        {
+          "answer": "Bars",
+          "score": 10
+        },
+        {
+          "answer": "Walmart",
+          "score": 9
+        },
+        {
+          "answer": "Diner",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "What animal has the ugliest babies",
+      "answers": [
+        {
+          "answer": "Human",
+          "score": 40
+        },
+        {
+          "answer": "Rat/Naked Mole Rat",
+          "score": 15
+        },
+        {
+          "answer": "Birds",
+          "score": 11
+        },
+        {
+          "answer": "Moles",
+          "score": 5
+        },
+        {
+          "answer": "Kangaroos",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "Name something a child might spend their allowance on",
+      "answers": [
+        {
+          "answer": "Candy",
+          "score": 60
+        },
+        {
+          "answer": "Video Games",
+          "score": 15
+        },
+        {
+          "answer": "Toys",
+          "score": 9
+        },
+        {
+          "answer": "Gum",
+          "score": 4
+        },
+        {
+          "answer": "Comic Books",
+          "score": 3
+        }
+      ]
+    },
+    {
+      "prompt": "Name something people say when they are trying to end a relationship",
+      "answers": [
+        {
+          "answer": "It's not you, it's me",
+          "score": 58
+        },
+        {
+          "answer": "We need to  talk",
+          "score": 7
+        },
+        {
+          "answer": "Let's stay friends",
+          "score": 6
+        },
+        {
+          "answer": "Fuck You/FuckOff",
+          "score": 5
+        },
+        {
+          "answer": "I'm  sorry",
+          "score": 4
+        }
+      ]
+    },
+    {
+      "prompt": "What do you want to have with you during the Zombie Apocalypse",
+      "answers": [
+        {
+          "answer": "Weapons",
+          "score": 50
+        },
+        {
+          "answer": "Other People",
+          "score": 13
+        },
+        {
+          "answer": "Transportation",
+          "score": 10
+        },
+        {
+          "answer": "SFood/Water/upplies",
+          "score": 7
+        },
+        {
+          "answer": "A Cure",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a historical figure you think you could beat in a fist fight",
+      "answers": [
+        {
+          "answer": "Hellen Keller",
+          "score": 16
+        },
+        {
+          "answer": "Gandhi",
+          "score": 15
+        },
+        {
+          "answer": "Mother Theresa",
+          "score": 9
+        },
+        {
+          "answer": "Napoleon Bonaparte",
+          "score": 7
+        },
+        {
+          "answer": "Steven Hawking",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "If money and physics were no limit, how would you travel",
+      "answers": [
+        {
+          "answer": "Teleport",
+          "score": 34
+        },
+        {
+          "answer": "Flight",
+          "score": 14
+        },
+        {
+          "answer": "Through Time",
+          "score": 8
+        },
+        {
+          "answer": "Through Outerspace",
+          "score": 6
+        },
+        {
+          "answer": "Private Jet",
+          "score": 6
+        }
+      ]
+    },
+    {
+      "prompt": "Name a musician people are embarrassed to like",
+      "answers": [
+        {
+          "answer": "Taylor Swift",
+          "score": 25
+        },
+        {
+          "answer": "Justin Bieber",
+          "score": 19
+        },
+        {
+          "answer": "Nicleback",
+          "score": 15
+        },
+        {
+          "answer": "One Direction",
+          "score": 6
+        },
+        {
+          "answer": "Katy Perry",
+          "score": 5
+        }
+      ]
+    },
+    {
+      "prompt": "Name a fictional animal you would like to have as a pet",
+      "answers": [
+        {
+          "answer": "Dragon",
+          "score": 23
+        },
+        {
+          "answer": "Unicorn",
+          "score": 12
+        },
+        {
+          "answer": "Pokemon",
+          "score": 6
+        },
+        {
+          "answer": "Phoenix",
+          "score": 5
+        },
+        {
+          "answer": "Griffin",
+          "score": 4
+        }
+      ]
     }
-]
-
+  ]
