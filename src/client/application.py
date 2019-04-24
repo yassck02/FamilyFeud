@@ -65,6 +65,15 @@ endgamePage      = EndgamePage()
 
 # ---------------------------------------------------------------------
 
+timer = None
+
+def startTimer(time, function):
+
+    timer = threading.Timer(time, function)
+    timer.start()
+
+# ---------------------------------------------------------------------
+
 def show(page):
     """Displays the given page by assigning the main windows body to its widget"""
 
@@ -84,7 +93,7 @@ def unhandled_input(key):
         
         if nm.connected == True:
             nm.disconnect()
-        
+
         raise urwid.ExitMainLoop()
 
     elif (key == 'backspace'):
@@ -101,4 +110,4 @@ def run():
     show(splashPage)
     loop.run()
 
-
+# ---------------------------------------------------------------------

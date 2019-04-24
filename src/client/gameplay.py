@@ -4,7 +4,6 @@ import networkManager as nm
 import application as app
 
 from page import Page
-import threading
 
 # ---------------------------------------------------------------------
 
@@ -70,7 +69,9 @@ class GameplayPage(Page):
         self.guess3_textbox.set_edit_text("")
 
         self.localScore = 0
+        self.questionNum = 0
 
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def didShow(self):
         """called right after this page is displayed"""
@@ -80,7 +81,9 @@ class GameplayPage(Page):
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     localScore = 0
-    gameTime = 5   # game duration in seconds
+
+    numQuestions = 3    # the total number fo questions that should be asked
+    questionNum = 0     # the number of the current question
 
     def startGame(self):
         """Starts the gameplay loop by asking the server for a question and starting the countdown timer"""
@@ -94,18 +97,12 @@ class GameplayPage(Page):
         # recieve the first question from the server
         question = nm.recieve()
         self.question_label.set_text(question['prompt'])
+        self.questionNum += 1
 
-        # create a timer
-        app.timer = threading.Timer(self.gameTime, self.endGame)
-        app.timer.start()
-
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def endGame(self):
-        """Called when the timer finishes"""
-
-        #  # tell the server the timer is up
-        message = { 'command': 'finish' }
-        nm.send(message)
+        """Called when the game is over"""
 
         # go to the engame menu
         app.endgamePage.score_label.set_text("Score: " + str(self.localScore))
@@ -121,20 +118,28 @@ class GameplayPage(Page):
         guess2 = self.guess2_textbox.edit_text
         guess3 = self.guess3_textbox.edit_text
         
+        # figure out if we shoudl request another question
+        lastQuestion = (self.questionNum >= self.numQuestions)
+
         # send the guesses to the server
         request = { "guesses": [ guess1, 
                                  guess2, 
-                                 guess3 ] }
+                                 guess3 ],
+                    "lastQuestion": lastQuestion}
         nm.send(request)
 
         # recieve the score from the server
         response = nm.recieve()
         self.localScore += response['score']
         self.score_label.set_text(str(self.localScore))
+        self.questionNum += 1
 
-        # recieve the next question from the server
-        question = nm.recieve()
-        self.question_label.set_text(question['prompt'])
+        # recieve the next question from the server if we expect one
+        if (lastQuestion == False):
+            question = nm.recieve()
+            self.question_label.set_text(question['prompt'])
+        else:
+            self.endGame()
 
         # clear the responses
         self.guess1_textbox.set_edit_text("")

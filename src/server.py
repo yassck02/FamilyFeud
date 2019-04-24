@@ -61,17 +61,16 @@ def playGame(socket, username):
         # wait for the users responses
         response = recieve(socket)
 
-        # Check to see if the user ended the game
-        if ('command' in response):
-            if 'finish' in response['command']:
-                break
-
         # calculate and send the score
         score = calculateScore(question, response['guesses'])
         message = { 'score': score }
         send(socket, message)
 
         totalScore += score
+
+        # Check to see if the user needs another question
+        if (response['lastQuestion'] == True):
+            break
 
     # after the game is done... save the record
     save(totalScore, username)
