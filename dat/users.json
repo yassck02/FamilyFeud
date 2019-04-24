@@ -10,43 +10,43 @@
         ], 
         "history": [
             {
-                "date": "today",
+                "date": "today", 
                 "score": 100
-            },
+            }, 
             {
-                "date": "yesterday",
+                "date": "yesterday", 
                 "score": 200
-            },
+            }, 
             {
-                "date": "tomorrow",
+                "date": "tomorrow", 
                 "score": 200
-            },
+            }, 
             {
-                "date": "friday",
+                "date": "friday", 
                 "score": 1050
-            },
+            }, 
             {
-                "date": "1990",
+                "date": "1990", 
                 "score": 1700
-            },
+            }, 
             {
-                "date": "may",
+                "date": "may", 
                 "score": 10230
-            },
+            }, 
             {
-                "date": "august 2nd",
+                "date": "august 2nd", 
                 "score": 1040
-            },
+            }, 
             {
-                "date": "1997",
+                "date": "1997", 
                 "score": 1070
-            },
+            }, 
             {
-                "date": "wednesday",
+                "date": "wednesday", 
                 "score": 9999
-            },
+            }, 
             {
-                "date": "today",
+                "date": "today", 
                 "score": 100
             }
         ]
@@ -62,7 +62,7 @@
         ], 
         "history": [
             {
-                "date": "4/20/18",
+                "date": "4/20/18", 
                 "score": 100
             }
         ]
@@ -78,11 +78,11 @@
         ], 
         "history": [
             {
-                "date": "4/20/69",
+                "date": "4/20/69", 
                 "score": 123
-            },
+            }, 
             {
-                "date": "1/1/11",
+                "date": "1/1/11", 
                 "score": 456
             }
         ]
