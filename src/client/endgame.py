@@ -52,7 +52,7 @@ class EndgamePage(Page):
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def on_press_menu(self, button):
-        wm.show(wm.SelectionPage)
+        wm.show(wm.selectionPage)
 
     def on_press_restart(self, button):
         wm.show(wm.instructionsPage)

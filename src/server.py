@@ -37,7 +37,7 @@ def handle(socket, address):
             register(socket, address, request['username'], request['password'])
 
         elif request['command'] == "playGame":
-            playGame(socket, address)
+            playGame(socket, "tmp username")
 
         elif request['command'] == "disconnect":
             break
@@ -62,8 +62,9 @@ def playGame(socket, username):
         response = recieve(socket)
 
         # Check to see if the user ended the game
-        if ('finished' in response):
-            break
+        if ('command' in response):
+            if 'finish' in response['command']:
+                break
 
         # calculate and send the score
         score = calculateScore(question, response['guesses'])
@@ -112,6 +113,8 @@ def save(score, username):
         # save the file
         usersfile.seek(0)
         usersfile.write(json.dumps(users, indent=4))
+
+        print("+ Saved record " + str(score) + " for " + username)
 
 # ---------------------------------------------------------------------
 
@@ -168,6 +171,8 @@ def register(socket, address, username, password):
         }
         send(socket, response)
 
+        print("+ Registered: " + username)
+
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 def login(socket, username, password):
@@ -195,6 +200,8 @@ def login(socket, username, password):
 
         res = { 'code': 404, 'description': 'invalid username' }
         send(socket, res)
+
+        print("> Logged in: " + username)
 
 # ---------------------------------------------------------------------
 

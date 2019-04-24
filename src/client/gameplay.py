@@ -17,8 +17,8 @@ class GameplayPage(Page):
 
         self.question_label = urwid.Text("", align='center')
 
-        self.timer_label = urwid.Text("remaining time: #", align='left')
-        self.score_label = urwid.Text("score: #", align='right')
+        self.timer_label = urwid.Text("time: 0:00", align='left')
+        self.score_label = urwid.Text("score: 0", align='right')
 
         self.guess1_textbox = urwid.Edit(caption='Guess 1: ')
         self.guess2_textbox = urwid.Edit(caption='Guess 2: ')
@@ -62,6 +62,9 @@ class GameplayPage(Page):
 
         self.question_label.set_text("")
 
+        self.timer_label.set_text("time: 0:00")
+        self.score_label.set_text("score: 0")
+
         self.guess1_textbox.set_edit_text("")
         self.guess2_textbox.set_edit_text("")
         self.guess3_textbox.set_edit_text("")
@@ -77,11 +80,13 @@ class GameplayPage(Page):
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     localScore = 0
-    gameTime = 20   # game duration in seconds
+    gameTime = 5   # game duration in seconds
 
     def startGame(self):
         """Starts the gameplay loop by asking the server for a question
             and starting the countdown timer"""
+
+        self.localScore = 0
 
         # tell the server we want to play a game
         request = { 'command': 'playGame' }
@@ -97,6 +102,10 @@ class GameplayPage(Page):
 
     def endGame(self):
         """Called when the 2 minute timer finishes"""
+
+         # tell the server the timer is up
+        message = { 'command': 'finish' }
+        nm.send(message)
 
         # go to the engame menu
         wm.endgamePage.score_label.set_text("Score: " + str(self.localScore))
