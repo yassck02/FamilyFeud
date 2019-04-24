@@ -4,6 +4,7 @@ import networkManager as nm
 import windowManager as wm
 
 from page import Page
+import os
 
 # ---------------------------------------------------------------------
 
@@ -13,7 +14,8 @@ class SplashPage(Page):
 
     def __init__(self):
 
-        splash_text_filepath = '/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/splash.txt'
+        dirname = os.path.dirname(__file__)
+        splash_text_filepath   = os.path.join(dirname, '../../res/splash.txt')
 
         btn_enter = urwid.Button(('yellow_blink', u"Press enter to continue"), on_press=self.on_press_enter)
         btn_enter._label.align = 'center'

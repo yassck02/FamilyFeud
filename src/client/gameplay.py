@@ -86,7 +86,6 @@ class GameplayPage(Page):
 
         # recieve the first question from the server
         question = nm.recieve()
-        print(question)
         self.question_label.set_text(question['prompt'])
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -109,6 +108,15 @@ class GameplayPage(Page):
         response = nm.recieve()
         self.localScore += response['score']
         self.score_label.set_text(str(self.localScore))
+
+        # recieve the next question from the server
+        question = nm.recieve()
+        self.question_label.set_text(question['prompt'])
+
+        # clear the responses
+        self.guess1_textbox.set_edit_text("")
+        self.guess2_textbox.set_edit_text("")
+        self.guess3_textbox.set_edit_text("")
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 

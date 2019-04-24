@@ -77,7 +77,7 @@ def playGame(socket, username):
 def calculateScore(question, usersAnswer):
     """Calculates the score of the question for the given answer"""
 
-    score = 0
+    score = 69
 
     for answer in question["answers"]:
         if(answer['answer'] == usersAnswer):    # TODO: Update so an exact match isnt necessary
