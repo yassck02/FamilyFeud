@@ -11,7 +11,7 @@ import os                   # for relative file paths
 import datetime             # for getting the current time
 
 dirname = os.path.dirname(__file__)
-questionFilePath = os.path.join(dirname, '../dat/questions1.json')
+questionFilePath = os.path.join(dirname, '../dat/questions2.json')
 usersFilePath = os.path.join(dirname, '../dat/users.json')
 
 # ---------------------------------------------------------------------
@@ -51,19 +51,22 @@ def handle(socket, address):
 def playGame(socket, username):
 
     totalScore = 0
-    continuePlaying = True
 
-    while(continuePlaying == True):
+    while(True):
 
         # Get and send a random question
         question = getRandomQuestion()
-        send(socket, question)
+        send(socket, { "prompt": question['prompt'] })
 
         # wait for the users responses
-        usersAnswers = recieve(socket)
+        response = recieve(socket)
+
+        # Check to see if the user ended the game
+        if ('finished' in response):
+            break
 
         # calculate and send the score
-        score = calculateScore(question, usersAnswers)
+        score = calculateScore(question, response['guesses'])
         message = { 'score': score }
         send(socket, message)
 
@@ -74,14 +77,15 @@ def playGame(socket, username):
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-def calculateScore(question, usersAnswer):
-    """Calculates the score of the question for the given answer"""
+def calculateScore(question, guesses):
+    """Calculates the score of the question for the given answers"""
 
     score = 69
 
     for answer in question["answers"]:
-        if(answer['answer'] == usersAnswer):    # TODO: Update so an exact match isnt necessary
-            score = answer['score']
+        for guess in guesses:
+            if guess in answer:
+                score = answer['score']
 
     return score
 
@@ -124,7 +128,7 @@ questions = loadQuestionsFile()
 def getRandomQuestion():
     """ Gets and returns a random questionfrom the list"""
     
-    index = randint(1, len(questions))
+    index = randint(0, len(questions)-1)
     return questions[index]
 
 # ---------------------------------------------------------------------
@@ -301,12 +305,12 @@ def send(socket, dictionary):
 def main():
 
     # Create a server socket
-    _socket = socket(AF_INET, SOCK_STREAM)
+    serverSocket = socket(AF_INET, SOCK_STREAM)
 
     # Define  a server port number, bind it to the server socket, and listen
     port = 6969
-    _socket.bind(("", port))
-    _socket.listen(1)
+    serverSocket.bind(("", port))
+    serverSocket.listen(1)
 
     print ("FF Server: Listening on port " + str(port))
 
@@ -314,7 +318,7 @@ def main():
     while True:
 
         # Create a connection socket for each connection request received
-        connection, address = _socket.accept()
+        connection, address = serverSocket.accept()
 
         # tell the client its connetion attempt was succesful
         print("+ Connected to " + str(address))

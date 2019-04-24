@@ -12,6 +12,7 @@ from records      import RecordsPage
 from selection    import SelectionPage
 from splash       import SplashPage
 from instructions import InstructionsPage
+from endgame      import EndgamePage
 
 # ---------------------------------------------------------------------
 
@@ -59,6 +60,7 @@ recordsPage      = RecordsPage()
 selectionPage    = SelectionPage()
 splashPage       = SplashPage()
 instructionsPage = InstructionsPage()
+endgamePage      = EndgamePage()
 
 # ---------------------------------------------------------------------
 

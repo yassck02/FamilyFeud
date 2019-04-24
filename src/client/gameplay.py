@@ -1,7 +1,10 @@
 import urwid
+
 import networkManager as nm
+import windowManager as wm
 
 from page import Page
+import threading
 
 # ---------------------------------------------------------------------
 
@@ -9,7 +12,7 @@ class GameplayPage(Page):
 
     def __init__(self):
 
-        self.btn_submit = urwid.Button(('yellow', u"Submit"), on_press=self.on_press_submit)
+        self.btn_submit = urwid.Button(('yellow_blink', u"Submit"), on_press=self.on_press_submit)
         self.btn_submit._label.align = 'center'
 
         self.question_label = urwid.Text("", align='center')
@@ -63,8 +66,8 @@ class GameplayPage(Page):
         self.guess2_textbox.set_edit_text("")
         self.guess3_textbox.set_edit_text("")
 
-        self.timerFinished = False
         self.localScore = 0
+
 
     def didShow(self):
         """called right after this page is displayed"""
@@ -74,7 +77,7 @@ class GameplayPage(Page):
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     localScore = 0
-    timerFinished = False
+    gameTime = 20   # game duration in seconds
 
     def startGame(self):
         """Starts the gameplay loop by asking the server for a question
@@ -88,6 +91,17 @@ class GameplayPage(Page):
         question = nm.recieve()
         self.question_label.set_text(question['prompt'])
 
+        # create a timer
+        self.timer = threading.Timer(self.gameTime, self.endGame).start()
+
+
+    def endGame(self):
+        """Called when the 2 minute timer finishes"""
+
+        # go to the engame menu
+        wm.endgamePage.score_label.set_text("Score: " + str(self.localScore))
+        wm.show(wm.endgamePage)
+
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_press_submit(self, button):
@@ -99,9 +113,9 @@ class GameplayPage(Page):
         guess3 = self.guess3_textbox.edit_text
         
         # send the guesses to the server
-        request = { 'guess1': guess1, 
-                    'guess2': guess2, 
-                    'guess3': guess3 }
+        request = { "guesses": [ guess1, 
+                                 guess2, 
+                                 guess3 ] }
         nm.send(request)
 
         # recieve the score from the server
@@ -117,10 +131,5 @@ class GameplayPage(Page):
         self.guess1_textbox.set_edit_text("")
         self.guess2_textbox.set_edit_text("")
         self.guess3_textbox.set_edit_text("")
-
-    # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
-
-    def onTimerFinish():
-        self.timerFinished = True
 
 # ---------------------------------------------------------------------
