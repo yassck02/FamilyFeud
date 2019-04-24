@@ -1,7 +1,7 @@
 import urwid
 
 from page import Page
-import windowManager as wm
+import application as app
 
 import json
 import os
@@ -44,7 +44,7 @@ class InstructionsPage(Page):
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def on_press_start(self, button):
-        wm.show(wm.gameplayPage)
+        app.show(app.gameplayPage)
 
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 

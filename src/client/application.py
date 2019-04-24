@@ -3,6 +3,7 @@ import urwid
 import networkManager as nm
 
 from page import Page
+import threading
 
 from gameplay     import GameplayPage
 from history      import HistoryPage
@@ -94,5 +95,10 @@ def unhandled_input(key):
             show(splashPage)
 
 # ---------------------------------------------------------------------
+
+def run():
+    loop = urwid.MainLoop(base, palette=palette, unhandled_input=unhandled_input)
+    show(splashPage)
+    loop.run()
 
 

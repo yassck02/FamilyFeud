@@ -1,7 +1,7 @@
 import urwid
 
 import networkManager as nm
-import windowManager as wm
+import application as app
 
 from page import Page
 import os
@@ -47,6 +47,6 @@ class SplashPage(Page):
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
     def on_press_enter(self, button):
-        wm.show(wm.loginPage)
+        app.show(app.loginPage)
 
 # ---------------------------------------------------------------------

@@ -1,7 +1,7 @@
 import urwid
 
 import networkManager as nm
-import windowManager as wm
+import application as app
 
 from page import Page
 
@@ -101,7 +101,7 @@ class LoginPage(Page):
             if (response['code'] == 200):
                 self.message_login.set_text([('green', command), u": success!"])
                 nm.loggedin = True
-                wm.show(wm.selectionPage)
+                app.show(app.selectionPage)
             else:
                 self.message_login.set_text([('red', u"ERROR: "), response['description']])
                 nm.disconnect()

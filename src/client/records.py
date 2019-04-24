@@ -1,7 +1,7 @@
 import urwid
 
 import networkManager as nm
-import windowManager as wm
+import application as app
 
 from page import Page
 

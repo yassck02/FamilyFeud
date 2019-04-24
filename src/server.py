@@ -37,7 +37,7 @@ def handle(socket, address):
             register(socket, address, request['username'], request['password'])
 
         elif request['command'] == "playGame":
-            playGame(socket, "tmp username")
+            playGame(socket, "connor")
 
         elif request['command'] == "disconnect":
             break

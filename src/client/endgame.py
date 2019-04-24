@@ -1,6 +1,6 @@
 import urwid
 
-import windowManager as wm
+import application as app
 
 from page import Page
 
@@ -52,10 +52,10 @@ class EndgamePage(Page):
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def on_press_menu(self, button):
-        wm.show(wm.selectionPage)
+        app.show(app.selectionPage)
 
     def on_press_restart(self, button):
-        wm.show(wm.instructionsPage)
+        app.show(app.instructionsPage)
         
 
 # ---------------------------------------------------------------------

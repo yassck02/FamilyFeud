@@ -1,7 +1,7 @@
 import urwid
 
 import networkManager as nm
-import windowManager as wm
+import application as app
 
 from page import Page
 import threading
@@ -83,8 +83,7 @@ class GameplayPage(Page):
     gameTime = 5   # game duration in seconds
 
     def startGame(self):
-        """Starts the gameplay loop by asking the server for a question
-            and starting the countdown timer"""
+        """Starts the gameplay loop by asking the server for a question and starting the countdown timer"""
 
         self.localScore = 0
 
@@ -97,19 +96,20 @@ class GameplayPage(Page):
         self.question_label.set_text(question['prompt'])
 
         # create a timer
-        self.timer = threading.Timer(self.gameTime, self.endGame).start()
+        app.timer = threading.Timer(self.gameTime, self.endGame)
+        app.timer.start()
 
 
     def endGame(self):
-        """Called when the 2 minute timer finishes"""
+        """Called when the timer finishes"""
 
-         # tell the server the timer is up
+        #  # tell the server the timer is up
         message = { 'command': 'finish' }
         nm.send(message)
 
         # go to the engame menu
-        wm.endgamePage.score_label.set_text("Score: " + str(self.localScore))
-        wm.show(wm.endgamePage)
+        app.endgamePage.score_label.set_text("Score: " + str(self.localScore))
+        app.show(app.endgamePage)
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

@@ -1,7 +1,7 @@
 import urwid
 
 import networkManager as nm
-import windowManager as wm
+import application as app
 
 from page import Page
 
@@ -47,15 +47,15 @@ class SelectionPage(Page):
     # - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  - - - -  -
 
     def on_press_play(self, button):
-        wm.show(wm.instructionsPage)
+        app.show(app.instructionsPage)
 
     def on_press_history(self, button):
-        wm.show(wm.historyPage)
+        app.show(app.historyPage)
 
     def on_press_record(self, button):
-        wm.show(wm.recordsPage)
+        app.show(app.recordsPage)
 
     def on_press_info(self, button):
-        wm.show(wm.infoPage)
+        app.show(app.infoPage)
 
 # ---------------------------------------------------------------------

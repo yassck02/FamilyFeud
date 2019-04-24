@@ -1,7 +1,7 @@
 import urwid
 
 import networkManager as nm
-import windowManager as wm
+import application as app
 
 from page import Page
 
@@ -24,7 +24,7 @@ class HistoryPage(Page):
                     ( 2, urwid.Filler( urwid.Padding(self.username_textbox, width=30, align='center') )),
                     ( 2, urwid.Filler( urwid.Padding(self.btn_search,       width=30, align='center') )),
                     ( 2, urwid.Filler( urwid.Padding(self.message_label,    width=50, align='center') )),
-                    (10, urwid.Filler( urwid.Padding(self.history_list,     width=30, align='center') ))
+                    (10, urwid.Filler( urwid.Padding(self.history_list,     width=40, align='center') ))
                 ])
             )
 

@@ -537,19 +537,19 @@ class BarGraph(with_metaclass(BarGraphMeta, Widget)):
             (bt1, w1), (bt2, w2) = a, b
             if (bt1, w1) == (bt2, w2):
                 return (bt1, w1), None, None
-            wmin = min(w1, w2)
+            appin = min(w1, w2)
             l1 = l2 = None
             if w1 > w2:
                 l1 = (bt1, w1 - w2)
             elif w2 > w1:
                 l2 = (bt2, w2 - w1)
             if type(bt1) == tuple:
-                return (bt1, wmin), l1, l2
+                return (bt1, appin), l1, l2
             if (bt2, bt1) not in self.satt:
                 if r < 4:
-                    return (bt2, wmin), l1, l2
-                return (bt1, wmin), l1, l2
-            return ((bt2, bt1, 8 - r), wmin), l1, l2
+                    return (bt2, appin), l1, l2
+                return (bt1, appin), l1, l2
+            return ((bt2, bt1, 8 - r), appin), l1, l2
 
         def row_combine_last(count, row):
             o_count, o_row = o[-1]
