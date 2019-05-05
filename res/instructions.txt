@@ -1,5 +1,5 @@
 INSTRUCTIONS
-- You have 2 minutes to answer as many questions as possible.
+- You will be asked 3 random questions
 - Up to 3 guesses can be made for each question
 
 - Guesses can be left blank if you want

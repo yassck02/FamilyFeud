@@ -3,6 +3,7 @@ import urwid
 from page import Page
 
 import json
+import os
 
 # ---------------------------------------------------------------------
 
@@ -11,8 +12,9 @@ class InfoPage(Page):
     def __init__(self):
         """Credits and resources are read from the credits file"""
 
-        credits_text_filepath = '/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/credits.json'
-        resources_text_filepath = '/Users/Connor/Documents/School/College/Semester 8/Networking/FamilyFeud/res/resources.json'
+        dirname = os.path.dirname(__file__)
+        credits_text_filepath   = os.path.join(dirname, '../../res/credits.json')
+        resources_text_filepath   = os.path.join(dirname, '../../res/resources.json')
 
         header_text = "Info"
 
