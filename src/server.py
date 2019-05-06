@@ -57,6 +57,7 @@ def playGame(socket, username):
         # Get and send a random question
         question = getRandomQuestion()
         send(socket, { "prompt": question['prompt'] })
+        print(question)
 
         # wait for the users responses
         response = recieve(socket)
@@ -80,12 +81,12 @@ def playGame(socket, username):
 def calculateScore(question, guesses):
     """Calculates the score of the question for the given answers"""
 
-    score = 69
+    score = 0
 
     for answer in question["answers"]:
         for guess in guesses:
-            if guess in answer:
-                score = answer['score']
+            if guess in answer["answer"]:
+                score += answer['score']
 
     return score
 
