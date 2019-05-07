@@ -16,10 +16,14 @@ class RecordsPage(Page):
         self.btn_search = urwid.Button(('yellow', u'Search'), on_press=self.on_btn_press)
         self.btn_search._label.align = 'center'
 
+        self.btn_global = urwid.Button(('yellow', u'Get population record'), on_press=self.on_btn_press_global)
+        self.btn_global._label.align = 'center'
+
         self.message_label = urwid.Text("", align='center')
 
         widget = urwid.Filler(
             urwid.Pile([
+                (2, urwid.Filler( urwid.Padding(self.btn_global,       width=30, align='center') )),
                 (2, urwid.Filler( urwid.Padding(self.username_textbox, width=30, align='center') )),
                 (2, urwid.Filler( urwid.Padding(self.btn_search,       width=30, align='center') )),
                 (2, urwid.Filler( urwid.Padding(self.message_label,    width=50, align='center') ))
@@ -39,6 +43,25 @@ class RecordsPage(Page):
     def didShow(self):
         pass
 
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    def on_btn_press_global(self):
+             # Create end the request to the server
+        request = { 'command': 'getPopulationRecord'}
+        nm.send(request)
+
+        # recieve and act on the response
+        response = nm.recieve()
+        if (response['code'] == 200):
+            
+            self.message_label.set_text("Overall best record was " + 
+                                        str(response['record']['score']) + " on " + 
+                                        response['record']['date'])
+        
+        else:
+
+            self.message_label.set_text([('red', u"ERROR: "), response['description']])
+     
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     def on_btn_press(self, button):

@@ -28,7 +28,11 @@ def handle(socket, address):
             getUserHistory(socket, request['username'])
 
         elif request['command'] == "getRecord":
-            getUserRecord(socket, request['username'])
+            
+            if request['username'] == "**population":
+                getPopulationRecord(socket)
+            else:
+                getUserRecord(socket, request['username'])
 
         elif request['command'] == "login":
             login(socket, request['username'], request['password'])
@@ -81,14 +85,12 @@ def playGame(socket, username):
 def calculateScore(question, guesses):
     """Calculates the score of the question for the given answers"""
 
-    score = 0
-
     for answer in question["answers"]:
         for guess in guesses:
-            if guess in answer["answer"]:
-                score += answer['score']
+            if guess.lower().find(answer["answer"].lower(), 0, ) != -1):
+                return answer['score']
 
-    return score
+    return 0
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
