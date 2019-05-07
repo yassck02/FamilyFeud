@@ -87,7 +87,7 @@ def calculateScore(question, guesses):
 
     for answer in question["answers"]:
         for guess in guesses:
-            if guess.lower().find(answer["answer"].lower(), 0, ) != -1):
+            if guess.lower().find(answer["answer"].lower(), 0, len(answer["answer"])) != -1):
                 return answer['score']
 
     return 0
