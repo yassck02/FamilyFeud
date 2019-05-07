@@ -45,9 +45,10 @@ class RecordsPage(Page):
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    def on_btn_press_global(self):
-             # Create end the request to the server
-        request = { 'command': 'getPopulationRecord'}
+    def on_btn_press_global(self, button):
+        
+        # Create end the request to the server
+        request = { 'command': 'getRecord', "username": "**population"}
         nm.send(request)
 
         # recieve and act on the response
